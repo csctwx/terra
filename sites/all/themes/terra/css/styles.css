@@ -1,0 +1,1623 @@
+/*
+ * NOVECENTO - Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Synthview Type Design
+ * License URL: http://www.fontspring.com/fflicense/synthview
+ *
+ *
+ */
+
+
+
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("reset.css");
+@import url("media-queries.css");
+
+
+/*FONT FACE KIT*/
+
+/*------------fontspring bulletproof @fontface syntax FEB21 2011----------------*/
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('webfont.woff') format('woff'), /* Modern Browsers */
+	     url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+@font-face {
+	font-family: 'Novecento-Bold';
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Bold-Webfont/Novecentosanswide-Bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Bold-Webfont/Novecentosanswide-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Bold-Webfont/Novecentosanswide-Bold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Bold-Webfont/Novecentosanswide-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Bold-Webfont/Novecentosanswide-Bold-webfont.svg#Novecentosanswide-Bold-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+@font-face {
+	font-family: 'Novecento-DemiBold';
+	src: url('novecento-fontfacekit/Novecento-sans-wide-DemiBold-Webfont/Novecentosanswide-DemiBold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('novecento-fontfacekit/Novecento-sans-wide-DemiBold-Webfont/Novecentosanswide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('novecento-fontfacekit/Novecento-sans-wide-DemiBold-Webfont/Novecentosanswide-DemiBold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('novecento-fontfacekit/Novecento-sans-wide-DemiBold-Webfont/Novecentosanswide-DemiBold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('novecento-fontfacekit/Novecento-sans-wide-DemiBold-Webfont/Novecentosanswide-DemiBold-webfont.svg#Novecentosanswide-DemiBold-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+@font-face {
+	font-family: 'Novecento-Medium';
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Medium-Webfont/Novecentosanswide-Medium-webfont.eot'); /* IE9 Compat Modes */
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Medium-Webfont/Novecentosanswide-Medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Medium-Webfont/Novecentosanswide-Medium-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Medium-Webfont/Novecentosanswide-Medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Medium-Webfont/Novecentosanswide-Medium-webfont.svg#Novecentosanswide-Medium-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+	
+@font-face {
+	font-family: 'Novecento-Normal';
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Normal-Webfont/Novecentosanswide-Normal-webfont.eot'); /* IE9 Compat Modes */
+	src: url('novecento-fontfacekit/Novecento-sans-wide-Normal-Webfont/Novecentosanswide-Normal-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Normal-Webfont/Novecentosanswide-Normal-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Normal-Webfont/Novecentosanswide-Normal-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('novecento-fontfacekit/Novecento-sans-wide-Normal-Webfont/Novecentosanswide-Normal-webfont.svg#Novecentosanswide-Normal-webfont') format('svg'); /* Legacy iOS */
+	}
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: 'ClearSans-Thin';
+	src: url('clear-sans-fontfacekit/clearsans_thin/ClearSans-Thin-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_thin/ClearSans-Thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_thin/ClearSans-Thin-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_thin/ClearSans-Thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_thin/ClearSans-Thin-webfont.svg#ClearSans-Thin-webfont') format('svg'); /* Legacy iOS */
+	}
+
+
+
+@font-face {
+	font-family: 'ClearSans-Light';
+	src: url('clear-sans-fontfacekit/clearsans_light/ClearSans-Light-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_light/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_light/ClearSans-Light-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_light/ClearSans-Light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_light/ClearSans-Light-webfont.svg#ClearSans-Light-webfont') format('svg'); /* Legacy iOS */
+	}
+
+
+
+
+@font-face {
+	font-family: 'ClearSans-Regular';
+	src: url('clear-sans-fontfacekit/clearsans_regular/ClearSans-Regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_regular/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_regular/ClearSans-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_regular/ClearSans-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_regular/ClearSans-Regular-webfont.svg#ClearSans-Regular-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+@font-face {
+	font-family: 'ClearSans-Italic';
+	src: url('clear-sans-fontfacekit/clearsans_italic/ClearSans-Italic-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_italic/ClearSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_italic/ClearSans-Italic-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_italic/ClearSans-Italic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_italic/ClearSans-Italic-webfont.svg#ClearSans-Italic-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+@font-face {
+	font-family: 'ClearSans-Medium';
+	src: url('clear-sans-fontfacekit/clearsans_medium/ClearSans-Medium-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_medium/ClearSans-Medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_medium/ClearSans-Medium-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_medium/ClearSans-Medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_medium/ClearSans-Medium-webfont.svg#ClearSans-Medium-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+@font-face {
+	font-family: 'ClearSans-MediumItalic';
+	src: url('clear-sans-fontfacekit/clearsans_mediumitalic/ClearSans-MediumItalic-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_mediumitalic/ClearSans-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_mediumitalic/ClearSans-MediumItalic-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_mediumitalic/ClearSans-MediumItalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_mediumitalic/ClearSans-MediumItalic-webfont.svg#ClearSans-MediumItalic-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+@font-face {
+	font-family: 'ClearSans-Bold';
+	src: url('clear-sans-fontfacekit/clearsans_bold/ClearSans-Bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('clear-sans-fontfacekit/clearsans_bold/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('clear-sans-fontfacekit/clearsans_bold/ClearSans-Bold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('clear-sans-fontfacekit/clearsans_bold/ClearSans-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('clear-sans-fontfacekit/clearsans_bold/ClearSans-Bold-webfont.svg#ClearSans-Bold-webfont') format('svg'); /* Legacy iOS */
+	}
+	
+	
+	
+	
+	
+	
+/*-----------------------------------------------------------------------------*/
+
+
+
+/* disable webkit text size adjust (for iPhone) */
+html {
+		-webkit-text-size-adjust: none;
+}
+
+
+
+
+
+
+.homepageBackground {
+	/*background-image: url(../../images/sticky-footer-kraft-strip-brown.jpg);*/
+	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
+	background-repeat:repeat-x;
+	background-color:rgb(80,61,51);
+	background-position:bottom;
+	
+	}
+	
+	
+	
+	
+	
+/*.dinoBackground {
+	background-image: url(../images/Dinosaur-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-dino.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+
+.dinoBackground2 {
+	background-image: url(../images/Dinosaur-Backdrop-only-iStock-fadeout3.jpg), url(../images/sticky-footer-kraft-strip-dino2.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+.dinoBackground3 {
+	background-image: url(../images/Dinosaur-Backdrop-only-iStock-fadeout4.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+.dinoBackground4 {
+	background-image: url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg), url(../images/sticky-footer-kraft-strip-dino-orange.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}*/
+
+
+.dinoBackground5 {
+	background:url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg) no-repeat fixed top, rgb(202,117,53) url(../images/sticky-footer-kraft-strip-dino-orange.jpg) repeat-x fixed bottom;
+	background-color:#bd6e4d;
+}
+
+/*  [ <color> || <image> || <repeat> || <attachment> || <position> ]   */
+
+
+
+
+
+
+
+/*.farmBackground {
+	background-image: url(../images/Farm-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}*/
+
+
+
+.farmBackground2 {
+	background-image: url(../images/Farm-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-farm.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:#e0bf70;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+
+
+
+
+/*.marineBackground {
+	background-image: url(../images/Marine-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}*/
+
+
+.marineBackground2 {
+	background-image: url(../images/Marine-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:#042477;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+.northAmericanBackground {
+	background-image: url(../images/northAmercian-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-northAmerican.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:#344018;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.fantasyBackground {
+	background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-purple.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+.fantasyBackground2 {
+	background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-dirt_brown.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+
+
+.fantasyBackground3 {
+	background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-dark_burgundy.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+.fantasyBackground4 {
+	background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-bricks-red.jpg), url(../images/sticky-footer-kraft-strip-dark_burgundy.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:rgb(202,117,53);
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}*/
+
+
+
+.fantasyBackground5 {
+	background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:black;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+.accessoriesBackground {
+	background-image: url(../images/Accessories-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:#a3be39;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	
+	
+}
+
+
+
+
+
+
+
+
+.africanBackground {
+	/*background:yellow;*/
+	/*background:url(../images/1211-African-scene-thumbnail-page-PNG8.png) no-repeat top center rgb(168,116,92);*/
+	/*background: url(../images/1211-African-scene-thumbnail-page-original.png) no-repeat top center rgb(168,116,92);*/
+	/*background: url(../images/Africa-Backdrop-only-iStock.jpg) no-repeat top center rgb(213,116,46);*/
+	/*background: url(../images/Africa-Backdrop-only-iStock.jpg) no-repeat top center rgb(232,190,135);*/
+	
+	
+	/*background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-ext.jpg);*/
+	background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg);
+	background-repeat:no-repeat, repeat-x;
+	background-color:#ca7535;
+	background-position:top, bottom;
+	background-attachment:fixed, fixed;
+	/*background:rgb(168,116,92);
+	background:rgb(180,130,80) url(../images/background-gradient2.png) repeat-x;*/
+	
+	
+	-pie-background:url(../images/Africa-Backdrop-only-iStock.jpg) no-repeat, url(../images/sticky-footer-kraft-strip.png) repeat-x;
+     behavior: url(../js/PIE-1/PIE.htc);
+
+}
+
+
+/*#topNavContainer {
+	background:blue url(../images/topNav-kraft.png) -50px 0px;
+	width:85%;
+	height:150px;
+	margin:0px auto;
+	
+}*/
+
+
+
+
+
+
+
+
+#topNavContainer {
+	background: url(../images/topNav-kraft-shorter.png) center no-repeat;
+
+	width:80%;
+	max-width:1600px;
+	height:150px;
+	
+	position:fixed;
+	top:0;
+	right:0;
+	
+	z-index:200000;
+	pointer-events:none;
+	
+	left: 50%;           /* Start at 50% of browser window */
+    margin-left: -800px; /* Go half of width to the left, centering the element */
+}
+	
+
+
+
+/*#topNavContainer {
+	background: url(../images/topNav-kraft-shorter.png) center no-repeat;
+
+	width:80%;
+	max-width:1600px;
+	height:150px;
+	margin:0px auto;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:10000;
+	
+}*/
+
+
+#topNav {
+	background:brown;
+	/*margin:0 0 0 450px;*/
+	margin:0 0 0 30%;
+	font-family:'ClearSans-Medium', Arial, Helvetica, sans-serif;
+	/*font-size:220%;*/
+	font-size:90%;
+	line-height:1.15em !important;
+	padding:0 0%;
+	
+}
+
+
+
+#topNav ul {
+    float: left;
+    width: 100%;
+    padding:0;
+	margin:30px 0 0 0;
+    list-style-type: none;
+	background:lime;
+}
+
+#topNav a {
+    float: left;
+    /*width: 6em;*/
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 0.2em 1.6em;
+    border-right: 1px solid white;
+}
+
+#topNav a:hover {
+    background-color: fuchsia;
+}
+
+#topNav li {
+    display: inline;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container {
+	background: url(../images/white-transparent-back-60pct-TEMP.png) repeat;
+	/*background: url(../images/1211-African-scene-thumbnail-page-1550px.png) no-repeat rgb(250,229,180);*/
+	/*background: url(../images/1211-African-scene-thumbnail-page-1550px.png) 0 70px no-repeat rgb(168,116,92);*/
+	/*background: url(../images/1211-African-scene-thumbnail-page-1550px.png) 0 70px no-repeat;*/
+	background-size:contain;
+	width:80%;
+	height:auto;
+	margin:0 auto;
+	max-width:1550px;
+	padding:180px 0 0 0;
+	overflow:visible;
+	
+
+}
+
+
+
+#containerHomepage {
+	width:80%;
+	max-width:1550px;
+	/*width:100%;*/
+	height:auto;
+	margin:0 auto !important;
+	/*max-width:1550px;*/
+	/*padding:180px 0 ;*/
+	/*padding:2% 0 0 0;*/
+	padding:5% 0 0 0;
+	overflow:visible;
+	/*background:purple;*/
+	background:cornsilk url(../images/iStock_000006543896Medium-pencil-drawing-DUOTONE-900px.jpg) no-repeat right top;
+	text-align:center;
+	
+	
+}
+
+.homepageMissionStatementContainer {
+
+	width:70%;
+	max-width:1300px; 
+	min-width:965px;
+	height:250px;
+	margin:0 auto 0% auto;
+	/*background:lime;*/
+	padding:2% 0% 0 2%;
+	position:relative;
+	overflow:visible;
+
+}
+
+
+
+.homepageMissionStatement {
+	width:40%;
+	height:auto;
+	background:cyan;
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	font-size:115%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	
+	
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/}
+	
+	
+
+.homepageRandomNews {
+	width:50%;
+	height:auto;
+	background:pink;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	margin:0 0 0 4%;
+	
+	
+	
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/}
+
+
+
+
+
+.homepageMissionStatementTwo {
+	width:45%;
+	height:auto;
+	/*background:cyan;*/
+	position:absolute;
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	
+	
+	display:inline-block;
+	text-align:left;
+	top:10px;
+	left:20px;
+	overflow:visible;
+	/*border-bottom:1px solid black;
+	padding:0 0 2% 0;*/
+	z-index:9 !important;
+	
+	
+	
+	
+	
+	
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/}
+
+
+
+.homepageMissionStatementTwo a {
+	/*color:maroon;*/
+	/*color:rgb(80,61,51);*/
+	text-decoration:underline;
+	font-family:'ClearSans-Medium', Arial, Helvetica, sans-serif;
+	color:maroon !important;
+	
+}
+
+
+.danLorussoLink {
+	font-family:'ClearSans-MediumItalic', Arial, Helvetica, sans-serif !important;
+	
+}
+
+.homepageMissionStatementTwo a:hover {
+	text-decoration:none;
+	
+}
+
+
+
+
+
+
+.homepageMissionStatementTwo p:first-of-type {
+	/*border-bottom:1px solid black;
+	padding:0 0 2% 0;*/
+	color:maroon;
+	font-size:125%;
+	line-height:1.5em;
+	
+}
+
+
+.homepageMissionStatementTwo p:first-of-type span {
+	font-family:'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+	
+}
+
+
+.italic {
+	font-family:'ClearSans-Italic', Arial, Helvetica, sans-serif !important;
+	
+	
+}
+
+
+
+.homepageMissionStatementTwo p:last-of-type {
+	font-size:100%;
+	color:rgb(80,61,51);
+	line-height:1.35em;
+	padding:2% 0 0 0;
+	
+	
+}
+
+
+
+
+
+
+
+.homepageRandomNewsTwo {
+	width:50%;
+	height:auto;
+	/*background:brown;*/
+	position:absolute;
+	vertical-align:bottom;
+	margin:0;
+	display:inline-block;
+	bottom:0;
+	right:0;
+	
+
+
+
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/}
+
+
+
+
+
+
+#productTitleDetailPage, #productTitleDetailPageDino {
+	/*width:30%;*/
+	width:auto;
+	height:auto;
+	/*background:orange;*/
+	margin:0 2% 0% 12%;
+	
+	
+	/*display:inline-block;*/
+	display:block;
+	overflow:visible;
+}
+
+
+
+
+
+
+
+
+#productTitleDetailPage h2, #productTitleDetailPageDino h2 {
+	font-size:240%;
+	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
+	color:maroon;
+	text-transform:none;
+	text-transform:uppercase;	
+}
+
+
+
+#productTitleDetailPage h4, #productTitleDetailPageDino h4 {
+	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
+	font-size:150%;
+	color:rgb(80,61,51);
+	text-transform:uppercase;
+
+
+}
+
+
+
+
+
+
+
+
+
+.productTitleDetailPageThumbContainer {
+	width:auto;
+	height:auto;
+	/*background:lime;*/
+	float:right;
+	margin:0px 12% 4% 0;
+	display:none;
+	
+}
+
+
+
+.productTitleDetailPageThumbContainerUnder {
+	/*width:auto;*/
+	width:100%;
+	height:auto;
+	/*background:lime;*/
+	margin:2% auto 0 auto;
+	/*background:purple;*/
+	text-align:center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+.productTitleDetailPageThumb {
+	width:80px;
+	height:80px;
+	/*background:cornsilk;*/
+	background:ivory;
+	/*margin:-55px 0.4em 0 0.4em;*/
+	margin:0px 0.4em 0 0.4em;
+	display:inline-block;
+	/*border:2px solid rgb(80,61,51);*/
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+
+	
+}
+
+
+
+div.productTitleDetailPageThumb:hover {
+	/*border:2px solid cornsilk;*/
+	background:wheat;
+	
+}
+
+
+
+
+
+/*.productTitleDetailPageThumbTwo {
+	width:80px;
+	height:80px;
+	background:black;
+	margin:-55px 2% 0 0;
+	
+}*/
+
+
+
+
+
+
+
+
+
+/*
+.productTitleDetailPageThumb {
+	width:80px;
+	height:80px;
+	background:blue;
+	float:right;
+	margin:-55px 13% 0 0;
+	
+}
+
+.productTitleDetailPageThumbTwo {
+	width:80px;
+	height:80px;
+	background:black;
+	float:right;
+	margin:-55px 2% 0 0;
+	
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#productPictureMapContainer, #productPictureFantasyMapContainer {
+	width:75%;
+	height:auto;
+	/*background:cornsilk url(../images/map-TEMP.png) no-repeat right;*/
+	/*background: url(../images/map-TEMP.png) no-repeat right;*/
+	
+	/*background:cornsilk url(../images/map-northAmericaAI2.jpg) no-repeat right;--now INLINE--*/
+	
+	/*background-size:contain;--now INLINE--*/
+	
+	margin:3% auto 0 auto;
+	/*margin:50px auto 0 auto;*/
+	overflow:visible;
+	clear:both;
+
+	
+}
+
+
+
+
+
+#productPictureAccessoriesContainer {
+	width:75%;
+	height:auto;
+	/*background:cornsilk url(../images/map-TEMP.png) no-repeat right;*/
+	/*background: url(../images/map-TEMP.png) no-repeat right;*/
+	
+	/*background:cornsilk url(../images/map-northAmericaAI2.jpg) no-repeat right;--now INLINE--*/
+	
+	/*background-size:contain;--now INLINE--*/
+	margin:3% auto 0 auto;
+	overflow:visible;
+	clear:both;
+
+	
+}
+
+
+
+#productPictureAccessoriesContainer img {
+	width:100%;
+	height:auto;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#productPictureMapContainer {
+	width:75%;
+	height:auto;
+	background:cornsilk url(../images/map-TEMP.png) no-repeat right;
+	background-size:contain;
+	margin:50px auto 0 auto;
+	overflow:visible;
+	
+}*/
+
+
+
+#productPictureInnerContainer {
+	width:450px;
+	height:450px;
+	margin:0 0 0 5%;
+	/*background:brown;*/
+	position:relative;
+	
+}
+
+
+#magnifyingGlassIcon {
+	width:35px;
+	height:35px;
+	/*background:red;*/
+	position:absolute;
+	bottom:0;
+	left:0;
+	display:none;
+}
+
+#magnifyingGlassIcon img {
+	width:100%;
+	height:100%;
+
+}
+
+
+#productDescriptionContainer {
+	width:100%;
+	height:auto;
+	background:cornsilk;
+	/*margin:4% 0 0 0;*/
+	margin:2% 0 0 0;
+	text-align:center;
+	padding:3% 0 3% 0;
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	/*font-size:95%;*/
+	font-size:110%;
+	line-height: 1.75em;
+	overflow:visible;
+	position:relative;	
+}
+
+.listSubTitleSpan {
+	font-family:'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+	color:maroon;
+	text-transform:uppercase;
+	
+	
+}
+
+
+
+/*#productSpecsFactsWrapper {
+	width:100%;
+	height:auto;
+	background:black;
+	position:relative;
+	overflow:visible;
+	
+}*/
+
+
+
+.productFantasySpecsContainer {
+	width:30%;
+	/*min-width:310px;*/
+	height:auto;
+	/*background:brown;*/
+	display:inline-block;
+	/*display:block;*/
+	margin:0 1% 0 3%;
+	text-align:left;
+	overflow:visible;
+	/*position:absolute;*/
+	vertical-align:top;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+	
+}
+
+
+
+
+
+
+
+.productSpecsContainer, .productComponentsContainer {
+	width:25%;
+	/*min-width:310px;*/
+	height:auto;
+	/*background:brown;*/
+	display:inline-block;
+	/*display:block;*/
+	margin:0 1% 0 8%;
+	text-align:left;
+	overflow:visible;
+	/*position:absolute;*/
+	vertical-align:top;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+	
+}
+
+
+.productComponentsContainerList {
+	list-style-type:disc;
+	list-style-position:inside;
+	
+}
+
+
+.productSpecsContainer li.habitat {
+	display:none;
+	
+}
+
+
+
+.productHabitatContainer {
+	width:100%;
+	/*min-width:310px;*/
+	height:auto;
+	/*background:brown;*/
+	display:inline-block;
+	/*display:block;*/
+	margin:0 1% 3% 0%;
+	text-align:left;
+	overflow:visible;
+	/*position:absolute;*/
+	vertical-align:top;
+	
+	
+	font-size:125% !important;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+}
+
+
+
+
+.productHabitatContainer li {
+	
+	list-style-type:decimal;
+	list-style-position:inside;
+	color:maroon;
+	/*font-family:'Novecento-Medium', Arial, Helvetica, sans-serif !important;*/
+	/*list-style-image:url(../images/1.gif);*/
+	
+	/*float:left;
+	padding:0 2% 0 0;*/
+	
+}
+
+
+
+
+.productHabitatContainer ol li span {
+	color:black !important;
+	font-family:'Novecento-Medium', Arial, Helvetica, sans-serif !important;
+	font-size:100%;
+	
+}
+
+
+
+
+
+
+
+#productRetailInfoContainer {
+	width:100%;
+	height:auto;
+	/*background:cyan;*/
+	border-top:1px solid black;
+	margin:15px 0 0 0;
+	padding:10px 0 0 0;
+	font-size:85%;
+	overflow:visible;
+	line-height:1.25em;
+	/*position:absolute;*/
+	
+}
+
+#productRetailInfoContainer ul li span, #productFantasyRetailInfoContainer ul li span {
+	font-family:'ClearSans-Bold', Arial, Helvetica, sans-serif;
+	color:black;
+	
+}
+
+
+#productRetailInfoContainer a, #productFantasyRetailInfoContainer a {
+	padding:3% 0 0 0;
+	color:maroon;
+	display:inline-block;
+	
+	
+	
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/}
+
+
+#productRetailInfoContainer a:hover, #productFantasyRetailInfoContainer a:hover {
+	text-decoration:none;
+	
+}
+
+
+
+
+
+#productFantasyRetailInfoContainer {
+	width:100%;
+	height:auto;
+	/*background:cyan;*/
+	border-top:1px solid black;
+	margin:15px 0 0 0;
+	padding:10px 0 0 0;
+	font-size:105% !important;
+	overflow:visible;
+	line-height:1.25em;
+	text-align:left;	/*position:absolute;*/	
+}
+
+
+
+
+
+#productFactsContainer {
+	width:49%;
+	height:auto;
+	/*background:blueviolet;*/
+	display:inline-block;
+	margin:0 6% 0 2%;
+	/*display:block;*/
+	text-align:left;
+	overflow:visible;
+	vertical-align:top;
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	font-size:80%;
+	line-height:1.75em;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+}
+
+
+
+#productStoryContainer {
+	width:70%;
+	height:auto;
+	/*background:blueviolet;*/
+	display:inline-block;
+	margin:0 6% 0 2%;
+	/*display:block;*/
+	text-align:left;
+	overflow:visible;
+	vertical-align:top;
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	font-size:80%;
+	line-height:1.75em;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+}
+
+
+
+
+
+
+
+#crossSellingContainer {
+	width:100%;
+	height:auto;
+	background:ivory;
+	text-align:center;
+	overflow:visible;
+	padding:0 0 3% 0;
+}
+
+
+
+
+
+
+.crossSellingThumbContainer {
+	width:75%;
+	height:auto;
+	/*background:lime;*/
+	/*margin:3% 12% 0 12%;*/
+	
+	margin:3% auto 0 auto;
+	
+	
+	
+	padding:20px 0 0 0;
+	text-align:center;
+	
+}
+
+.homepageCrossSellingThumbContainer {
+	width:90% !important;
+	
+	
+}
+
+
+
+.thumbPageContainer {
+	width:75%;
+	height:auto;
+	/*background:lime;*/
+	margin:3% auto 0 auto !important;
+	padding:20px 0 0 0;
+	text-align:center;
+	display:block;
+	
+	
+}
+
+.thumbnails {
+
+min-width:160px;
+
+}
+
+
+
+
+
+.crossSellingThumb {
+	/*width:auto;*/
+	width:18% !important;
+	
+	height:auto !important;
+	/*background:url(../images/thumbnail-kraft-back.jpg);*/
+	/*background:ivory;*/
+	
+	/*background:url(../images/ivory-transparent30pct-back-TEMP.png) repeat;*/
+	
+	display:inline-block !important;
+	margin:0px 12px 20px 12px !important;
+	overflow:visible;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline !important; /*-- IE fix for inline-block --*/	
+	
+	
+	min-width:160px;
+}
+
+
+.homepageCrossSellingThumb {
+	/*width:15% !important;*/
+	width:10% !important;
+	
+	
+}
+
+
+
+
+.crossSellingThumb img, .crossSellingFloatingThumb img {
+	width:100% !important;
+	
+	
+}
+
+
+
+
+div.crossSellingThumb:hover, .crossSellingFloatingThumb {
+	
+	background:rgb(80,61,51);
+	
+}
+
+
+
+
+.crossSellingFloatingThumbContainer {
+	width:75%;
+	height:400px;
+	background:lime;
+	/*margin:3% 12% 0 12%;*/
+	margin:3% auto 0 auto;
+	padding:20px 0 0 0;
+	text-align:center;
+	overflow:visible;
+	position:relative;
+	float:left;
+	left:50%;
+	
+}
+
+
+
+
+.crossSellingFloatingThumb {
+	/*width:auto;*/
+	width:18% !important;
+	height:auto !important;
+	/*background:url(../images/thumbnail-kraft-back.jpg);*/
+	background:cornsilk;
+	float:left;
+	margin:0px 12px 20px 12px !important;
+	overflow:visible;
+	left:-50%;
+	
+}
+
+
+
+
+
+
+
+/*.crossSellingThumb {
+	width:200px;
+	height:200px;
+	background:cornflowerblue;
+	display:inline-block;
+	margin:0px 12px 20px 12px;	
+}*/
+
+
+.crossSellTitle {
+	font-family:'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+	font-size:115% !important;
+	padding:40px 0 0 0;
+	width:25%;
+	height:auto;
+	line-height:1.2em;
+	/*background:white;*/
+	color:maroon;
+	display:inline-block;
+	*display:inline; /*-- IE fix for inline-block --*/
+	*zoom: 1; /*-- IE fix for inline-block --*/
+	
+	
+	
+}
+
+
+
+
+.crossSellTitleRuler {
+	margin:0 2%;
+	width:25%;
+	height:20px;
+	background:url(../images/ruler-decoration-TEMP3.gif) no-repeat center;
+	display:inline-block;
+	*zoom: 1; /*-- IE fix for inline-block --*/
+    *display: inline; /*-- IE fix for inline-block --*/
+	
+	
+}
+
+
+
+
+#bottomFooterContainer {
+	/*background:red;*/
+	background:rgb(80,61,51);
+	width:80%;
+	height:auto;
+	margin:0px auto;
+	max-width:1550px;
+}
+
+
+#bottomFooterContainer h6 {
+	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
+	/*font-size:220%;*/
+	font-size:75%;
+	line-height:1.25em !important;
+	padding:1.35em 0;
+	text-align:center;
+	color:rgb(205,190,183);
+}
+
+
+
+
+
+
+/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+
+
+
+.thumbLink {
+	font-family:'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+	font-size:200%;
+	color:blanchedalmond;
+	
+}
+
+.thumbLink span {
+	display:inline-block;
+	vertical-align:text-bottom !important;
+	
+}
+
+
+.smallerDinoNames {
+	font-size:80%;
+		
+}
+
+
+.slideshowNarrow {
+	display:none;
+	
+}
+
+
+.slideshowWide {
+	display:block;
+	
+}
+
+
+
+body.sectionHome #topNavContainer ul li a.home,
+
+body.sectionFigurines #topNavContainer ul li a.figurines,
+
+body.sectionAccessories #topNavContainer ul li a.accessories,
+body.sectionBuy #topNavContainer ul li a.buy {
+	cursor:default;
+	color:rgb(80,61,51);
+	/*border-left:5px solid black;*/
+	/*text-shadow:0px 0px 25px black;*/
+	}
+	
+
+	
+body.sectionFigurines #topNavContainer ul li a.dinosaurs,
+body.sectionFigurines #topNavContainer ul li a.fantasy,
+body.sectionFigurines #topNavContainer ul li a.wild,
+body.sectionFigurines #topNavContainer ul li a.farm,
+body.sectionFigurines #topNavContainer ul li a.marine,
+body.sectionFigurines #topNavContainer ul li a.american {
+	cursor:default !important;
+	color:orange !important;
+	
+}
+
+
+/*new add */
+@media all and (max-width: 360px) {
+  
+  
+  #productTitleDetailPageDino h2 {
+  font-size:120% !important;
+}
+
+}
+
+
+
+
+
+
+@media all and (max-width: 600px) {
+  
+  
+  #productTitleDetailPageDino h2 {
+  font-size:140%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+
+#productPictureMapContainer {
+  background:ivory url(images/map-worldAIcropped.jpg) no-repeat top !important;
+  background-size:contain;
+  border-top:10px solid cornsilk;
+  border-right:10px solid cornsilk;
+  border-left:10px solid cornsilk;
+  width:auto;
+ 
+
+
+}
+
+
+#productPictureFantasyMapContainer {
+  background:ivory url(images/map-fantasyCropped.jpg) no-repeat top !important;
+  background-size:contain;
+  border-top:10px solid cornsilk;
+  border-right:10px solid cornsilk;
+  border-left:10px solid cornsilk;
+  width:auto;
+  
+  
+}

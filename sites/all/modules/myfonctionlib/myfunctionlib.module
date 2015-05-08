@@ -1,0 +1,38 @@
+<?php
+function print_theme_path($path){
+	print base_path() . drupal_get_path('theme', 'terra') . '/' . $path;
+} 
+
+function myfunctionlib_get_fields($content){
+    $fields = '';
+    if($content){
+    	foreach ($content as $field => $value) {
+    		$field_name = '';
+    		$field_label = '';
+    		if(isset($value['#title'])){
+    			$field_label = $value['#title'];
+    		}    		
+    		if(substr($field, 0, 6) == 'field_'){
+    			$field_name = substr($field, 6);
+    			if ($value['#field_type'] == 'text') {
+    				$field_value = $value['#items'][0]['value'];
+    				$fields[$field_name] = $field_value;
+    			}
+    			elseif ($value['#field_type'] == 'image') {
+    				$field_value = $value['#items'][0]['uri'];
+    				
+    			}
+    		}
+    		elseif ($field == 'body') {
+    			$field_name = 'descriptive_text';
+    			$field_value = $value['#items'][0]['value'];
+    		}
+
+    		if ($field_name) {
+    			$fields[$field_name] = ['label'=>$field_label, 'value'=>$field_value];
+    		}    		
+    	}
+    }
+
+    return $fields;
+}

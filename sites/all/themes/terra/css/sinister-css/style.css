@@ -1,0 +1,72 @@
+/*
+* Sinister V1.6.4 CSS File
+* Author : IncisiveStudio
+* Author Website : http://IncisiveStudio.com
+* Thursday - 2014 27 March
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {font-family: Arial,sans-serif;background-color: #e8e7e1;}
+html,body{
+  padding:0;
+  margin:0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     div.chrome-fix { width: 99.99999% !important;}
+}
+/* -------------------- Headings -------------------- */
+h1 {font-size: 36.4px;}
+h2 {font-size: 30.1px;}
+h3 {font-size: 23.8px;}
+h4 {font-size: 17.5px;}
+h5 {font-size: 14.0px;}
+h6 {font-size: 11.9px;}
+a,
+a:hover, a:focus {text-decoration: none;outline: medium none;}
+div.header {background-color: #e74c3c;text-align: center;}
+div.header h1 {font: 32px 'Source Sans Pro',Arial,sans-serif;color: #ffffff;}
+.wrap-section {padding: 0 15px 0;}
+.wrap-section h2.section-title {font: 32px 'Source Sans Pro',Arial,sans-serif;color: #8CA757;padding: 4px 12px 4px;margin: 40px 0 0;border-bottom: 1px solid rgba(88, 86, 82, 0.1);}
+.wrap-section ul {display: block;margin: 40px 0 0;border-bottom: 1px solid rgba(88, 86, 82, 0.1);}
+.wrap-section ul li {cursor: pointer;display: inline-block;padding: 4px 12px 4px;background-color: #FFFFFF;border-radius: 2px 2px 0 0;opacity: .4;}
+.wrap-section ul li:hover {opacity: .6;}
+.wrap-section ul li.current {cursor: default;display: inline-block;padding: 4px 12px 4px;background-color: #FFFFFF;border-radius: 2px 2px 0 0;opacity: 1;}
+.wrap-section ul li.current a {cursor: default;font:bold 18px 'Source Sans Pro',Arial,sans-serif;color: #8CA757;}
+.wrap-section ul li a {font:bold 18px 'Source Sans Pro',Arial,sans-serif;color: #8CA757;}
+/* -------------------- Blog Section -------------------- */
+ul {margin: 0 0 0;}
+ul > li {margin: 40px 0 0;}
+ul > li > div.blog-post {position: relative;}
+ul > li > div.blog-post .StyleNumber {position: relative;margin: 6px 0 0;background-color: #FFFFFF;border-radius: 2px 2px 2px 2px;float: left;display: block;height: 22px;border-bottom: 1px solid #D7D5D2;padding: 0 8px 0 6px;}
+ul > li > div.blog-post .StyleNumber h4 {font-family: 'Source Sans Pro',Arial,sans-serif;color: #585652;line-height: 21px;font-size: 13px;}
+/* -------------------- Footer -------------------- */
+footer {background: none repeat scroll 0 0 #131313;position: relative;overflow: hidden;margin: 0;}
+footer p {padding: 18px 0;color: #fff;font: 14px 'Source Sans Pro',Arial,sans-serif;}

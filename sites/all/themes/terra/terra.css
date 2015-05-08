@@ -1,0 +1,73 @@
+/*
+body {  
+  background-image: url(images/sticky-footer-kraft-strip-brown.jpg);
+  background-repeat: repeat-x;
+  background-color: rgb(80,61,51);
+  background-position: bottom;
+}
+.container {  
+  width: 100%; 
+}
+
+#wrap {
+  margin-top: 0; 
+  margin-bottom: 60px;
+  background: transparent; 
+  padding: 0; 
+}
+
+#header-wrap {
+	z-index: 99;
+	width: 85%;
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+  text-align: left;
+  padding: 0;  
+}
+
+#site-navigation-wrap {
+  background: transparent;  
+  height: 55px;
+  width: 80%;
+  margin: -135px auto 0;
+  position: relative;
+  z-index: 9999;
+}
+
+#site-navigation {
+	margin-left: 370px;
+}
+
+#homepage-slider-wrap {
+  margin: 0; 
+  width: 80%;
+  max-width: 1550px;
+  margin: -75px auto 0;
+}
+
+
+#site-navigation #main-menu > ul > li > a:hover, 
+#site-navigation #main-menu > ul > li.sfHover > a, 
+#site-navigation #main-menu > ul > li > a.active, 
+#site-navigation #main-menu > ul > li > a.active:hover{
+	cursor: default;
+	color: rgb(80,61,51);
+	background-color: transparent;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;	
+}
+
+#main {
+  margin: 0; 
+  width: 80%;
+  max-width: 1550px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+*/

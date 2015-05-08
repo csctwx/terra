@@ -1,0 +1,61 @@
+#topNavContainer {    
+    z-index: 99;    
+}
+/*
+html, 
+body,
+#containerHomepage,
+#main {
+    height: 100%;
+}
+*/
+#main {
+    padding-top: 10%;
+}
+
+body.front {
+	/*background-image: url(../../images/sticky-footer-kraft-strip-brown.jpg);*/
+	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
+	background-repeat:repeat-x;
+	background-color:rgb(80,61,51);
+	background-position:bottom;
+	
+}
+
+body.node-type-dinosaurs,
+body.page-node-4 {
+  background: url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg) no-repeat fixed top, 
+  rgb(202,117,53) url(../images/sticky-footer-kraft-strip-dino-orange.jpg) repeat-x fixed bottom;
+  background-color: #bd6e4d;
+}
+
+
+/*
+body.front #topNavContainer ul li a.home,
+body.sectionFigurines #topNavContainer ul li a.figurines,
+body.sectionAccessories #topNavContainer ul li a.accessories,
+body.sectionBuy #topNavContainer ul li a.buy {
+   cursor:default;
+   color:orange !important;
+   /*text-shadow:0px 0px 25px black;
+}
+*/
+body.front #topNavContainer ul li a.home,
+body.node-type-dinosaurs #topNavContainer ul li a.figurines,
+body.page-node-4 #topNavContainer ul li a.figurines,
+body.sectionAccessories #topNavContainer ul li a.accessories,
+body.sectionBuy #topNavContainer ul li a.buy {
+	cursor:default;
+	color:rgb(80,61,51) !important;	
+}
+
+body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
+body.page-node-4 #topNavContainer ul li a.dinosaurs, 
+body.sectionFigurines #topNavContainer ul li a.fantasy, 
+body.sectionFigurines #topNavContainer ul li a.wild, 
+body.sectionFigurines #topNavContainer ul li a.farm, 
+body.sectionFigurines #topNavContainer ul li a.marine, 
+body.sectionFigurines #topNavContainer ul li a.american {
+  cursor: default !important;
+  color: orange !important;
+}
