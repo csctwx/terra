@@ -16,30 +16,37 @@
                             'measurements', 
                             'piece_count',                            
                           ];                       
-  // kpr($content); die();
+   // kpr($fields); die();
 ?>
 <div id="productTitleDetailPageDino">
   <h4>Dinosaurs</h4>
   <h2>Pachyrhinosaurus</h2>
 </div>
-<div class="productTitleDetailPageThumbContainer">
+<!-- <div class="productTitleDetailPageThumbContainer">
   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
-</div>
+</div> -->
+
 <!--<div class="productTitleDetailPageThumbTwo"></div>-->
-<div id="productPictureMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url']; ?>) no-repeat right; background-size:contain;">
+<div id="productPictureMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]; ?>) no-repeat right; background-size:contain;">
   <div id="productPictureInnerContainer">
     <div id="magnifyingGlassIcon">
       <img src="<?php print_theme_path('images/magnifyingGlassIcon-TEMP.png'); ?>" />
     </div>
     <span>
-      <img src="<?php echo $fields['product_picture']['url']; ?>" name="stage" id="stage" />
+      <img src="<?php echo $fields['product_picture']['url'][0]; ?>" name="stage" id="stage" />
     </span>
   </div>
 </div>
 <div class="productTitleDetailPageThumbContainerUnder">
+  <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
+  <?php //echo $product_picture_url; die(); ?>
+    <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
+  <?php endforeach; ?>
+<!--   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $fields['product_picture']['url']; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $fields['product_picture']['url']; ?>',1)"/></a></div>
   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
+ -->
 </div>
 <div id="productDescriptionContainer">
   <!--<div id="productSpecsFactsWrapper">-->
