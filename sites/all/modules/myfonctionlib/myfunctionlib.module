@@ -34,7 +34,9 @@ function myfunctionlib_get_fields($content){
     		}
 
     		if ($field_name) {
-    			$fields[$field_name] = ['label'=>$field_label, 'value'=>$field_value, 'url'=>$field_path];
+    			$fields[$field_name] = array('label'=>$field_label, 
+                                             'value'=>$field_value, 
+                                             'url'=>$field_path);
     		}    		
     	}
     }

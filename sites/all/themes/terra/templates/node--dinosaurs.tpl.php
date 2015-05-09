@@ -2,7 +2,7 @@
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
   //extract($fields);  
-  $animal_specifications = ['name_means', 
+  $animal_specifications = array('name_means', 
                             'period', 
                             'order', 
                             'suborder',
@@ -10,12 +10,12 @@
                             'length',
                             'weight',
                             'discoverer',
-                           ]; 
-  $product_informations = ['product_no', 
+                           ); 
+  $product_informations = array('product_no', 
                             'age_grade', 
                             'measurements', 
                             'piece_count',                            
-                          ];                       
+                          );                       
    // kpr($fields); die();
 ?>
 <div id="productTitleDetailPageDino">
