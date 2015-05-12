@@ -1,20 +1,18 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
 #topNavContainer {    
     z-index: 99;    
 }
-/*
-html, 
-body,
-#containerHomepage,
-#main {
-    height: 100%;
-}
-*/
+
 #main {
     padding-top: 10%;
 }
 
-body.front {
-	/*background-image: url(../../images/sticky-footer-kraft-strip-brown.jpg);*/
+body.front,
+body.page-node-11 {	
 	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
 	background-repeat:repeat-x;
 	background-color:rgb(80,61,51);
@@ -29,33 +27,84 @@ body.page-node-4 {
   background-color: #bd6e4d;
 }
 
-
-/*
-body.front #topNavContainer ul li a.home,
-body.sectionFigurines #topNavContainer ul li a.figurines,
-body.sectionAccessories #topNavContainer ul li a.accessories,
-body.sectionBuy #topNavContainer ul li a.buy {
-   cursor:default;
-   color:orange !important;
-   /*text-shadow:0px 0px 25px black;
+body.page-node-6 {
+  background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: black;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
 }
-*/
+
+body.page-node-7 {
+  background-image: url(../images/Farm-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-farm.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #e0bf70;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.page-node-8 {
+  background-image: url(../images/northAmercian-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-northAmerican.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #344018;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.page-node-9 {  
+  background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #ca7535;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;  
+}
+
+body.page-node-10 {
+  background-image: url(../images/Marine-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #042477;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.page-node-5 {
+  background-image: url(../images/Accessories-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #a3be39;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+
 body.front #topNavContainer ul li a.home,
 body.node-type-dinosaurs #topNavContainer ul li a.figurines,
 body.page-node-4 #topNavContainer ul li a.figurines,
-body.sectionAccessories #topNavContainer ul li a.accessories,
-body.sectionBuy #topNavContainer ul li a.buy {
+body.page-node-6 #topNavContainer ul li a.figurines,
+body.page-node-7 #topNavContainer ul li a.figurines,
+body.page-node-8 #topNavContainer ul li a.figurines,
+body.page-node-9 #topNavContainer ul li a.figurines,
+body.page-node-10 #topNavContainer ul li a.figurines,
+body.page-node-5 #topNavContainer ul li a.accessories,
+body.page-node-11 #topNavContainer ul li a.buy {
 	cursor:default;
 	color:rgb(80,61,51) !important;	
 }
 
 body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
 body.page-node-4 #topNavContainer ul li a.dinosaurs, 
-body.sectionFigurines #topNavContainer ul li a.fantasy, 
-body.sectionFigurines #topNavContainer ul li a.wild, 
-body.sectionFigurines #topNavContainer ul li a.farm, 
-body.sectionFigurines #topNavContainer ul li a.marine, 
-body.sectionFigurines #topNavContainer ul li a.american {
-  cursor: default !important;
+body.page-node-6 #topNavContainer ul li a.fantasy, 
+body.page-node-9 #topNavContainer ul li a.wild, 
+body.page-node-7 #topNavContainer ul li a.farm, 
+body.page-node-10 #topNavContainer ul li a.marine, 
+body.page-node-8 #topNavContainer ul li a.american {  
   color: orange !important;
+}
+
+body.page-node-4 #topNavContainer ul li a.dinosaurs, 
+body.page-node-6 #topNavContainer ul li a.fantasy, 
+body.page-node-9 #topNavContainer ul li a.wild, 
+body.page-node-7 #topNavContainer ul li a.farm, 
+body.page-node-10 #topNavContainer ul li a.marine, 
+body.page-node-8 #topNavContainer ul li a.american {
+  cursor: default !important;  
 }

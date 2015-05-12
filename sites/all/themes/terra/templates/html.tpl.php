@@ -26,21 +26,16 @@
       <li><?php print l(t('Home'), '/', array('attributes' => array('class' => 'home'))); ?></li>
       <li class='active has-sub'><a href='#' class="figurines"><span>Figurines</span></a>
         <ul>
-           <li class='has-sub'><?php print l(t('Dinosaurs'), '/dinosaurs/pachyrhinosaurus', array('attributes' => array('class' => 'dinosaurs'))); ?></li>
-           <li class='has-sub'><a href='#' class=""><span>Fantasy Sets</span></a>                
-           </li>
-           <li class='has-sub'><a href='#' class="american"><span>North American Animals</span></a>                
-           </li>
-           <li class='has-sub'><a href='#' class=""><span>Wild Animals</span></a>                
-           </li>
-           <li class='has-sub'><a href='#' class=""><span>Farm Animals</span></a>                
-           </li>
-           <li class='has-sub'><a href='#' class=""><span>Marine Animals</span></a>                
-           </li>
+           <li class='has-sub'><?php print l(t('Dinosaurs'), '/dinosaurs', array('attributes' => array('class' => 'dinosaurs'))); ?></li>
+           <li class='has-sub'><?php print l(t('Fantasy Sets'), '/fantasy-sets', array('attributes' => array('class' => 'fantasy'))); ?></li>
+           <li class='has-sub'><?php print l(t('North American Animals'), '/north-american-animals', array('attributes' => array('class' => 'american'))); ?></li>
+           <li class='has-sub'><?php print l(t('Wild Animals'), '/wild-animals', array('attributes' => array('class' => 'wild'))); ?></li>
+           <li class='has-sub'><?php print l(t('Farm Animals'), '/farm-animals', array('attributes' => array('class' => 'farm'))); ?></li>
+           <li class='has-sub'><?php print l(t('Marine Animals'), '/marine-animals', array('attributes' => array('class' => 'marine'))); ?></li>
         </ul>
       </li>
-      <li><a href='#' class="accessories"><span>Accessories</span></a></li>
-      <li class='last'><a href='#' class="buy"><span>Where to Buy</span></a></li>
+      <li><?php print l(t('Accessories'), '/accessories', array('attributes' => array('class' => 'accessories'))); ?></li>
+      <li class='last'><?php print l(t('Where To Buy'), '/buy', array('attributes' => array('class' => 'buy'))); ?></li>
     </ul>
   </div>     
 </div>

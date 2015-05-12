@@ -1,13 +1,14 @@
+<?php //echo $title; die();?>
 <!-- InstanceBeginEditable name="mainContainer" -->
 <div id="container" style="padding-bottom:5%;">
 	<div id="productTitleDetailPage">
 		<h4>Figurines</h4>
-		<h2>Dinosaurs</h2>
+		<h2><?php echo $title; ?></h2>
 	</div>
 	<!-- <div class="thumbPageContainer" style="background:url(images/ivory-transparent-back-TEMP.png) repeat;">-->
 	<div class="thumbPageContainer" style="background:ivory;"> 
 		<div class="crossSellingThumb thumbnails ImageWrapper BackgroundS ContentWrapperH chrome-fix">
-			<a href="http://www.battatco.com">
+			<a href="<?php echo base_path().'dinosaurs/pachyrhinosaurus'; ?>">
 				<img class="img-responsive" src="<?php print_theme_path('images/1385-AN2662-pr-b-TIGER.png'); ?>" alt="">
 				<div class="PStyleH ContentH TOrange">
 					<div class="Content thumbName">
