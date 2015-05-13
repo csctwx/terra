@@ -15,12 +15,13 @@
                             'age_grade', 
                             'measurements', 
                             'piece_count',                            
-                          );                       
-   // kpr($fields); die();
+                          );  
+
+  //kpr($fields); die();                       
 ?>
 <div id="productTitleDetailPageDino">
-  <h4>Dinosaurs</h4>
-  <h2>Pachyrhinosaurus</h2>
+  <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
+  <h2><?php echo $title; ?></h2>
 </div>
 <!-- <div class="productTitleDetailPageThumbContainer">
   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
@@ -43,10 +44,6 @@
   <?php //echo $product_picture_url; die(); ?>
     <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
   <?php endforeach; ?>
-<!--   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $fields['product_picture']['url']; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $fields['product_picture']['url']; ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
- -->
 </div>
 <div id="productDescriptionContainer">
   <!--<div id="productSpecsFactsWrapper">-->
@@ -55,7 +52,7 @@
       <?php foreach ($animal_specifications as $value): ?>
        <li><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
       <?php endforeach; ?>
-      <li class="habitat"><span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?>--bitat:</span> <?php echo $fields['natural_habitat']['value']; ?></li>
+      <li class="habitat"><span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?>:</span> <?php echo $fields['natural_habitat']['value'][0]['value']; ?></li>
     </ul>
     <div id="productRetailInfoContainer">
       <ul>        
@@ -67,9 +64,11 @@
     </div>
   </div>
   <div id="productFactsContainer">
-    <div class="productHabitatContainer"><span class="listSubTitleSpan">Natural Habitat</span>
+    <div class="productHabitatContainer"><span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>
       <ol>
-        <li><span>North America</span></li>
+        <?php foreach($fields['natural_habitat']['value'] as $natural_habitat_value): ?>
+          <li><span><?php echo $natural_habitat_value['value']; ?></span></li>
+        <?php endforeach; ?>
       </ol>
     </div>
         <?php echo $fields['descriptive_text']['value']; ?>

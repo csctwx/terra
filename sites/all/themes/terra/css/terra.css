@@ -35,6 +35,7 @@ body.page-node-6 {
   background-attachment: fixed, fixed;
 }
 
+body.node-type-farm-animals,
 body.page-node-7 {
   background-image: url(../images/Farm-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-farm.jpg);
   background-repeat: no-repeat, repeat-x;

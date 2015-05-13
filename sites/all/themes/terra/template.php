@@ -23,5 +23,7 @@ function terra_preprocess_page(&$vars, $hook) {
   		
   	}
   }
+
+  //kpr($vars['node']); die();
 }
 
