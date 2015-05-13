@@ -1599,7 +1599,7 @@ body.sectionFigurines #topNavContainer ul li a.american {
 @media screen and (max-width: 950px) {
 
 #productPictureMapContainer {
-  background:ivory url(images/map-worldAIcropped.jpg) no-repeat top !important;
+  background:ivory url(../images/map-worldAIcropped.jpg) no-repeat top !important;
   background-size:contain;
   border-top:10px solid cornsilk;
   border-right:10px solid cornsilk;
@@ -1612,7 +1612,7 @@ body.sectionFigurines #topNavContainer ul li a.american {
 
 
 #productPictureFantasyMapContainer {
-  background:ivory url(images/map-fantasyCropped.jpg) no-repeat top !important;
+  background:ivory url(../images/map-fantasyCropped.jpg) no-repeat top !important;
   background-size:contain;
   border-top:10px solid cornsilk;
   border-right:10px solid cornsilk;
