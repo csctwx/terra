@@ -23,15 +23,15 @@
   <h2><?php echo $title; ?></h2>
 </div>
 <!-- <div class="productTitleDetailPageThumbContainer">
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
+  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
+  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
 </div> -->
 
 <!--<div class="productTitleDetailPageThumbTwo"></div>-->
 <div id="productPictureMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]; ?>) no-repeat right; background-size:contain;">
   <div id="productPictureInnerContainer">
     <div id="magnifyingGlassIcon">
-      <img src="<?php print_theme_path('images/magnifyingGlassIcon-TEMP.png'); ?>" />
+      <img src="<?php echo myfunctionlib_theme_path('images/magnifyingGlassIcon-TEMP.png'); ?>" />
     </div>
     <span>
       <img src="<?php echo $fields['product_picture']['url'][0]; ?>" name="stage" id="stage" />
@@ -44,8 +44,8 @@
     <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
   <?php endforeach; ?>
 <!--   <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $fields['product_picture']['url']; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $fields['product_picture']['url']; ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php print_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
+  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
+  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
  -->
 </div>
 <div id="productDescriptionContainer">
@@ -82,7 +82,7 @@
   <div class="crossSellingThumbContainer"> 
     <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
       <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php print_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" alt="">
+        <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" alt="">
         <div class="PStyleH ContentH TOrange">
           <div class="Content thumbName">
             <h2>
@@ -97,7 +97,7 @@
     </div>
     <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
       <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php print_theme_path('images/AN4001-pr-CRYOLO.png'); ?>" alt="">
+        <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4001-pr-CRYOLO.png'); ?>" alt="">
         <div class="PStyleH ContentH TOrange">
           <div class="Content thumbName">
             <h2>
@@ -112,7 +112,7 @@
     </div>
     <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
       <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php print_theme_path('images/AN4002-pr-b-DACENTRURUS.png'); ?>" alt="">
+        <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4002-pr-b-DACENTRURUS.png'); ?>" alt="">
         <div class="PStyleH ContentH TOrange">
           <div class="Content thumbName">
             <h2>
@@ -127,7 +127,7 @@
     </div>
     <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
       <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php print_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
+        <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
         <div class="PStyleH ContentH TOrange">
           <div class="Content thumbName">
             <h2>

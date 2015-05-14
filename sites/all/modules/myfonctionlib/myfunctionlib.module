@@ -1,6 +1,6 @@
 <?php
-function print_theme_path($path){
-	print base_path() . drupal_get_path('theme', 'terra') . '/' . $path;
+function myfunctionlib_theme_path($path){
+	return base_path() . drupal_get_path('theme', 'terra') . '/' . $path;
 } 
 
 function myfunctionlib_get_fields($content){
@@ -50,4 +50,93 @@ function myfunctionlib_get_fields($content){
     }
 
     return $fields;
+}
+
+function myfunctionlib_get_nodes($title){
+    $type = str_replace(' ', '_', strtolower($title));
+    
+    $nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('type', $type, '=')
+    ->execute()
+    ->fetchCol();
+
+    // Get all of the article nodes.
+    $node_arr = node_load_multiple($nids);
+
+    $nodes = null;
+    foreach ($node_arr as $node_obj) {
+        $nodes[] = array('title' => $node_obj->title,
+                         'path' => base_path() . 'node/' . $node_obj->nid,
+                         'product_no'=> $node_obj->field_product_no['und'][0]['value'],
+                         'product_picture_url'=> file_create_url($node_obj->field_product_picture['und'][0]['uri']) 
+                         );
+        //kpr($node_obj); die();
+    }
+    return $nodes;
+}
+
+function myfunctionlib_get_tmps($nodes){
+    $tmp_nodes = array(array('title'=>'Bengal Tiger',
+                         'path' => '#',
+                         'product_no' => 'AN6001',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1385-AN2662-pr-b-TIGER.png'),
+                        ),
+                   array('title'=>'Black Rhinoceros',
+                         'path' => '#',
+                         'product_no' => 'AN6002',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1366-AN2687-pr-b-RHINO.png'),
+                        ),
+                   array('title'=>'Lion',
+                         'path' => '#',
+                         'product_no' => 'AN6003',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1365-AN2685-pr-LION.png'),
+                        ),
+                   array('title'=>'Lioness',
+                         'path' => '#',
+                         'product_no' => 'AN6004',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1404-AN2641-pr-b-LIONESS.png'),
+                        ),
+                   array('title'=>'Elephant',
+                         'path' => '#',
+                         'product_no' => 'AN6005',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1374-AN2684-pr-b-ELEPHANT.png'),
+                        ),
+                   array('title'=>'Bengal Tiger',
+                         'path' => '#',
+                         'product_no' => 'AN6001',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1385-AN2662-pr-b-TIGER.png'),
+                        ),
+                   array('title'=>'Black Rhinoceros',
+                         'path' => '#',
+                         'product_no' => 'AN6002',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1366-AN2687-pr-b-RHINO.png'),
+                        ),
+                   array('title'=>'Lion',
+                         'path' => '#',
+                         'product_no' => 'AN6003',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1365-AN2685-pr-LION.png'),
+                        ),
+                   array('title'=>'Lioness',
+                         'path' => '#',
+                         'product_no' => 'AN6004',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1404-AN2641-pr-b-LIONESS.png'),
+                        ),
+                   array('title'=>'Elephant',
+                         'path' => '#',
+                         'product_no' => 'AN6005',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1374-AN2684-pr-b-ELEPHANT.png'),
+                        ),
+                   array('title'=>'Bengal Tiger',
+                         'path' => '#',
+                         'product_no' => 'AN6001',
+                         'product_picture_url' => myfunctionlib_theme_path('images/1385-AN2662-pr-b-TIGER.png'),
+                        ),
+                   );
+    $node_n = count($nodes);     
+    for($i = 0; $i < $node_n; $i++){
+        $tmp_nodes[$i] = $nodes[$i];
+    }
+    
+    return $tmp_nodes;
 }

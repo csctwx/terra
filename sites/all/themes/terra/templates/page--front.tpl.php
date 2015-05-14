@@ -2,16 +2,16 @@
 <div id="wrapper" >
     <div class="slider-wrapper theme-default slideshowWide">
         <div id="slider" class="nivoSlider">
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-1.jpg'; ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-2.jpg'; ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-3.jpg'; ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-1.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-2.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-3.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
         </div>
     </div>
     <div class="slider-wrapper theme-default slideshowNarrow">
         <div id="sliderTwo" class="nivoSlider">
-            <a href="http://www.tsn.ca"><img src="<?php print_theme_path('images/iphone-crop-slideshow-african.jpg'); ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print_theme_path('images/iphone-crop-slideshow-fantasy.jpg'); ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print_theme_path('images/iphone-crop-slideshow-north-american.jpg'); ?>"  data-thumb="<?php print_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-african.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-fantasy.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-north-american.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
         </p>
     </div>
     <div class="homepageRandomNews">
-      <img src="<?php print_theme_path('images/homepage-dinosaur-burst.png'); ?>" width="100%" />
+      <img src="<?php echo myfunctionlib_theme_path('images/homepage-dinosaur-burst.png'); ?>" width="100%" />
   </div>
 </div>
 <div class="homepageMissionStatementContainer">
@@ -34,7 +34,7 @@
         </p>
     </div>
     <div class="homepageRandomNewsTwo">
-      <img src="<?php print_theme_path('images/homepage-dinosaur-burst-reversed-closeup.png'); ?>" width="90%" />
+      <img src="<?php echo myfunctionlib_theme_path('images/homepage-dinosaur-burst-reversed-closeup.png'); ?>" width="90%" />
   </div>
 </div>
 <div id="crossSellingContainer">
@@ -44,7 +44,7 @@
     <div class="crossSellingThumbContainer homepageCrossSellingThumbContainer"> 
         <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
             <a href="http://www.battatco.com">
-                <img class="img-responsive" src="<?php print_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
+                <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
                 <div class="PStyleH ContentH TOrange">                    
                 </div>
             </a>
@@ -55,7 +55,7 @@
        </div>
        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
         <a href="http://www.battatco.com">
-            <img class="img-responsive" src="<?php print_theme_path('images/AN4004-pr-b-WARRIOR.png'); ?>" alt="">
+            <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4004-pr-b-WARRIOR.png'); ?>" alt="">
             <div class="PStyleH ContentH TOrange">                    
             </div>
         </a>
@@ -66,7 +66,7 @@
        </div>
        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix homepageCrossSellingThumb" style="position:relative;">
           <a href="http://www.battatco.com">
-            <img class="img-responsive" src="<?php print_theme_path('images/1365-AN2685-pr-LION.png'); ?>" alt="">
+            <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/1365-AN2685-pr-LION.png'); ?>" alt="">
             <div class="PStyleH ContentH TOrange">
                     
             </div>
@@ -78,7 +78,7 @@
        </div>
        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix homepageCrossSellingThumb" style="position:relative;">
         <a href="http://www.battatco.com">
-            <img class="img-responsive" src="<?php print_theme_path('images/AN2680-pr-RACCOON.png'); ?>" alt="">
+            <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN2680-pr-RACCOON.png'); ?>" alt="">
             <div class="PStyleH ContentH TOrange">                    
             </div>
         </a>
@@ -89,7 +89,7 @@
        </div>
        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
         <a href="http://www.battatco.com">
-            <img class="img-responsive" src="<?php print_theme_path('images/AN2690-pr-b-CLYDESDALE.png'); ?>" alt="">
+            <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN2690-pr-b-CLYDESDALE.png'); ?>" alt="">
             <div class="PStyleH ContentH TOrange">                    
             </div>
         </a>
@@ -100,7 +100,7 @@
        </div>
        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
         <a href="http://www.battatco.com">
-            <img class="img-responsive" src="<?php print_theme_path('images/AN2611-pr-DOLPHIN.png'); ?>" alt="">
+            <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN2611-pr-DOLPHIN.png'); ?>" alt="">
             <div class="PStyleH ContentH TOrange">                    
             </div>
         </a>
