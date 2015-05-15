@@ -1,8 +1,6 @@
 <?php 
 $nodes = myfunctionlib_get_nodes($title);
-
 $tmp_nodes = myfunctionlib_get_tmps($nodes);
-// kpr($tmp_nodes); die(); 
 ?>
 <!-- InstanceBeginEditable name="mainContainer" -->
 <div id="container" style="padding-bottom:5%;">

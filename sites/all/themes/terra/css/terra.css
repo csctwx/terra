@@ -27,6 +27,7 @@ body.page-node-4 {
   background-color: #bd6e4d;
 }
 
+body.node-type-fantasy-sets,
 body.page-node-6 {
   background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
   background-repeat: no-repeat, repeat-x;
@@ -44,6 +45,7 @@ body.page-node-7 {
   background-attachment: fixed, fixed;
 }
 
+body.node-type-north-american-animals,
 body.page-node-8 {
   background-image: url(../images/northAmercian-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-northAmerican.jpg);
   background-repeat: no-repeat, repeat-x;
@@ -52,6 +54,7 @@ body.page-node-8 {
   background-attachment: fixed, fixed;
 }
 
+body.node-type-wild-animals,
 body.page-node-9 {  
   background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg);
   background-repeat: no-repeat, repeat-x;
@@ -60,6 +63,7 @@ body.page-node-9 {
   background-attachment: fixed, fixed;  
 }
 
+body.node-type-marine-animals,
 body.page-node-10 {
   background-image: url(../images/Marine-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
   background-repeat: no-repeat, repeat-x;
@@ -68,6 +72,7 @@ body.page-node-10 {
   background-attachment: fixed, fixed;
 }
 
+body.node-type-accessories,
 body.page-node-5 {
   background-image: url(../images/Accessories-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
   background-repeat: no-repeat, repeat-x;
@@ -91,12 +96,20 @@ body.page-node-11 #topNavContainer ul li a.buy {
 	color:rgb(80,61,51) !important;	
 }
 
+body.node-type-accessories #topNavContainer ul li a.accessories {  
+  color:rgb(80,61,51) !important; 
+}
+
 body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
 body.page-node-4 #topNavContainer ul li a.dinosaurs, 
 body.page-node-6 #topNavContainer ul li a.fantasy, 
+body.node-type-wild-animals #topNavContainer ul li a.wild, 
 body.page-node-9 #topNavContainer ul li a.wild, 
+body.node-type-farm-animals #topNavContainer ul li a.farm,
 body.page-node-7 #topNavContainer ul li a.farm, 
+body.node-type-marine-animals #topNavContainer ul li a.marine, 
 body.page-node-10 #topNavContainer ul li a.marine, 
+body.node-type-north-american-animals #topNavContainer ul li a.american,
 body.page-node-8 #topNavContainer ul li a.american {  
   color: orange !important;
 }
