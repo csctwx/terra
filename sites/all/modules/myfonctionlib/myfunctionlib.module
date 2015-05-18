@@ -31,7 +31,11 @@ function myfunctionlib_get_fields($content){
     			elseif ($value['#field_type'] == 'image') {
                     for ($i=0; $i < count($value['#items']); $i++) { 
                         $field_value[$i] = $value['#items'][$i]['uri'];
-                        $field_path[$i] = file_create_url($field_value[$i]);
+                        //$field_path[$i] = file_create_url($field_value[$i]);
+                        $field_path[$i] = array(
+                            'picture_url'=>file_create_url($field_value[$i]),
+                            'thumbnail_url'=>image_style_url("thumbnail", $field_value[$i])
+                            );
                     }
     				
     			}
@@ -65,11 +69,15 @@ function myfunctionlib_get_nodes($title){
     $node_arr = node_load_multiple($nids);
 
     $nodes = null;
-    foreach ($node_arr as $node_obj) {
+    foreach ($node_arr as $node_obj) {        
+        $img_url = $node_obj->field_product_picture['und'][0]['uri'];
+        $thumbnail_url = image_style_url("thumbnail", $img_url);  
+        $path = drupal_get_path_alias('node/' . $node_obj->nid);      
         $nodes[] = array('title' => $node_obj->title,
-                         'path' => base_path() . 'node/' . $node_obj->nid,
+                         'path' => base_path() . $path,
                          'product_no'=> $node_obj->field_product_no['und'][0]['value'],
-                         'product_picture_url'=> file_create_url($node_obj->field_product_picture['und'][0]['uri']) 
+                         //'product_picture_url'=> file_create_url($img_url),
+                         'product_picture_url' => $thumbnail_url
                          );
         //kpr($node_obj); die();
     }

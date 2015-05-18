@@ -15,24 +15,26 @@
      <h2><?php echo $title; ?></h2>
  </div>
  <div class="productTitleDetailPageThumbContainer">
-   <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?> 
-    <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
-   <?php endforeach; ?>
-</div>        
-<div id="productPictureFantasyMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]; ?>) no-repeat right; background-size:contain;">
+  <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
+      <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+      <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
+  <?php endforeach; ?>
+</div>
+<div id="productPictureFantasyMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>) no-repeat right; background-size:contain;">
    <div id="productPictureInnerContainer">
      <div id="magnifyingGlassIcon">
           <img src="<?php echo myfunctionlib_theme_path('images/magnifyingGlassIcon-TEMP.png'); ?>" />
      </div>
      <span>
-        <img src="<?php echo $fields['product_picture']['url'][0]; ?>" name="stage" id="stage" />
+        <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
     </span>
 </div>
 </div>
 <div class="productTitleDetailPageThumbContainerUnder">
-    <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?> 
-        <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
-    <?php endforeach; ?>
+  <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
+      <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+      <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
+  <?php endforeach; ?>
 </div>
 <div id="productDescriptionContainer">
    <!--<div id="productSpecsFactsWrapper">-->

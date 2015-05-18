@@ -1,6 +1,7 @@
 <?php 
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
+
   $product_informations = array('product_no', 
                             'age_grade', 
                             'measurements', 
@@ -13,16 +14,18 @@
 </div>
 <div class="productTitleDetailPageThumbContainer">
     <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?> 
-    <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
+    <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+    <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
    <?php endforeach; ?>
 </div>        
 <!--<div class="productTitleDetailPageThumbTwo"></div>-->
 <div id="productPictureAccessoriesContainer">
-    <img src="<?php echo $fields['product_picture']['url'][0]; ?>" name="stage" id="stage" />
+    <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
 </div>
 <div class="productTitleDetailPageThumbContainerUnder">
      <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?> 
-        <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
+        <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>
+        <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
     <?php endforeach; ?>
 </div>
 <div id="productDescriptionContainer">

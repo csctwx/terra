@@ -17,32 +17,34 @@
                             'piece_count',                            
                           );  
 
-  //kpr($fields); die();                       
+ // kpr($fields); die();                       
 ?>
 <div id="productTitleDetailPageDino">
   <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
   <h2><?php echo $title; ?></h2>
 </div>
-<!-- <div class="productTitleDetailPageThumbContainer">
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>',1)"/></a></div>
-  <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo myfunctionlib_theme_path('images/AN4000-pkg-PACHY.png'); ?>',1)"/></a></div>
-</div> -->
+<div class="productTitleDetailPageThumbContainer">
+  <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
+      <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+      <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
+  <?php endforeach; ?>
+</div>
 
 <!--<div class="productTitleDetailPageThumbTwo"></div>-->
-<div id="productPictureMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]; ?>) no-repeat right; background-size:contain;">
+<div id="productPictureMapContainer" style="background:ivory url(<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>) no-repeat right; background-size:contain;">
   <div id="productPictureInnerContainer">
     <div id="magnifyingGlassIcon">
       <img src="<?php echo myfunctionlib_theme_path('images/magnifyingGlassIcon-TEMP.png'); ?>" />
     </div>
     <span>
-      <img src="<?php echo $fields['product_picture']['url'][0]; ?>" name="stage" id="stage" />
+      <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
     </span>
   </div>
 </div>
 <div class="productTitleDetailPageThumbContainerUnder">
   <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
-  <?php //echo $product_picture_url; die(); ?>
-    <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $product_picture_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $product_picture_url; ?>',1)"/></a></div>
+      <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+      <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
   <?php endforeach; ?>
 </div>
 <div id="productDescriptionContainer">
