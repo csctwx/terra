@@ -35,7 +35,7 @@
         </ul>
       </li>
       <li><?php print l(t('Accessories'), '/accessories', array('attributes' => array('class' => 'accessories'))); ?></li>
-      <li class='last'><?php print l(t('Where To Buy'), '/buy', array('attributes' => array('class' => 'buy'))); ?></li>
+      <li class='last'><?php print l(t('Where To Buy'), '/where-to-buy', array('attributes' => array('class' => 'buy'))); ?></li>
     </ul>
   </div>     
 </div>
