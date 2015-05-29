@@ -221,5 +221,6 @@ a.right.carousel-control img {
 .carousel-control.left,
 .carousel-control.right {
   border-image: none;
+  filter:none;
 }
 
