@@ -122,3 +122,99 @@ body.page-node-10 #topNavContainer ul li a.marine,
 body.page-node-8 #topNavContainer ul li a.american {
   cursor: default !important;  
 }
+
+/*  Carousel set */
+.carousel-control { 
+  width:  4%; 
+}
+
+.carousel-control.left{
+  margin-left:0px;
+  background-image:none;
+}
+
+.carousel-control.right {
+  margin-right:0px;
+  background-image:none;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -100%; }
+  .carousel-inner .next        { left:  100%; }
+  .carousel-inner .prev    { left: -100%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px ) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev    { left: -50%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+  .active > div:first-child + div { display:block; }
+}
+
+@media (min-width: 992px ) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .next        { left:  25%; }
+  .carousel-inner .prev    { left: -25%; }  
+}
+
+.thumbnail{
+  background-color: #e3c697;
+}
+
+.views-field-title a,
+.views-field-title a:visited{
+  display: block;
+  color:#802a23;
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+  font-size: 100% !important;
+}
+
+.views-field-title {
+  //padding:10px 0 20px;
+
+}
+
+/* arrow style */
+@media screen and (min-width: 768px){
+  a.right.carousel-control img {
+    margin-right: 0;
+  }
+
+  a.left.carousel-control img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a.left.carousel-control img, 
+  a.right.carousel-control img {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+}
+
+a.right.carousel-control img {
+  right: 50%;
+  margin-right: -10px;
+}
+
+a.left.carousel-control img, 
+a.right.carousel-control img {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-inner {  
+  width: 90%;
+  margin: 0 auto;  
+}
+

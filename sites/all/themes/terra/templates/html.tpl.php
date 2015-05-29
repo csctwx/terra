@@ -10,14 +10,46 @@
   <meta name="keywords" content="">
   <!-- InstanceBeginEditable name="doctitle" -->
   <title><?php print $head_title; ?></title>
-  <!-- InstanceEndEditable -->
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+   <!-- InstanceEndEditable -->
+  <!--script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <!--script src="js/script.js"></script-->
   <?php print $scripts; ?>
   <?php print $styles; ?>
-</head>
+  <!-- bootstrap lib -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      $('.carousel[data-type="multi"] .item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
 
+            for (var i=0;i<2;i++) {
+              next=next.next();
+              if (!next.length) {
+                next = $(this).siblings(':first');
+              }
+
+              next.children(':first-child').clone().appendTo($(this));
+            }
+      });
+
+      /* set equal height thumbnail images*/
+      $('.thumbnail').css({
+          'height': $('.thumbnail').height() + $('.views-field-title').height() + 10
+      });
+       //alert($('.thumbnail').height());
+    });    
+  </script> 
+</head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
   <?php print $page_top; ?>
   <div id="topNavContainer">
@@ -43,6 +75,6 @@
   <?php print $page_bottom; ?> 
   <div id="bottomFooterContainer">    
     <h6>©<?php echo date('Y'); ?> TERRA by Battat™.<br> Maison Joseph Battat Ltd. All Rights Reserved.</h6>    
-  </div>    
+  </div> 
 </body>
 </html>
