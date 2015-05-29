@@ -42,7 +42,7 @@
     <div class="crossSellTitle">TERRA BY BATTAT&trade; THEMES</div>
     <div class="crossSellTitleRuler"></div>
     <div class="crossSellingThumbContainer homepageCrossSellingThumbContainer"> 
-        <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
+        <!--div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix  homepageCrossSellingThumb" style="position:relative;">
             <a href="http://www.battatco.com">
                 <img class="img-responsive" src="<?php echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
                 <div class="PStyleH ContentH TOrange">                    
@@ -108,10 +108,16 @@
         <div class="homepageThumbName">
            <h2>Marine Animals</h2>
        </div>
-       </div>
+       </div-->
+
+      <?php if ($page['footer']): ?>         
+          <?php print render($page['footer']); ?>          
+      <?php endif; ?>
    </div>
 </div>
 </div>
+
+
 
 
  
