@@ -166,6 +166,14 @@ body.page-node-8 #topNavContainer ul li a.american {
   background-color: #e3c697;
 }
 
+.thumbnail:hover{
+  background-color: #403e37;
+}
+
+.thumbnail:hover .views-field-title a,
+.thumbnail:hover .views-field-title a:visited{
+  color:#fae584;
+}
 .views-field-title a,
 .views-field-title a:visited{
   display: block;
