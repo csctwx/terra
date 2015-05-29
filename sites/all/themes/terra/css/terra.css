@@ -218,3 +218,8 @@ a.right.carousel-control img {
   margin: 0 auto;  
 }
 
+.carousel-control.left,
+.carousel-control.right {
+  border-image: none;
+}
+
