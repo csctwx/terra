@@ -156,7 +156,17 @@ body.page-node-8 #topNavContainer ul li a.american {
   .active > div:first-child + div { display:block; }
 }
 
-@media (min-width: 992px ) {
+@media (min-width: 992px) and (max-width: 1220px ) {
+  .carousel-inner .active.left { left: -33.33%; }
+  .carousel-inner .next        { left:  33.33%; }
+  .carousel-inner .prev    { left: -33.33%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+@media (min-width: 1220px ) {
   .carousel-inner .active.left { left: -25%; }
   .carousel-inner .next        { left:  25%; }
   .carousel-inner .prev    { left: -25%; }  
