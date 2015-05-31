@@ -29,23 +29,29 @@
     <div class="page-text">
       <p>Specialty stores throughout the United States and Canada carry <strong>B.</strong> toys from time to time. While we can't guarantee these stores will have what you are looking for when you are looking, the following is a list of stores that sometimes carry our toys. It would B. smart to call before you go.</p>
     </div>
-    <b>Country:</b>
-    <Select class="CountrySelect" id="countrycode" >
-      <option value="US">US</option>
-      <option value="CA">Canada</option>        
-    </Select>
-    <br><br>
-    <b>Address:&nbsp;</b><input type="text" id="address" style="width:150px" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <b>City:&nbsp;&nbsp;&nbsp;</b><input type="text" id="city" style="width:150px" value="">
-    <br/><br/>                                
-    <div id="US" class="country" ><b>State, and/or Zipcode:</b></div>            
-    <div id="CA" class="country" style="display:none"><b>Province, and/or Postal code:</b></div>
-    <input type="text" id="addressInput" style="width:250px" value="">
-    <br/><br/>
-    <br><br>
+    <div class="col-xs-12">
+      <b>Country:</b>
+      <Select class="CountrySelect" id="countrycode" >
+        <option value="US">US</option>
+        <option value="CA">Canada</option>        
+      </Select>
+    </div>
+    <div  class="col-xs-12 col-md-6">
+      <b>Address:&nbsp;</b><input type="text" id="address" style="width:40%" value="">
+    </div>
+    <div  class="col-xs-12 col-md-6">
+      <b>City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" id="city" style="width:40%" value="">
+    </div>
+    <div  class="col-xs-12">
+      <div id="US" class="country" ><b>State, and/or Zipcode:</b></div>            
+      <div id="CA" class="country" style="display:none"><b>Province, and/or Postal code:</b></div>
+      <input type="text" id="addressInput" style="width:80%" value="">
+    </div>                   
+    
     <div id="map-container">
       <div id="searchbar">
         <div id="search-location"> 
+        <div class="col-xs-12">
           <strong>Radius:</strong>
           <select name="radiusSelect" id="radiusSelect">
             <option value="1">1 mile</option>
@@ -55,6 +61,7 @@
             <option value="50">50 miles</option>
             <option value="100">100 miles</option>
           </select>
+        </div>          
           <br>
           <br>
           <input type="button" value="Search Locations" onClick="getcoord();">

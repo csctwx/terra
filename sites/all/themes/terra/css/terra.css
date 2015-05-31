@@ -12,6 +12,7 @@ body {
 }
 
 body.front,
+body.page-categories,
 body.page-node-11 {	
 	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
 	background-repeat:repeat-x;
@@ -83,6 +84,7 @@ body.page-node-5 {
 
 
 body.front #topNavContainer ul li a.home,
+body.page-categories #topNavContainer ul li a.figurines,
 body.node-type-dinosaurs #topNavContainer ul li a.figurines,
 body.page-node-4 #topNavContainer ul li a.figurines,
 body.page-node-6 #topNavContainer ul li a.figurines,
@@ -91,9 +93,14 @@ body.page-node-8 #topNavContainer ul li a.figurines,
 body.page-node-9 #topNavContainer ul li a.figurines,
 body.page-node-10 #topNavContainer ul li a.figurines,
 body.page-node-5 #topNavContainer ul li a.accessories,
-body.page-node-11 #topNavContainer ul li a.buy {
-	cursor:default;
+body.page-node-11 #topNavContainer ul li a.buy {	
 	color:rgb(80,61,51) !important;	
+}
+
+body.front #topNavContainer ul li a.home,
+body.page-node-5 #topNavContainer ul li a.accessories,
+body.page-node-11 #topNavContainer ul li a.buy {
+  cursor:default;  
 }
 
 body.node-type-accessories #topNavContainer ul li a.accessories {  
@@ -240,5 +247,102 @@ a.right.carousel-control img {
 .carousel-control.right {
   border-image: none;
   filter:none;
+}
+
+#productTitleDetailPage, #productTitleDetailPageDino {
+    padding-left: 15px;
+}
+
+body.node-type-dinosaurs #container,
+body.page-categories #container,
+body.page-node-11 #container {    
+    background: #ffe9bf url("../images/map-beige-bg-small.jpg") no-repeat ;
+    margin-top: 150px;
+    
+    /*border*/
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/border.png) 30 round;
+}
+
+
+@media (min-width: 992px) {
+  body.node-type-dinosaurs #container,
+  body.page-categories #container,
+  body.page-node-11 #container {    
+    background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;
+  }
+}
+
+/*map style*/
+#about-content {
+    background-color: #f9f3dc;
+    border-radius: 10px;
+    color: #650360;
+    margin: 0 10px;
+    padding: 50px;
+}
+
+body.page-node-11 .thumbPageContainer{
+  background-color: #B9AA8E !important;
+  padding-top:0;
+  text-align: left;
+}
+
+#about-content p {
+    margin-bottom: 12px;
+}
+
+#about-content {    
+    font-size: 100%;    
+    vertical-align: baseline;
+}
+
+#about-content .col-xs-12 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+body.node-type-dinosaurs #productPictureInnerContainer{
+  background-color: #fff;
+  padding: 0;
+  width: 50%;
+}
+
+body.node-type-dinosaurs #productRetailInfoContainer{  
+  width: auto;  
+}
+
+body.node-type-dinosaurs #productPictureMapContainer{
+  background-color: #e3c697;
+  font-family: "ClearSans-Regular",Arial,Helvetica,sans-serif;
+  font-size: 110%;
+  line-height: 1.75em;
+}
+
+body.node-type-dinosaurs #productPictureMapContainer p{
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.productTitleDetailPageThumbContainerUnder {
+    padding-top: 25px;
+    text-align: left;
+}
+
+#productDescriptionContainer {
+    background: none;    
+    margin: 2% auto;    
+    width: 75%;
+    text-align: justify;
+}
+
+.productSpecsContainer, 
+.productComponentsContainer {    
+    margin: 0;    
+    width: 100%;
 }
 

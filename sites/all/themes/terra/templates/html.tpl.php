@@ -42,12 +42,17 @@
             }
       });
 
+
       /* set equal height thumbnail images*/
       $('.thumbnail').css({
           'height': $('.thumbnail').height() + $('.views-field-title').height() + 10
       });
-       //alert($('.thumbnail').height());
-    });    
+
+      // add class img-responsive to carousel thumbnail image
+      $('.carousel[data-type="multi"] .item .thumbnail img').addClass('img-responsive');    
+
+    });
+        
   </script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -60,7 +65,7 @@
   <div id='cssmenu'>
     <ul>
       <li><?php print l(t('Home'), '/', array('attributes' => array('class' => 'home'))); ?></li>
-      <li class='active has-sub'><a href='#' class="figurines"><span>Figurines</span></a>
+      <li class='active has-sub'><?php print l(t('Figurines'), '/categories', array('attributes' => array('class' => 'figurines'))); ?>
         <ul>
            <li class='has-sub'><?php print l(t('Dinosaurs'), '/dinosaurs', array('attributes' => array('class' => 'dinosaurs'))); ?></li>
            <li class='has-sub'><?php print l(t('Fantasy Sets'), '/fantasy-sets', array('attributes' => array('class' => 'fantasy'))); ?></li>
