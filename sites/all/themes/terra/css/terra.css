@@ -323,7 +323,7 @@ body.node-type-dinosaurs #productPictureMapContainer{
   background-color: #e3c697;
   font-family: "ClearSans-Regular",Arial,Helvetica,sans-serif;
   font-size: 110%;
-  line-height: 1.75em;
+  line-height: 1.25em;
 }
 
 body.node-type-dinosaurs #productDescriptionContainer #description{  
@@ -338,7 +338,7 @@ body.node-type-dinosaurs #productDescriptionContainer h3 {
 }
 
 .productTitleDetailPageThumbContainerUnder {
-    padding: 10% 0;
+    padding: 6% 0;
     text-align: justify;
 }
 
@@ -409,7 +409,22 @@ body.node-type-dinosaurs #productDescriptionContainer h3 {
   }
 }
 
-  
+.productTitleDetailPageThumb {
+  width: 25%;
+  height: 25%;
+}
+
+#productPictureMapContainer .productThumbDesc{
+  font-size: 110%;
+} 
+
+.thumbPageContainer {
+  width: 100%;
+}
+
+.thumbPageContainer .field-content {
+  background-color: #fff;
+}
 
 
 
