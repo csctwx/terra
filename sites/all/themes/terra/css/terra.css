@@ -261,10 +261,14 @@ body.page-node-11 #container {
     
     /*border*/
     border: 10px solid transparent;
-    padding: 15px;
+    padding: 15px 0;
     -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
     border-image: url(../images/border.png) 30 round;
+}
+
+#crossSellingContainer {
+   background: transparent; 
 }
 
 
@@ -322,27 +326,91 @@ body.node-type-dinosaurs #productPictureMapContainer{
   line-height: 1.75em;
 }
 
-body.node-type-dinosaurs #productPictureMapContainer p{
-  margin-right: 20%;
-  margin-top: 5%;
-  margin-bottom: 10%;
+body.node-type-dinosaurs #productDescriptionContainer #description{  
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+body.node-type-dinosaurs #productDescriptionContainer h3 {
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+  color: maroon;
+  text-transform: uppercase;
 }
 
 .productTitleDetailPageThumbContainerUnder {
-    padding-top: 25px;
-    text-align: left;
+    padding: 10% 0;
+    text-align: justify;
 }
 
 #productDescriptionContainer {
     background: none;    
-    margin: 2% auto;    
+    margin: 0 auto;    
     width: 75%;
     text-align: justify;
 }
 
 .productSpecsContainer, 
 .productComponentsContainer {    
-    margin: 0;    
+    margin: 1% 0;    
     width: 100%;
 }
+
+.productSpecsContainer .listSubTitleSpan{
+  font-size: 90%;
+  font-weight: normal;
+}
+
+.productSpecsContainer .listTitle{
+  background-color: #CEAA9D;
+  text-align: center;
+}
+
+.productSpecsContainer .listValue{
+  background-color: #F8ECD4;
+}
+
+.productSpecsContainer table tbody tr td{
+  border-top: 1px solid #802A18;
+}
+
+.productSpecsContainer tr:first-child td{
+  border-top: 1px solid transparent;
+}
+
+.drop-cap p:first-letter {
+    font-size: 3.5em;
+    float: left;
+    margin-top: .25em;
+}
+
+#productFactsContainer {
+  width: 100%; 
+  margin: 0;
+} 
+
+.crossSellTitleRuler,
+.crossSellTitle{
+  width: 30%;
+}
+
+@media screen and (max-width: 950px){
+  #productPictureMapContainer {
+    background-color: #e3c697 !important;
+  }
+}
+
+.productTitleDetailPageThumbContainerUnder {
+  background: transparent;
+}
+
+@media screen and (max-width: 950px){
+  #productPictureMapContainer {
+   background: #e3c697 !important; 
+  }
+}
+
+  
+
+
+
 

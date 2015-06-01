@@ -31,19 +31,21 @@
 </div>
 
 <div id="productPictureMapContainer" class="row">
-  <div id="productPictureInnerContainer" class="col-xs-12 col-md-6">  
+  <div id="productPictureInnerContainer" class="col-xs-12 col-lg-6">  
       <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
   </div>
-  <div class="col-xs-12 col-md-6">
+  <div class="col-xs-12 col-lg-6">
     <div class="productTitleDetailPageThumbContainerUnder">
       <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
           <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
           <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="80" height="80" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
       <?php endforeach; ?>
     </div> 
+    
     <p>1 Wooden Barn, 1 Ladder, 2 Food Troughs, 4 Bales of Hay, 1 Hayloft Pulley Tray, 1 Removable Loft, 10 Fence
-    </p>
-    <div id="productRetailInfoContainer"  >
+    </p>    
+    
+    <div id="productRetailInfoContainer">
       <ul>        
         <?php foreach ($product_informations as $value): ?>
          <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
@@ -54,39 +56,35 @@
       
     </div>
 </div>
-
-
-
 <div id="productDescriptionContainer">
-  <h3><b>DESCRIPTION</b></h3>
-  <br>
-  <p>
+  <h3>DESCRIPTION</h3>  
+  <div id="description" class="drop-cap">
     <?php echo $fields['descriptive_text']['value']; ?>
-  </p> 
+  </div> 
+  <h3>CHARACTERISTICS</h3>
   <div class="productSpecsContainer">
-    <table>      
+    <table class="table">      
       <?php foreach ($animal_specifications as $value): ?>
         <tr>
-          <td><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
-          <td><?php echo $fields[$value]['value']; ?></td>
+          <td class="listTitle"><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
+          <td class="listValue"><?php echo $fields[$value]['value']; ?></td>
         </tr>       
       <?php endforeach; ?>      
-    </table>
-    
+    </table>    
   </div>
   <div id="productFactsContainer">
-    <div class="productHabitatContainer"><span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>
+    <div class="productHabitatContainer">
+    <span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>
       <ol>
         <?php foreach($fields['natural_habitat']['value'] as $natural_habitat_value): ?>
           <li><span><?php echo $natural_habitat_value['value']; ?></span></li>
         <?php endforeach; ?>
       </ol>
-    </div>
-       
+    </div>       
   </div>
+</div>
 <div id="productPictureMapContainer2">
   <img src="<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>" style="width:100%;">
-</div>
 </div>
 <div id="crossSellingContainer">
   <div class="crossSellTitleRuler"></div>
