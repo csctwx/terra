@@ -309,29 +309,30 @@ body.page-node-11 .thumbPageContainer{
     width: 100%;
 }
 
-body.node-type-dinosaurs #productPictureInnerContainer{
+#productPictureInnerContainer{
   background-color: #fff;
-  padding: 0;
-  width: 50%;
+  padding: 0; 
 }
 
-body.node-type-dinosaurs #productRetailInfoContainer{  
+#productRetailInfoContainer{  
   width: auto;  
+  position: relative;
+  bottom: 5px;
 }
 
-body.node-type-dinosaurs #productPictureMapContainer{
+#productPictureMapContainer{
   background-color: #e3c697;
   font-family: "ClearSans-Regular",Arial,Helvetica,sans-serif;
   font-size: 110%;
   line-height: 1.25em;
 }
 
-body.node-type-dinosaurs #productDescriptionContainer #description{  
+#productDescriptionContainer #description{  
   margin-top: 0;
   margin-bottom: 5%;
 }
 
-body.node-type-dinosaurs #productDescriptionContainer h3 {
+#productDescriptionContainer h3 {
   font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
   color: maroon;
   text-transform: uppercase;
@@ -426,6 +427,58 @@ body.node-type-dinosaurs #productDescriptionContainer h3 {
   background-color: #fff;
 }
 
+.thumbPageContainer .thumbnail{
+  width: 164px;
+  margin:0 auto 10px;
+}
 
+.carousel-inner .thumbnail{
+  width: 164px;
+  margin:0 auto;
+}
 
+#productPictureMapContainer .col-xs-12, 
+#productPictureMapContainer .col-md-6 {
+  padding: 2% 1%;
+  position: relative;
+}
 
+.productTitleDetailPageThumb.col-xs-3{
+  padding: 0;
+  width: 25%;
+  height: 25%;
+}
+
+.productTitleDetailPageThumb {
+  margin: 0px 0.8em 0 0;
+}
+
+.productThumbDesc{
+  margin-top: 3%;
+}
+@media (max-width: 992px) {
+  #productPictureInnerContainer{
+    width:100%;
+    max-width: 100%;
+  } 
+}
+
+@media (min-width: 993px) {
+  #productPictureInnerContainer {
+    width: 50%;    
+  }
+}
+
+@media (max-width: 950px) {
+  #productPictureMapContainer {
+    width: 75%; 
+    padding: 0;
+    border: none;
+  }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

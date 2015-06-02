@@ -20,7 +20,7 @@
 	          <?php foreach ($rows as $id => $row): ?>
 			      <div class="<?php print $classes_array[$id]; echo ($id==0)?' active':''; ?> item">
 			        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-			          <div class="col-xs-10 col-xs-offset-1 thumbnail"><?php print $row; ?></div>
+			          <div class="thumbnail"><?php print $row; ?></div>
 			        </div>
 			      </div>
 			  <?php endforeach; ?>

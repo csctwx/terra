@@ -31,15 +31,17 @@
 </div>
 
 <div id="productPictureMapContainer" class="row">
- <div class="row-same-height">
-   <div id="productPictureInnerContainer" class="col-xs-12 col-md-6 col-md-height">  
+ <!-- <div class="row-same-height"> -->
+   <div id="productPictureInnerContainer" class="col-xs-12 col-md-6 col-md-height  vcenter">  
       <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
-  </div>
-  <div class="col-xs-12 col-md-6 col-md-height">
-    <div class="productTitleDetailPageThumbContainerUnder">
+  </div><!--
+--><div class="col-xs-12 col-md-6 col-md-height  vcenter">    
+    <div class="productTitleDetailPageThumbContainerUnder row">
       <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
           <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
-          <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
+          <div class="productTitleDetailPageThumb col-xs-3">
+            <a href="#"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
+          </div>
       <?php endforeach; ?>
     </div> 
     <div class="productThumbDesc">
@@ -55,7 +57,7 @@
       </ul>
     </div>      
   </div>
- </div>  
+ <!-- </div>   -->
 </div>
 <div id="productDescriptionContainer">
   <h3>DESCRIPTION</h3>  
@@ -94,71 +96,10 @@
 
   <div class="crossSellingThumbContainer"> 
 
-    <!-- <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
-      <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php // echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" alt="">
-        <div class="PStyleH ContentH TOrange">
-          <div class="Content thumbName">
-            <h2>
-              Pachyrhinosaurus
-            </h2>
-            <p>
-              AN4000
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
-      <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php //echo myfunctionlib_theme_path('images/AN4001-pr-CRYOLO.png'); ?>" alt="">
-        <div class="PStyleH ContentH TOrange">
-          <div class="Content thumbName">
-            <h2>
-              Cryolophosaurus
-            </h2>
-            <p>
-              AN4001
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
-      <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php //echo myfunctionlib_theme_path('images/AN4002-pr-b-DACENTRURUS.png'); ?>" alt="">
-        <div class="PStyleH ContentH TOrange">
-          <div class="Content thumbName">
-            <h2>
-              Dacentrurus
-            </h2>
-            <p>
-              AN4002
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="crossSellingThumb ImageWrapper BackgroundS ContentWrapperH chrome-fix">
-      <a href="http://www.battatco.com">
-        <img class="img-responsive" src="<?php //echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" alt="">
-        <div class="PStyleH ContentH TOrange">
-          <div class="Content thumbName">
-            <h2>
-              Nanshiungosaurusus
-            </h2>
-            <p>
-              AN4003
-            </p>
-          </div>
-        </div>
-      </a>
-    </div> -->
-
     <div class="thumbPageContainer row"> 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="col-xs-12 thumbnail" style="height: 208px;">  
+              <div class="thumbnail" style="height: 208px;">  
                 <div class="views-field views-field-field-category-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="160" height="160" alt=""></a>
@@ -175,7 +116,7 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="col-xs-12 thumbnail" style="height: 208px;">  
+              <div class="thumbnail" style="height: 208px;">  
                 <div class="views-field views-field-field-category-picture">        
                   <div class="field-content">
                     <a href="/terra/dinosaurs">
@@ -194,7 +135,7 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="col-xs-12 thumbnail" style="height: 208px;">  
+              <div class="thumbnail" style="height: 208px;">  
                 <div class="views-field views-field-field-category-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4002-pr-b-DACENTRURUS.png'); ?>" width="160" height="160" alt=""></a>
@@ -211,7 +152,7 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="col-xs-12 thumbnail" style="height: 208px;">  
+              <div class="thumbnail" style="height: 208px;">  
                 <div class="views-field views-field-field-category-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" width="160" height="160" alt=""></a>
