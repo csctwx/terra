@@ -337,7 +337,7 @@ body.node-type-dinosaurs #productDescriptionContainer h3 {
   text-transform: uppercase;
 }
 
-.productTitleDetailPageThumbContainerUnder {
+.row-same-height .productTitleDetailPageThumbContainerUnder {
     padding: 6% 0;
     text-align: justify;
 }
@@ -409,20 +409,20 @@ body.node-type-dinosaurs #productDescriptionContainer h3 {
   }
 }
 
-.productTitleDetailPageThumb {
+.crossSellingThumbContainer .productTitleDetailPageThumb {
   width: 25%;
   height: 25%;
 }
 
-#productPictureMapContainer .productThumbDesc{
+.crossSellingThumbContainer #productPictureMapContainer .productThumbDesc{
   font-size: 110%;
 } 
 
-.thumbPageContainer {
+.crossSellingThumbContainer .thumbPageContainer {
   width: 100%;
 }
 
-.thumbPageContainer .field-content {
+.crossSellingThumbContainer .thumbPageContainer .field-content {
   background-color: #fff;
 }
 
