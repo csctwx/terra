@@ -2,16 +2,16 @@
 <div id="wrapper" >
     <div class="slider-wrapper theme-default slideshowWide">
         <div id="slider" class="nivoSlider">
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-1.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-2.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-3.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-1.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-2.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'terra') . '/images/slide-image-3.jpg'; ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
         </div>
     </div>
     <div class="slider-wrapper theme-default slideshowNarrow">
         <div id="sliderTwo" class="nivoSlider">
-            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-african.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-fantasy.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
-            <a href="http://www.tsn.ca"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-north-american.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-african.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-fantasy.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
+            <a href="#"><img src="<?php echo myfunctionlib_theme_path('images/iphone-crop-slideshow-north-american.jpg'); ?>"  data-thumb="<?php echo myfunctionlib_theme_path('images/up.jpg'); ?>" alt="" /></a>
         </div>
     </div>
 </div>
