@@ -6,7 +6,7 @@ $tmp_nodes = myfunctionlib_get_tmps($nodes);
 <div id="container" style="padding-bottom:5%;">
 	<div id="productTitleDetailPage">
 		<h4>Figurines</h4>
-		<h2><?php echo $title; ?></h2>
+		<h2><?php echo $title.'wen'; die();?></h2>
 	</div>
 	<!-- <div class="thumbPageContainer" style="background:url(images/ivory-transparent-back-TEMP.png) repeat;">-->
 	<div class="thumbPageContainer" style="background:ivory;"> 

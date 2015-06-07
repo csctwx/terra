@@ -49,7 +49,16 @@
       });
 
       // add class img-responsive to carousel thumbnail image
-      $('.carousel[data-type="multi"] .item .thumbnail img').addClass('img-responsive');    
+      $('.carousel[data-type="multi"] .item .thumbnail img').addClass('img-responsive');  
+
+      //modify view figurines' link destination
+      $('.view-figurines .thumbnail').each(function(){
+        var title = $(this).find('.views-field-title a').text().replace(' ','-').toLowerCase();
+        $(this).find('a').each(function(){
+          console.log(title);
+          $(this).attr('href', title);
+        });
+      });  
 
     });
         

@@ -22,14 +22,14 @@ body.page-node-11 {
 }
 
 body.node-type-dinosaurs,
-body.page-node-4 {
+body.page-dinosaurs {
   background: url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg) no-repeat fixed top, 
   rgb(202,117,53) url(../images/sticky-footer-kraft-strip-dino-orange.jpg) repeat-x fixed bottom;
   background-color: #bd6e4d;
 }
 
 body.node-type-fantasy-sets,
-body.page-node-6 {
+body.page-fantasy-sets {
   background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: black;
@@ -86,8 +86,9 @@ body.page-node-5 {
 body.front #topNavContainer ul li a.home,
 body.page-categories #topNavContainer ul li a.figurines,
 body.node-type-dinosaurs #topNavContainer ul li a.figurines,
-body.page-node-4 #topNavContainer ul li a.figurines,
-body.page-node-6 #topNavContainer ul li a.figurines,
+body.node-type-fantasy-sets #topNavContainer ul li a.figurines,
+body.page-dinosaurs #topNavContainer ul li a.figurines,
+body.page-fantasy-sets #topNavContainer ul li a.figurines,
 body.page-node-7 #topNavContainer ul li a.figurines,
 body.page-node-8 #topNavContainer ul li a.figurines,
 body.page-node-9 #topNavContainer ul li a.figurines,
@@ -95,6 +96,22 @@ body.page-node-10 #topNavContainer ul li a.figurines,
 body.page-node-5 #topNavContainer ul li a.accessories,
 body.page-node-11 #topNavContainer ul li a.buy {	
 	color:rgb(80,61,51) !important;	
+}
+
+@media (max-width: 990px) {
+  body.front #topNavContainer ul li a.home,
+  body.page-categories #topNavContainer ul li a.figurines,
+  body.node-type-dinosaurs #topNavContainer ul li a.figurines,
+  body.page-node-4 #topNavContainer ul li a.figurines,
+  body.page-node-6 #topNavContainer ul li a.figurines,
+  body.page-node-7 #topNavContainer ul li a.figurines,
+  body.page-node-8 #topNavContainer ul li a.figurines,
+  body.page-node-9 #topNavContainer ul li a.figurines,
+  body.page-node-10 #topNavContainer ul li a.figurines,
+  body.page-node-5 #topNavContainer ul li a.accessories,
+  body.page-node-11 #topNavContainer ul li a.buy {  
+    color:orange !important; 
+  }
 }
 
 body.front #topNavContainer ul li a.home,
@@ -108,8 +125,9 @@ body.node-type-accessories #topNavContainer ul li a.accessories {
 }
 
 body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
-body.page-node-4 #topNavContainer ul li a.dinosaurs, 
-body.page-node-6 #topNavContainer ul li a.fantasy, 
+body.page-dinosaurs #topNavContainer ul li a.dinosaurs, 
+body.page-fantasy-sets #topNavContainer ul li a.fantasy, 
+body.node-type-fantasy-sets #topNavContainer ul li a.fantasy, 
 body.node-type-wild-animals #topNavContainer ul li a.wild, 
 body.page-node-9 #topNavContainer ul li a.wild, 
 body.node-type-farm-animals #topNavContainer ul li a.farm,
@@ -249,36 +267,67 @@ a.right.carousel-control img {
   filter:none;
 }
 
-#productTitleDetailPage, #productTitleDetailPageDino {
+#productTitleDetailPage {
+    width:75%; 
+    margin: 8% auto 0;
     padding-left: 15px;
 }
 
-body.node-type-dinosaurs #container,
-body.page-categories #container,
-body.page-node-11 #container {    
+#productTitleDetailPageDino {
+    width:75%; 
+    margin: 8% auto 0;
+    /*padding-left: 15px;*/
+}
+
+
+#container {    
     background: #ffe9bf url("../images/map-beige-bg-small.jpg") no-repeat ;
-    margin-top: 150px;
+    margin-top: 150px;   
     
+}
+
+@media (min-width: 420px){
+  #container {    
     /*border*/
     border: 10px solid transparent;
     padding: 15px 0;
     -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
     border-image: url(../images/border.png) 30 round;
+    
+  }  
 }
 
 #crossSellingContainer {
    background: transparent; 
 }
 
+body > #container {
+  max-width: 1242px;
+}
+
+
+body.node-type-north-american-animals #container,
+body.node-type-dinosaurs #container,
+body.node-type-fantasy-sets #container {
+  background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
+}
 
 @media (min-width: 992px) {
-  body.node-type-dinosaurs #container,
-  body.page-categories #container,
-  body.page-node-11 #container {    
+  
+  body.page-north-american-animals #container,
+  body.page-categories #container {    
     background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;
   }
-}
+  
+  body.page-dinosaurs #container {    
+    background: #ffe9bf url("../images/map-beige-bg-dinosaurs-signature.jpg") no-repeat ;
+  }
+  
+  body.page-fantasy-sets #container {    
+    background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;
+  }
+} 
 
 /*map style*/
 #about-content {
@@ -313,6 +362,7 @@ body.page-node-11 .thumbPageContainer{
   background-color: #fff;
   padding: 0; 
   margin: 0;
+
 }
 
 #productRetailInfoContainer{  
@@ -424,9 +474,19 @@ body.page-node-11 .thumbPageContainer{
   width: 100%;
 }
 
-.crossSellingThumbContainer .thumbPageContainer .field-content {
+.thumbPageContainer .thumbnail .views-field-field-product-picture .field-content {
   background-color: #fff;
 }
+
+.thumbPageContainer .thumbnail .views-field-title{
+  /*position:relative;*/
+}
+
+/*.thumbnail .views-field-title .field-content{
+  position: relative;  
+  transform: translate(0,50%);
+  display: inline-block;
+}*/
 
 .thumbPageContainer .thumbnail{
   width: 164px;
@@ -438,16 +498,22 @@ body.page-node-11 .thumbPageContainer{
   margin:0 auto;
 }
 
-#productPictureMapContainer .col-xs-12, 
-#productPictureMapContainer .col-md-6 {
+#productPictureDescContainer {
   padding: 2% 1%;
   position: relative;
 }
 
-.productTitleDetailPageThumb.col-xs-3{
+@media (max-width: 420px){
+  #productPictureDescContainer {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+
+.productTitleDetailPageThumb.col-xs-2{
   padding: 0;
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  height: 20%;
 }
 
 .productTitleDetailPageThumb {
@@ -470,9 +536,9 @@ body.page-node-11 .thumbPageContainer{
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 420px) {
   #productPictureMapContainer {
-    width: 75%; 
+    width: 100%; 
     padding: 0;
     border: none;
   }
@@ -482,4 +548,12 @@ body.page-node-11 .thumbPageContainer{
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+@media (max-width: 950px){
+  #productPictureMapContainer {
+    width: 75%;    
+    padding: 0;
+    border: none;
+  }
 }

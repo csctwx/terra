@@ -9,13 +9,12 @@
  * @ingroup views_templates
  */
 ?>
-<?php print $wrapper_prefix; ?>
-  <?php if (!empty($title)) : ?>
-    <h3><?php print $title; ?></h3>
-  <?php endif; ?>
-  <?php print $list_type_prefix; ?>
-    <?php foreach ($rows as $id => $row): ?>
-      <li class="<?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
-    <?php endforeach; ?>
-  <?php print $list_type_suffix; ?>
-<?php print $wrapper_suffix; ?>
+<div class="thumbPageContainer row"> 
+   <?php foreach ($rows as $id => $row): ?>
+      <div class="<?php print $classes_array[$id]; ?> item">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail"><?php print $row; ?></div>
+        </div>
+      </div>
+  <?php endforeach; ?>
+</div>

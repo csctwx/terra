@@ -8,7 +8,7 @@ function terra_preprocess_page(&$vars, $hook) {
   }
 
   $vars['scripts'] = drupal_get_js();
-
+  /*
   if (isset($vars['node']->field_category)) {
   	$category = $vars['node']->field_category;
   	
@@ -23,7 +23,7 @@ function terra_preprocess_page(&$vars, $hook) {
   		
   	}
   }
-
+  */
   
   function terra_preprocess_image_style(&$vars) { 
     $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'

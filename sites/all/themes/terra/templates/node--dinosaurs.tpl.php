@@ -1,13 +1,15 @@
 <?php 
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
+  
   //extract($fields);  
-  $animal_specifications = array('name_means', 
+  $animal_specifications = array('full_name',
+                            'name_means', 
                             'period', 
                             'order', 
                             'suborder',
                             'diet',
-                            'length',
+                            'size',
                             'weight',
                             'discoverer',
                            ); 
@@ -31,15 +33,14 @@
 </div>
 
 <div id="productPictureMapContainer" class="row">
- <!-- <div class="row-same-height"> -->
    <div id="productPictureInnerContainer" class="col-xs-12 col-md-6 col-md-height  vcenter">  
       <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
   </div><!--
---><div class="col-xs-12 col-md-6 col-md-height  vcenter">    
+--><div id="productPictureDescContainer"  class="col-xs-12 col-md-6 col-md-height  vcenter">    
     <div class="productTitleDetailPageThumbContainerUnder row">
       <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
           <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
-          <div class="productTitleDetailPageThumb col-xs-3">
+          <div class="productTitleDetailPageThumb col-xs-2">
             <a href="#"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
           </div>
       <?php endforeach; ?>
@@ -68,10 +69,12 @@
   <div class="productSpecsContainer">
     <table class="table">      
       <?php foreach ($animal_specifications as $value): ?>
+        <?php if(isset($fields[$value]['value'])): ?>
         <tr>
           <td class="listTitle"><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
           <td class="listValue"><?php echo $fields[$value]['value']; ?></td>
-        </tr>       
+        </tr>
+        <?php endif; ?>       
       <?php endforeach; ?>      
     </table>    
   </div>
@@ -99,8 +102,8 @@
     <div class="thumbPageContainer row"> 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="thumbnail" style="height: 208px;">  
-                <div class="views-field views-field-field-category-picture">        
+              <div class="thumbnail" style="">  
+                <div class="views-field views-field-field-product-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4000-pr-b-PACHY.png'); ?>" width="160" height="160" alt=""></a>
                   </div>  
@@ -116,8 +119,8 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="thumbnail" style="height: 208px;">  
-                <div class="views-field views-field-field-category-picture">        
+              <div class="thumbnail" style="">  
+                <div class="views-field views-field-field-product-picture">        
                   <div class="field-content">
                     <a href="/terra/dinosaurs">
                       <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4001-pr-CRYOLO.png'); ?>" width="160" height="160" alt="">
@@ -135,8 +138,8 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="thumbnail" style="height: 208px;">  
-                <div class="views-field views-field-field-category-picture">        
+              <div class="thumbnail" style="">  
+                <div class="views-field views-field-field-product-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4002-pr-b-DACENTRURUS.png'); ?>" width="160" height="160" alt=""></a>
                   </div>  
@@ -152,8 +155,8 @@
 
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="thumbnail" style="height: 208px;">  
-                <div class="views-field views-field-field-category-picture">        
+              <div class="thumbnail" style="">  
+                <div class="views-field views-field-field-product-picture">        
                   <div class="field-content"><a href="/terra/dinosaurs">
                     <img typeof="foaf:Image" src="<?php echo myfunctionlib_theme_path('images/AN4003-pr-NANSHIU.png'); ?>" width="160" height="160" alt=""></a>
                   </div>  
