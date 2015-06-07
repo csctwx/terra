@@ -1,5 +1,12 @@
 <!-- InstanceBeginEditable name="mainContainer" -->
+<?php $views_page = views_get_page_view(); ?>
 <div id="container">
+  <?php if (is_object($views_page)): ?>
+	  <div id="productTitleDetailPage">
+		<h4>Figurines</h4>
+		<h2><?php echo $title; ?></h2>
+	  </div>
+  <?php endif; ?>
   <?php print render($page['content']); ?>
   
 </div>

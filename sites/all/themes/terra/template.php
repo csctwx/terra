@@ -24,9 +24,14 @@ function terra_preprocess_page(&$vars, $hook) {
   	}
   }
   */
-  
-  function terra_preprocess_image_style(&$vars) { 
-    $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
-  }
 }
+
+function terra_preprocess_image_style(&$vars) { 
+  $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
+}
+
+// function terra_preprocess_views_view(&$vars) { 
+//   $vars['title'] = ucwords(str_replace('_', ' ', $vars['name']));
+//   //kpr($vars); die();
+// }
 
