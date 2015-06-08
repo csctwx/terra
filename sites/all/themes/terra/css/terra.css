@@ -590,3 +590,14 @@ body.page-node-11 .thumbPageContainer{
     padding: 10px 20px;
     width: 150px;
 }
+
+.breadcrumb {
+  background-color: transparent;
+  color: maroon;
+}
+
+.breadcrumb a, 
+.breadcrumb a:visited {
+  color: maroon;
+  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+}

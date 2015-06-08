@@ -53,7 +53,7 @@
 
       //modify view figurines' link destination
       $('.view-figurines .thumbnail').each(function(){
-        var title = $(this).find('.views-field-title a').text().replace(' ','-').toLowerCase();
+        var title = $(this).find('.views-field-title a').text().replace(/\s/g,'-').toLowerCase();
         $(this).find('a').each(function(){
           console.log(title);
           $(this).attr('href', title);

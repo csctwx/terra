@@ -19,6 +19,9 @@
     </script>
 <!-- InstanceBeginEditable name="mainContainer" -->
 <div id="container" style="padding-bottom:5%;">
+  <div id="breadcrumb">
+    <?php print $breadcrumb; ?>    
+  </div>
   <div id="productTitleDetailPage">    
     <h2><?php echo $title; ?></h2>
   </div>

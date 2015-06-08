@@ -148,3 +148,29 @@ function myfunctionlib_get_tmps($nodes){
     
     return $tmp_nodes;
 }
+
+function myfunctionlib_set_breadcrumbs($category, $taxonomy){
+  
+    //Build Breadcrumbs
+    $breadcrumb = array();
+    $breadcrumb[] = l('Home', '<front>');
+    if($taxonomy){
+        $taxonomy_title = ucfirst(str_replace('_', ' ', $taxonomy));
+        if($taxonomy == 'figurines'){
+            $taxonomy_path = ($taxonomy == 'figurines')? 'categories' : str_replace('_', '-', $taxonomy);
+        }
+        else {                    
+            $taxonomy_path = str_replace('_', '-', $taxonomy);
+        }
+        $breadcrumb[] = l($taxonomy_title, $taxonomy_path);
+    }
+
+    if($category) {
+        $category_title = ucfirst(str_replace('_', ' ', $category));
+        $category_path = str_replace('_', '-', $category);
+        $breadcrumb[] = l($category_title, $category_path);
+    }   
+// kpr($breadcrumb); die();
+    // Set Breadcrumbs
+    drupal_set_breadcrumb($breadcrumb);
+}

@@ -7,52 +7,43 @@ function terra_preprocess_page(&$vars, $hook) {
     drupal_add_js(path_to_theme().'/nivo-slider/script.js');
   }
 
-  $vars['scripts'] = drupal_get_js();
-  /*
-  if (isset($vars['node']->field_category)) {
-  	$category = $vars['node']->field_category;
-  	
-  	if ($category['und'][0]['tid'] == 1) { // if it is term of Figurines   		
-
-  		$vars['theme_hook_suggestions'][] = 'page__figurines';
-  		
-  	}
-  	elseif ($category['und'][0]['tid'] == 2) { // if it is term of Accessories   		
-
-  		$vars['theme_hook_suggestions'][] = 'page__accessories';
-  		
-  	}
+  $vars['scripts'] = drupal_get_js();  
+  
+  // modify breadcrumbs if node type belong to categories
+  $node_type = $vars['node']->type; //kpr($vars); die();
+  if($node_type){ 
+    if($node_type == 'accessories') {
+      myfunctionlib_set_breadcrumbs('',$node_type);
+    }
+    else{
+      //get all figurines's types
+      $figurines_node_ids = taxonomy_select_nodes(1);
+      // $figurines_node = node_load($figurines_types[0]);
+      $figurines_types = array();
+      foreach ($figurines_node_ids as $figurines_node_id) {
+        $figurines_node = node_load($figurines_node_id);
+        $figurines_types[] = str_replace(' ', '_', strtolower($figurines_node->title));
+      }
+      
+      if(in_array($node_type, $figurines_types)){
+        myfunctionlib_set_breadcrumbs($node_type, 'figurines');
+      }
+    }    
   }
-  */
+ 
+
+  //kpr($node_type); die();
+  
 }
 
 function terra_preprocess_image_style(&$vars) { 
   $vars['attributes']['class'][] = 'img-responsive'; // can be 'img-rounded', 'img-circle', or 'img-thumbnail'
 }
 
-// function terra_preprocess_views_view(&$vars) { 
-//   $vars['title'] = ucwords(str_replace('_', ' ', $vars['name']));
-//   //kpr($vars); die();
-// }
-
-// function terra_menu_tree($variables) {
-//   return '<ul class="menu">' . $variables ['tree'] . '</ul>';
-// }
 
 function terra_menu_tree($variables) {
   return '<ul>' . $variables ['tree'] . '</ul>';
 }
-
-// function terra_menu_link(array $variables) {
-//   $element = $variables ['element'];
-//   $sub_menu = '';
-
-//   if ($element ['#below']) {
-//     $sub_menu = drupal_render($element ['#below']);
-//   }
-//   $output = l($element ['#title'], $element ['#href'], $element ['#localized_options']);
-//   return '<li' . drupal_attributes($element ['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-// }
 
 function terra_menu_link(array $variables) {
   $element = $variables ['element'];
@@ -64,3 +55,5 @@ function terra_menu_link(array $variables) {
   $output = l($element ['#title'], $element ['#href'], $element ['#localized_options']);
   return '<li class="' . ($element ['#below'] ? ' has-sub':'') . '">' . $output . $sub_menu . "</li>\n";
 }
+
+?>

@@ -1,6 +1,10 @@
 <!-- InstanceBeginEditable name="mainContainer" -->
 <?php $views_page = views_get_page_view(); ?>
 <div id="container">
+  <div id="breadcrumb">
+    <?php print $breadcrumb; ?>    
+  </div>
+  
   <?php if (is_object($views_page)): ?>
 	  <div id="productTitleDetailPage">
 		<h4>Figurines</h4>
