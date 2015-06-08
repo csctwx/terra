@@ -72,7 +72,12 @@
   <?php print $page_top; ?>
   <div id="topNavContainer">
   <div id='cssmenu'>
-    <ul>
+
+  <?php 
+    $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+    print drupal_render($main_menu_tree);
+  ?>
+    <!-- <ul>
       <li><?php print l(t('Home'), '/', array('attributes' => array('class' => 'home'))); ?></li>
       <li class='active has-sub'><?php print l(t('Figurines'), '/categories', array('attributes' => array('class' => 'figurines'))); ?>
         <ul>
@@ -86,13 +91,13 @@
       </li>
       <li><?php print l(t('Accessories'), '/accessories', array('attributes' => array('class' => 'accessories'))); ?></li>
       <li class='last'><?php print l(t('Where To Buy'), '/where-to-buy', array('attributes' => array('class' => 'buy'))); ?></li>
-    </ul>
+    </ul> -->
   </div>     
 </div>
   <?php print $page; ?>
   <?php print $page_bottom; ?> 
   <div id="bottomFooterContainer">    
-    <h6>©<?php echo date('Y'); ?> TERRA by Battat™.<br> Maison Joseph Battat Ltd. All Rights Reserved.</h6>    
+    <h6>©<?php echo date('Y'); ?> TERRA by Battat™.<br> <a href="http://www.battatco.com" target="_blank">Maison Joseph Battat Ltd.</a> All Rights Reserved.</h6>    
   </div> 
 </body>
 </html>

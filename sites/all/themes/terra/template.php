@@ -35,3 +35,32 @@ function terra_preprocess_image_style(&$vars) {
 //   //kpr($vars); die();
 // }
 
+// function terra_menu_tree($variables) {
+//   return '<ul class="menu">' . $variables ['tree'] . '</ul>';
+// }
+
+function terra_menu_tree($variables) {
+  return '<ul>' . $variables ['tree'] . '</ul>';
+}
+
+// function terra_menu_link(array $variables) {
+//   $element = $variables ['element'];
+//   $sub_menu = '';
+
+//   if ($element ['#below']) {
+//     $sub_menu = drupal_render($element ['#below']);
+//   }
+//   $output = l($element ['#title'], $element ['#href'], $element ['#localized_options']);
+//   return '<li' . drupal_attributes($element ['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+// }
+
+function terra_menu_link(array $variables) {
+  $element = $variables ['element'];
+  $sub_menu = '';
+
+  if ($element ['#below']) {
+    $sub_menu = drupal_render($element ['#below']);
+  }
+  $output = l($element ['#title'], $element ['#href'], $element ['#localized_options']);
+  return '<li class="' . ($element ['#below'] ? ' has-sub':'') . '">' . $output . $sub_menu . "</li>\n";
+}

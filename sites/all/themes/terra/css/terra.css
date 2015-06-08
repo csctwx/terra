@@ -74,7 +74,7 @@ body.page-node-10 {
 }
 
 body.node-type-accessories,
-body.page-node-5 {
+body.page-accessories {
   background-image: url(../images/Accessories-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: #a3be39;
@@ -112,6 +112,24 @@ body.page-node-11 #topNavContainer ul li a.buy {
   body.page-node-11 #topNavContainer ul li a.buy {  
     color:orange !important; 
   }
+}
+
+#topNavContainer #cssmenu ul li a.active,
+#topNavContainer #cssmenu ul li a.active-trail{
+  color:rgb(80,61,51) !important;
+}
+
+@media (max-width: 990px) {
+  #topNavContainer #cssmenu ul li a.active,
+  #topNavContainer #cssmenu ul li a.active-trail{
+    color:orange !important;
+  }
+
+}
+
+#topNavContainer #cssmenu ul li ul li a.active,
+#topNavContainer #cssmenu ul li ul li a.active-trail{
+  color:orange !important;
 }
 
 body.front #topNavContainer ul li a.home,
@@ -556,4 +574,19 @@ body.page-node-11 .thumbPageContainer{
     padding: 0;
     border: none;
   }
+}
+
+.view-content .thumbPageContainer{
+  margin-top: 1% !important;
+  padding-top: 0;
+}
+
+#bottomFooterContainer a {
+  color: rgb(205,190,183);
+  text-decoration: none;
+}
+
+#cssmenu ul ul li a {    
+    padding: 10px 20px;
+    width: 150px;
 }

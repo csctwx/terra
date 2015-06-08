@@ -1,4 +1,4 @@
-InstanceBeginEditable name="mainContainer" -->
+<!-- InstanceBeginEditable name="mainContainer" -->
 <div id="container"  style="padding-bottom:5%;">
   <div id="productTitleDetailPage">
 	<!-- <h4>Figurines</h4> -->
@@ -6,4 +6,4 @@ InstanceBeginEditable name="mainContainer" -->
   </div>
   <?php print render($page['content']); ?>  
 </div>
-<!-- InstanceEndEditable
+<!-- InstanceEndEditable -->
