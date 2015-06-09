@@ -624,6 +624,8 @@ body.node-type-wild-animals #container {
 .breadcrumb {
   background-color: transparent;
   color: maroon;
+  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .breadcrumb a, 
