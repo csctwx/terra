@@ -38,7 +38,7 @@ body.page-fantasy-sets {
 }
 
 body.node-type-farm-animals,
-body.page-node-7 {
+body.page-farm-animals {
   background-image: url(../images/Farm-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-farm.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: #e0bf70;
@@ -47,7 +47,7 @@ body.page-node-7 {
 }
 
 body.node-type-north-american-animals,
-body.page-node-8 {
+body.page-north-american-animals {
   background-image: url(../images/northAmercian-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-northAmerican.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: #344018;
@@ -56,7 +56,7 @@ body.page-node-8 {
 }
 
 body.node-type-wild-animals,
-body.page-node-9 {  
+body.page-wild-animals {  
   background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: #ca7535;
@@ -65,7 +65,7 @@ body.page-node-9 {
 }
 
 body.node-type-marine-animals,
-body.page-node-10 {
+body.page-marine-animals {
   background-image: url(../images/Marine-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
   background-repeat: no-repeat, repeat-x;
   background-color: #042477;
@@ -83,7 +83,7 @@ body.page-accessories {
 }
 
 
-body.front #topNavContainer ul li a.home,
+/*body.front #topNavContainer ul li a.home,
 body.page-categories #topNavContainer ul li a.figurines,
 body.node-type-dinosaurs #topNavContainer ul li a.figurines,
 body.node-type-fantasy-sets #topNavContainer ul li a.figurines,
@@ -112,7 +112,7 @@ body.page-node-11 #topNavContainer ul li a.buy {
   body.page-node-11 #topNavContainer ul li a.buy {  
     color:orange !important; 
   }
-}
+}*/
 
 #topNavContainer #cssmenu ul li a.active,
 #topNavContainer #cssmenu ul li a.active-trail{
@@ -132,7 +132,7 @@ body.page-node-11 #topNavContainer ul li a.buy {
   color:orange !important;
 }
 
-body.front #topNavContainer ul li a.home,
+/*body.front #topNavContainer ul li a.home,
 body.page-node-5 #topNavContainer ul li a.accessories,
 body.page-node-11 #topNavContainer ul li a.buy {
   cursor:default;  
@@ -164,7 +164,7 @@ body.page-node-7 #topNavContainer ul li a.farm,
 body.page-node-10 #topNavContainer ul li a.marine, 
 body.page-node-8 #topNavContainer ul li a.american {
   cursor: default !important;  
-}
+}*/
 
 /*  Carousel set */
 .carousel-control { 
@@ -287,8 +287,18 @@ a.right.carousel-control img {
 
 #productTitleDetailPage {
     width:75%; 
-    margin: 8% auto 0;
+    margin: 7% auto 0;
     padding-left: 15px;
+}
+
+#breadcrumb {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-left: 15px;
+}
+
+#breadcrumb .breadcrumb{    
+    padding-left: 0;
 }
 
 #productTitleDetailPageDino {
@@ -299,7 +309,7 @@ a.right.carousel-control img {
 
 
 #container {    
-    background: #ffe9bf url("../images/map-beige-bg-small.jpg") no-repeat ;
+    background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
     margin-top: 150px;   
     
 }
@@ -327,7 +337,12 @@ body > #container {
 
 body.node-type-north-american-animals #container,
 body.node-type-dinosaurs #container,
-body.node-type-fantasy-sets #container {
+body.node-type-fantasy-sets #container,
+body.node-type-accessories #container,
+body.node-type-farm-animals #container,
+body.node-type-north-american-animals #container,
+body.node-type-marine-animals #container,
+body.node-type-wild-animals #container {
   background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
 }
 
@@ -345,6 +360,26 @@ body.node-type-fantasy-sets #container {
   body.page-fantasy-sets #container {    
     background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;
   }
+
+  body.page-farm-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-farm.jpg") no-repeat ;
+  }
+
+  body.page-wild-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-wild.jpg") no-repeat ;
+  }
+
+  body.page-north-american-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-american.jpg") no-repeat ;
+  }
+
+  body.page-marine-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;
+  }
+
+  body.page-accessories #container {    
+    background: #ffe9bf url("../images/map-beige-bg-accessories.jpg") no-repeat ;
+  }
 } 
 
 /*map style*/
@@ -356,11 +391,6 @@ body.node-type-fantasy-sets #container {
     padding: 50px;
 }
 
-body.page-node-11 .thumbPageContainer{
-  background-color: #B9AA8E !important;
-  padding-top:0;
-  text-align: left;
-}
 
 #about-content p {
     margin-bottom: 12px;
@@ -447,7 +477,7 @@ body.page-node-11 .thumbPageContainer{
   border-top: 1px solid transparent;
 }
 
-.drop-cap p:first-letter {
+.drop-cap p:first-of-type:first-letter {
     font-size: 3.5em;
     float: left;
     margin-top: .25em;
@@ -600,4 +630,33 @@ body.page-node-11 .thumbPageContainer{
 .breadcrumb a:visited {
   color: maroon;
   font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+}
+
+body.page-node-11 .thumbPageContainer{
+  background-color: #B9AA8E !important;
+  padding:10px;
+  text-align: left;
+  border: 1px solid #666;
+}
+
+#map-container {
+  width: 75%;
+  height: auto;  
+  margin: 3% auto 0 auto !important;
+  padding: 0;
+  text-align: center;
+  display: block;
+  background-color:white; 
+}
+
+#sidebar{
+  float: left;
+  width: 30%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+#map-canvas{
+  margin: 0 !important;
+  border: none !important;
 }
