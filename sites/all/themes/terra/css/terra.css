@@ -326,7 +326,7 @@ a.right.carousel-control img {
   }  
 }
 
-#crossSellingContainer {
+body.not-front #crossSellingContainer {
    background: transparent; 
 }
 
