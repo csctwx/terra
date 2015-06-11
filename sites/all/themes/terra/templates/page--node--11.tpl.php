@@ -30,7 +30,9 @@
   <table class="thumbPageContainer" >
 
     <tr>
-      <td colspan="2">Specialty stores throughout the United States and Canada carry <strong>B.</strong> toys from time to time. While we can't guarantee these stores will have what you are looking for when you are looking, the following is a list of stores that sometimes carry our toys. It would B. smart to call before you go.
+      <td colspan="2">Specialty stores throughout the United States and Canada carry <strong>TERRA by Battat™</strong> from time to time. While
+we can't guarantee these stores will have what you are looking for when you are looking, the following is a
+list of stores that sometimes carry our toys.
       </td>
     </tr>
     <tr>
