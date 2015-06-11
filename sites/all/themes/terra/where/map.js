@@ -21,7 +21,8 @@ var numusstores;
 var numcastores;	
 
 //var destinationIcon = 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=D|FF0000|000000';
-var destinationIcon='http://www.mybtoys.com/media/images/where/bmarkers/image.png';
+var destinationIcon= 'sites/all/themes/terra/where/store-marker-T.png';
+// 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=7|69261B|FFFFFF';
 var originIcon = 'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=O|FFFF00|000000';
 var origin1 = new google.maps.LatLng(55.930, -3.118);
 var origin2 = 'Greenwich, England';
@@ -56,7 +57,8 @@ function load() {
 		
 $(document).ready(function() {
 //    initialize();
-    load(); 
+    // load(); 
+$('#map-container').hide();
 
 var l = window.location;
 var base_url = l.protocol + "//" + l.host + "/" + l.pathname.split('/')[1];
@@ -67,7 +69,7 @@ var base_url = l.protocol + "//" + l.host + "/" + l.pathname.split('/')[1];
 		url: base_url +"/sites/all/themes/terra/where/retailers.csv",
 		dataType: "text",
 		success: function(data) {processData(data);}	 
-	});   
+	});  	
 });
 
 //--------------------------------------------------------------------------------------------------------------
@@ -139,7 +141,8 @@ function processData(allText)
 
  function getcoord() 
  {
-			//load();
+ 	$('#map-container').show();
+	load();
 			deleteOverlays();
 			if( document.getElementById("addressInput").value !="") 
 			
@@ -149,7 +152,7 @@ function processData(allText)
 							var address = document.getElementById("address").value + "," + document.getElementById("addressInput").value + "," + document.getElementById("addressInput").value;
 							var country =  document.getElementById('countrycode').value;
 							var rad=document.getElementById('radiusSelect').value/1.609344;
-							var sidebar = document.getElementById('sidebar');
+							var sidebar = document.getElementById('sidebar-list');							 
 							sidebar.innerHTML = '';
 							//var loc=[];
 							var dd;
@@ -163,16 +166,20 @@ function processData(allText)
 									  {
 												loc[0]=results[0].geometry.location.lat();
 												loc[1]=results[0].geometry.location.lng();
+												var num = 0;
 												if (country == 'US') 
 												{
 													for (var z=0;z<numusstores;z++)
 													{
 														if(getdistance(loc[0],loc[1],latt[z],long[z])<rad)
 														{
-															//numofstores++;
-														addMarker(destinationsArray[z], true);
 														
-														var sidebarEntry = createSidebarEntry(storesusname[z], destinationsArray[z]);
+														num++;
+														//numofstores++;
+														addMarker(destinationsArray[z], true, num);
+														
+														
+														var sidebarEntry = createSidebarEntry(storesusname[z], destinationsArray[z], num);
 														sidebar.appendChild(sidebarEntry);
 														}
 													}
@@ -184,14 +191,20 @@ function processData(allText)
 													{
 														if(getdistance(loc[0],loc[1],lattca[zz],longca[zz])<rad)
 														{
+															
+															num++;
 															//numofstores++;
-															addMarker(storesca[zz], true);
-														var sidebarEntry = createSidebarEntry(storescaname[zz], storesca[zz]);
-														sidebar.appendChild(sidebarEntry);
+															addMarker(storesca[zz], true, num);
+
+															
+															var sidebarEntry = createSidebarEntry(storescaname[zz], storesca[zz], num);
+															sidebar.appendChild(sidebarEntry);
 														}
 													}
 												}
-							
+
+												var outputDiv = document.getElementById('outputDiv');
+    											outputDiv.innerHTML = '<b>YOUR SEARCH HAS RETURNED:</b> ' + num + ' result(s)';							
 					}
 						
 						
@@ -211,12 +224,18 @@ function processData(allText)
  }
 
 //--------------------------------------------------------------------------------------------------------------
-function createSidebarEntry(name, address) {
-    var div = document.createElement('div');
-    var html = '<b>' + name + '</b> :' + address ;
+function createSidebarEntry(name, address, num) {
+    var li = document.createElement('li');    
+    var html = '<div class="list-label">' + num + '</div>';
+    var address_arr = address.split(',');
 
+    html +=  '<div class="list-details"><div class="list-content"><div class="loc-name">' + name + '</div>';
+    $.each(address_arr, function(index, addr){
+    	html +=  '<div class="loc-addr">' + addr + '</div>';
+    });
 
-    div.innerHTML = html;
+    html +=  '</div></div>' ;
+    li.innerHTML = html;
     //div.style.cursor = 'pointer';
    // //div.style.marginBottom = '30px';
     //GEvent.addDomListener(div, 'click', function() {
@@ -228,7 +247,7 @@ function createSidebarEntry(name, address) {
    // GEvent.addDomListener(div, 'mouseout', function() {
     //    div.style.backgroundColor = '#F9F3DC';
     //});
-    return div;
+    return li;
 }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -327,10 +346,17 @@ function callback(response, status) {
   }
 }
 //--------------------------------------------------------------------------------------------------------------
-function addMarker(location, isDestination) {
+function addMarker(location, isDestination, num) {
   var icon;
   if (isDestination) {
-    icon = destinationIcon;
+  	if(num){
+  		icon = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + num + '|69261B|FFFFFF';
+  	}
+  	else {
+  		icon = destinationIcon;
+  	}
+
+    
   } else {
     icon = originIcon;
   }
@@ -339,11 +365,25 @@ function addMarker(location, isDestination) {
 	{
       bounds.extend(results[0].geometry.location);
       map.fitBounds(bounds);
+
       var marker = new google.maps.Marker({
         map: map,
         position: results[0].geometry.location,
         icon: icon
       });
+
+  //     var marker = new MarkerWithLabel({
+	 //   map: map,
+  //      position: results[0].geometry.location,
+	 //   draggable: true,
+	 //   raiseOnDrag: true,
+	 //   labelContent: "2", // your number
+	 //   icon: icon,
+	 //   labelAnchor: new google.maps.Point(3, 30),
+	 //   labelClass: "labels", // the CSS class for the label
+	 //   labelInBackground: false
+	 // });
+
       markersArray.push(marker);
     } 
 		//else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) 

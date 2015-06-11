@@ -7,6 +7,7 @@
   </style>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script src="<?php echo myfunctionlib_theme_path('where/markerwithlabel.js'); ?>"></script>
     <script src="<?php echo myfunctionlib_theme_path('where/map.js'); ?>"></script>
     <script>
       $(function()
@@ -62,7 +63,7 @@
       <div id="searchbar">
           <div id="search-location"> 
           
-            <strong>Radius:</strong>
+            <b>Radius:</b>
             <select name="radiusSelect" id="radiusSelect">
               <option value="1">1 mile</option>
               <option value="5">5 miles</option>
@@ -74,9 +75,7 @@
                   
             <br>
             <br>
-            <input type="button" value="Search Locations" onClick="getcoord();">
-            <br>
-            
+            <input type="button" value="Search" onClick="getcoord();">            
             <div id="outputDiv"></div>
           </div>
           
@@ -85,7 +84,9 @@
     </tr> 
   </table>
   <div id="map-container">
-    <div id="sidebar"></div>
+    <div id="sidebar">
+      <ul id="sidebar-list"></ul>
+    </div>
     <div id="map-canvas"></div>
   </div> 
    
