@@ -18,7 +18,8 @@ function myfunctionlib_get_fields($content){
     			$field_name = substr($field, 6);
     			if ($value['#field_type'] == 'text') {
     				
-                    if($field_name == 'natural_habitat'){
+                    if(($field_name == 'natural_habitat') 
+                      || ($field_name == 'includes')){
                         $field_value = $value['#items'];
                     }
                     else{

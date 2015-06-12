@@ -3,16 +3,10 @@
   $fields = myfunctionlib_get_fields($content);  
   
   //extract($fields);  
-  $animal_specifications = array('full_name',
-                            'name_means', 
-                            'period', 
-                            'order', 
-                            'suborder',
-                            'diet',
+  $animal_specifications = array('diet',
                             'size',
-                            'weight',
-                            'discoverer',
-                            'species',
+                            'weight', 
+                            'species',                             
                             'average_life_span',
                             'group_name',
                             'protection_status',
@@ -49,16 +43,11 @@
           </div>
       <?php endforeach; ?>
     </div> 
-    <div class="productThumbDesc">
-      <p>1 Wooden Barn, 1 Ladder, 2 Food Troughs, 4 Bales of Hay, 1 Hayloft Pulley Tray, 1 Removable Loft, 10 Fence
-      </p> 
-    </div>    
     <div id="productRetailInfoContainer">
       <ul>        
         <?php foreach ($product_informations as $value): ?>
          <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
         <?php endforeach; ?>
-        <li><a href="#">Download the Instructions Sheet</a></li>
       </ul>
     </div>      
   </div>

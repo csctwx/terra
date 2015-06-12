@@ -417,6 +417,8 @@ body.node-type-wild-animals #container {
   width: auto;  
   position: relative;
   bottom: 5px;
+  border-top: none;
+  margin-top: 0;
 }
 
 #productPictureMapContainer{
@@ -501,6 +503,7 @@ body.node-type-wild-animals #container {
 
 .productTitleDetailPageThumbContainerUnder {
   background: transparent;
+  margin-bottom: 2%;
 }
 
 @media screen and (max-width: 950px){
@@ -570,6 +573,8 @@ body.node-type-wild-animals #container {
 
 .productThumbDesc{
   margin-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
 }
 @media (max-width: 992px) {
   #productPictureInnerContainer{
@@ -797,3 +802,11 @@ table.thumbPageContainer td input[type=button] {
   padding-left: 10px;
 }
 
+.productThumbDesc ul{
+  list-style-type: none;
+}
+
+.productThumbDesc ul li {
+  display: inline-block;
+  margin-right: 7px;
+}

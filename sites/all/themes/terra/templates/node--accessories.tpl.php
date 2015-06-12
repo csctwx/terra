@@ -1,18 +1,10 @@
 <?php 
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
-  
+// kpr($fields); die();  
   //extract($fields);  
-  $animal_specifications = array('full_name',
-                            'name_means', 
-                            'period', 
-                            'order', 
-                            'suborder',
-                            'diet',
-                            'size',
-                            'weight',
-                            'discoverer',
-                           ); 
+  // $animal_specifications = array('includes',
+  //                          ); 
   $product_informations = array('product_no', 
                             'age_grade', 
                             'measurements', 
@@ -46,8 +38,13 @@
       <?php endforeach; ?>
     </div> 
     <div class="productThumbDesc">
-      <p>1 Wooden Barn, 1 Ladder, 2 Food Troughs, 4 Bales of Hay, 1 Hayloft Pulley Tray, 1 Removable Loft, 10 Fence
-      </p> 
+      <?php if($fields['includes']): ?>
+      <ul>
+      <?php foreach ($fields['includes']['value'] as $include): ?>
+        <li><?php echo $include['value']; ?></li>
+      <?php endforeach; ?>  
+      </ul> 
+      <?php endif; ?>
     </div>    
     <div id="productRetailInfoContainer">
       <ul>        
@@ -65,7 +62,7 @@
   <div id="description" class="drop-cap">
     <?php echo $fields['descriptive_text']['value']; ?>
   </div> 
-  <h3>CHARACTERISTICS</h3>
+  <!-- <h3>CHARACTERISTICS</h3>
   <div class="productSpecsContainer">
     <table class="table">      
       <?php foreach ($animal_specifications as $value): ?>
@@ -77,7 +74,7 @@
         <?php endif; ?>       
       <?php endforeach; ?>      
     </table>    
-  </div>
+  </div> -->
   <div id="productFactsContainer">
     <div class="productHabitatContainer">
     <span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>

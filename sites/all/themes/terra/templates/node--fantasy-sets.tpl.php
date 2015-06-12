@@ -2,17 +2,7 @@
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
   
-  //extract($fields);  
-  $animal_specifications = array('full_name',
-                            'name_means', 
-                            'period', 
-                            'order', 
-                            'suborder',
-                            'diet',
-                            'size',
-                            'weight',
-                            'discoverer',
-                           ); 
+  
   $product_informations = array('product_no', 
                             'age_grade', 
                             'measurements', 
@@ -44,11 +34,7 @@
             <a href="#"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
           </div>
       <?php endforeach; ?>
-    </div> 
-    <div class="productThumbDesc">
-      <p>1 Wooden Barn, 1 Ladder, 2 Food Troughs, 4 Bales of Hay, 1 Hayloft Pulley Tray, 1 Removable Loft, 10 Fence
-      </p> 
-    </div>    
+    </div>      
     <div id="productRetailInfoContainer">
       <ul>        
         <?php foreach ($product_informations as $value): ?>
@@ -65,19 +51,7 @@
   <div id="description" class="drop-cap">
     <?php echo $fields['descriptive_text']['value']; ?>
   </div> 
-  <h3>CHARACTERISTICS</h3>
-  <div class="productSpecsContainer">
-    <table class="table">      
-      <?php foreach ($animal_specifications as $value): ?>
-        <?php if(isset($fields[$value]['value'])): ?>
-        <tr>
-          <td class="listTitle"><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
-          <td class="listValue"><?php echo $fields[$value]['value']; ?></td>
-        </tr>
-        <?php endif; ?>       
-      <?php endforeach; ?>      
-    </table>    
-  </div>
+  
   <div id="productFactsContainer">
     <div class="productHabitatContainer">
     <span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>

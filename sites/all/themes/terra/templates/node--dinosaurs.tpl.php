@@ -45,10 +45,6 @@
           </div>
       <?php endforeach; ?>
     </div> 
-    <div class="productThumbDesc">
-      <p>1 Wooden Barn, 1 Ladder, 2 Food Troughs, 4 Bales of Hay, 1 Hayloft Pulley Tray, 1 Removable Loft, 10 Fence
-      </p> 
-    </div>    
     <div id="productRetailInfoContainer">
       <ul>        
         <?php foreach ($product_informations as $value): ?>
