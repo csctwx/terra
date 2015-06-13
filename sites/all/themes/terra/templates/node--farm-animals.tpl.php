@@ -24,12 +24,12 @@
   <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
   <h2><?php echo $title; ?></h2>
 </div>
-<div class="productTitleDetailPageThumbContainer">
+<!-- <div class="productTitleDetailPageThumbContainer">
   <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
       <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
       <div class="productTitleDetailPageThumb"><a href="#"><img src="<?php echo $thumbnail_url; ?>" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a></div>
   <?php endforeach; ?>
-</div>
+</div> -->
 
 <div id="productPictureMapContainer" class="row">
    <div id="productPictureInnerContainer" class="col-xs-12 col-md-6 col-md-height  vcenter">  
@@ -40,7 +40,7 @@
       <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
           <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
           <div class="productTitleDetailPageThumb col-xs-2">
-            <a href="#"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
+            <a href="javascript:void(0)"><img src="<?php echo $thumbnail_url; ?>" width="100%" height="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
           </div>
       <?php endforeach; ?>
     </div>      
