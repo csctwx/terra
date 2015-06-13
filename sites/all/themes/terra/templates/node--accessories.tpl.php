@@ -1,17 +1,11 @@
 <?php 
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
-// kpr($fields); die();  
-  //extract($fields);  
-  // $animal_specifications = array('includes',
-  //                          ); 
   $product_informations = array('product_no', 
                             'age_grade', 
                             'measurements', 
                             'piece_count',                            
                           );  
-
- // kpr($fields); die();                       
 ?>
 <div id="productTitleDetailPageDino">
   <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
@@ -51,30 +45,18 @@
         <?php foreach ($product_informations as $value): ?>
          <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
         <?php endforeach; ?>
-        <li><a href="#">Download the Instructions Sheet</a></li>
+        <?php if(is_array($fields['instructions_sheet']['url'])): ?>
+        <li>Download the <a href="<?php echo $fields['instructions_sheet']['url'][0]['picture_url']; ?>">Instructions Sheet</a></li>
+        <?php endif; ?>
       </ul>
     </div>      
-  </div>
- <!-- </div>   -->
+  </div> 
 </div>
 <div id="productDescriptionContainer">
   <h3>DESCRIPTION</h3>  
   <div id="description" class="drop-cap">
     <?php echo $fields['descriptive_text']['value']; ?>
-  </div> 
-  <!-- <h3>CHARACTERISTICS</h3>
-  <div class="productSpecsContainer">
-    <table class="table">      
-      <?php foreach ($animal_specifications as $value): ?>
-        <?php if(isset($fields[$value]['value'])): ?>
-        <tr>
-          <td class="listTitle"><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
-          <td class="listValue"><?php echo $fields[$value]['value']; ?></td>
-        </tr>
-        <?php endif; ?>       
-      <?php endforeach; ?>      
-    </table>    
-  </div> -->
+  </div>   
   <div id="productFactsContainer">
     <div class="productHabitatContainer">
     <span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>

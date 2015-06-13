@@ -232,12 +232,12 @@ body.page-node-8 #topNavContainer ul li a.american {
   display: block;
   color:#802a23;
   font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
-  font-size: 100% !important;
+  font-size: 11px !important;
+  text-transform: uppercase;
 }
 
-.views-field-title {
-  //padding:10px 0 20px;
-
+.front .views-field-title {
+  /*margin-top: 14px;*/
 }
 
 /* arrow style */
@@ -529,8 +529,8 @@ body.node-type-wild-animals #container {
   background-color: #fff;
 }
 
-.thumbPageContainer .thumbnail .views-field-title{
-  /*position:relative;*/
+.thumbnail .views-field-title{  
+  margin: 15px auto;
 }
 
 /*.thumbnail .views-field-title .field-content{

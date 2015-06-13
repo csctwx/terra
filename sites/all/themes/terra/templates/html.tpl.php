@@ -44,9 +44,9 @@
 
 
       /* set equal height thumbnail images*/
-      $('.thumbnail').css({
-          'height': $('.thumbnail').height() + $('.views-field-title').height() + 10
-      });
+      // $('.thumbnail').css({
+      //     'height': $('.thumbnail').height() + $('.views-field-title').height() + 10
+      // });
 
       // add class img-responsive to carousel thumbnail image
       $('.carousel[data-type="multi"] .item .thumbnail img').addClass('img-responsive');  

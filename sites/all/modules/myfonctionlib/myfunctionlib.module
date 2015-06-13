@@ -29,7 +29,8 @@ function myfunctionlib_get_fields($content){
                     $fields[$field_name] = $field_value;
     				
     			}
-    			elseif ($value['#field_type'] == 'image') {
+    			elseif (($value['#field_type'] == 'image') 
+                        || ($value['#field_type'] == 'file')) {
                     for ($i=0; $i < count($value['#items']); $i++) { 
                         $field_value[$i] = $value['#items'][$i]['uri'];
                         //$field_path[$i] = file_create_url($field_value[$i]);

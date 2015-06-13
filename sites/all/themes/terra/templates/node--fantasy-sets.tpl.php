@@ -40,7 +40,6 @@
         <?php foreach ($product_informations as $value): ?>
          <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
         <?php endforeach; ?>
-        <li><a href="#">Download the Instructions Sheet</a></li>
       </ul>
     </div>      
   </div>
