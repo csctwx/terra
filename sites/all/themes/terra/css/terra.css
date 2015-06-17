@@ -288,13 +288,24 @@ a.right.carousel-control img {
 #productTitleDetailPage {
     width:75%; 
     margin: 7% auto 0;
-    padding-left: 15px;
+    /*padding-left: 23px;*/
 }
 
 #breadcrumb {
     width:75%; 
     margin: 1% auto 0;
-    padding-left: 15px;
+    /*padding-left: 23px;*/
+}
+
+#container > .view {
+    width:75%; 
+    margin: 0 auto;
+}
+
+.view .thumbPageContainer {
+   width: 100%;     
+   margin: 0 auto !important;
+   padding: 0; 
 }
 
 #breadcrumb .breadcrumb{    
@@ -330,7 +341,9 @@ body.not-front #crossSellingContainer {
    background: transparent; 
 }
 
-body > #container {
+body > #container ,
+#containerHomepage,
+#bottomFooterContainer{
   max-width: 1242px;
 }
 

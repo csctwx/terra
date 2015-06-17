@@ -8,7 +8,7 @@
   <?php if (is_object($views_page)): ?>
 	  <div id="productTitleDetailPage">
 		<h4>Figurines</h4>
-		<h2><?php echo $title; ?></h2>
+		<h2><?php echo ($title=='Figurines')?'Categories':$title; ?></h2>
 	  </div>
   <?php endif; ?>
   <?php print render($page['content']); ?>

@@ -9,31 +9,30 @@ function terra_preprocess_page(&$vars, $hook) {
 
   $vars['scripts'] = drupal_get_js();  
   
-  // modify breadcrumbs if node type belong to categories
-  $node_type = $vars['node']->type; //kpr($vars); die();
-  if($node_type){ 
-    if($node_type == 'accessories') {
-      myfunctionlib_set_breadcrumbs('',$node_type);
-    }
-    else{
-      //get all figurines's types
-      $figurines_node_ids = taxonomy_select_nodes(1);
-      // $figurines_node = node_load($figurines_types[0]);
-      $figurines_types = array();
-      foreach ($figurines_node_ids as $figurines_node_id) {
-        $figurines_node = node_load($figurines_node_id);
-        $figurines_types[] = str_replace(' ', '_', strtolower($figurines_node->title));
-      }
-      
-      if(in_array($node_type, $figurines_types)){
-        myfunctionlib_set_breadcrumbs($node_type, 'figurines');
-      }
+  // modify breadcrumbs if it is view page or node type belong to categories
+  $figurines_node_ids = taxonomy_select_nodes(1);
+  $figurines_types = array();
+  foreach ($figurines_node_ids as $figurines_node_id) {
+    $figurines_node = node_load($figurines_node_id);
+    $figurines_types[] = str_replace(' ', '_', strtolower($figurines_node->title));
+  }
+  $views_page = views_get_page_view();
+  if (is_object($views_page)) {    
+    $view_name = $views_page->name; 
+    if(in_array($view_name, $figurines_types)){
+      myfunctionlib_set_breadcrumbs('', 'figurines');
     }    
   }
- 
 
-  //kpr($node_type); die();
-  
+  $node_type = $vars['node']->type;  
+  if($node_type){ 
+    if($node_type == 'accessories') {
+      myfunctionlib_set_breadcrumbs('', 'accessories');
+    }
+    elseif(in_array($node_type, $figurines_types)){      
+        myfunctionlib_set_breadcrumbs($node_type, 'figurines');
+    }    
+  }
 }
 
 function terra_preprocess_image_style(&$vars) { 
