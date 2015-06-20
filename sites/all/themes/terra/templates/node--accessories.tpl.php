@@ -6,6 +6,7 @@
                             'measurements', 
                             'piece_count',                            
                           );  
+  $other_products = myfunctionlib_get_other_products($type, $node->nid);     
 ?>
 <div id="productTitleDetailPageDino">
   <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
@@ -79,7 +80,25 @@
   <div class="crossSellingThumbContainer"> 
 
     <div class="thumbPageContainer row"> 
+      <?php foreach ($other_products as $index => $product):?>  
           <div class="item">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="thumbnail" style="">  
+                <div class="views-field views-field-field-product-picture">        
+                  <div class="field-content"><a href="<?php echo $product['url']; ?>">
+                    <img typeof="foaf:Image" src="<?php echo $product['thumbnail_url']; ?>" width="160" height="160" alt=""></a>
+                  </div>  
+                </div>  
+                <div class="views-field views-field-title">        
+                  <span class="field-content">
+                    <a href="/terra/dinosaurs"><?php echo $product['title']; ?></a>
+                  </span>  
+                </div>
+               </div>
+            </div>
+          </div>
+        <?php endforeach; ?>      
+          <!-- <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="thumbnail" style="">  
                 <div class="views-field views-field-field-product-picture">        
@@ -147,7 +166,7 @@
                 </div>
                </div>
             </div>
-          </div>
+          </div> -->
     </div>
   </div>
 </div>
