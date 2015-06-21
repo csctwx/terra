@@ -68,7 +68,7 @@ function field_tools_field_references_overview() {
   $rows = array();
   foreach ($fields as $field_name => $field) {
     // TODO: also deal with taxonomy term ref, product ref.
-    if (!in_array($field['type'], array('entityreference', 'taxonomy_term_reference'))) {
+    if (!in_array($field['type'], array('entityreference'))) {
       continue;
     }
 
@@ -79,49 +79,13 @@ function field_tools_field_references_overview() {
     $row[] = $field_types[$field['type']]['label'];
     // Column: field instances.
     $row[] = field_tools_field_instances_list($field);
-    // Column: target entity type.
+    // Column: targets.
     switch ($field['type']) {
-      case 'taxonomy_term_reference':
-        $target_type = 'taxonomy_term';
-        break;
       case 'entityreference':
         $target_type = $field['settings']['target_type'];
-    } // switch
+    }
+    // TODO: target bundles.
     $row[] = $entity_info[$target_type]['label'];
-    // Column: target bundles.
-    switch ($field['type']) {
-      case 'taxonomy_term_reference':
-        $vocabulary = $field['settings']['allowed_values'][0]['vocabulary'];
-        $row[] = $entity_info['taxonomy_term']['bundles'][$vocabulary]['label'];
-        break;
-      case 'entityreference':
-        switch ($field['settings']['handler']) {
-          case 'base':
-            // Base handler: select bundles.
-            if (empty($field['settings']['handler_settings']['target_bundles'])) {
-              // Nothing means all bundles.
-              $row[] = t("All bundles");
-            }
-            else {
-              $target_bundles = $field['settings']['handler_settings']['target_bundles'];
-              $items = array();
-              foreach ($target_bundles as $target_bundle) {
-                $items[] = l($entity_info[$target_type]['bundles'][$target_bundle]['label'],
-                  _field_ui_bundle_admin_path($target_type, $target_bundle));
-              }
-
-              $row[] = theme('item_list', array(
-                'items' => $items,
-              ));
-            }
-            break;
-          default:
-            $row[] = "**other handler**";
-            // TODO: view selection
-
-        } // switch entref handler
-        break;
-    } // switch field type
 
     $rows[] = $row;
   }
@@ -130,8 +94,7 @@ function field_tools_field_references_overview() {
     t('Field name'),
     t('Type'),
     t('Instances'),
-    t('Target entity type'),
-    t('Target bundles'),
+    t('Target'),
   );
 
   $output .= theme('table', array(

@@ -90,6 +90,9 @@ list of stores that sometimes carry our toys.
       <ul id="sidebar-list"></ul>
     </div>
     <div id="map-canvas"></div>
+    <div id="sidebar2">
+      <ul id="sidebar-list-2"></ul>
+    </div>
   </div> 
    
 </div>

@@ -315,7 +315,39 @@ a.right.carousel-control img {
 #productTitleDetailPageDino {
     width:75%; 
     margin: 8% auto 0;
-    /*padding-left: 15px;*/
+}
+
+#productTitleDetailPage h2, #productTitleDetailPageDino h2 {
+  font-size: 210%;
+}
+
+body.node-type-dinosaurs #productTitleDetailPageDino {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-top: 85px;
+    height: 148px;
+}
+
+@media (min-width: 992px){
+  body.node-type-dinosaurs #productTitleDetailPageDino {    
+    background: url("../images/product_page_lorusso_signature.png") top right no-repeat ;
+  }
+}
+
+@media (max-width: 992px){
+  body.node-type-dinosaurs #productTitleDetailPageDino {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-top: 25px;
+    height: 88px;
+  }
+  body.node-type-dinosaurs #productDescriptionContainer {
+    background: url("../images/product_page_lorusso_signature_mobile.png") top center no-repeat ;
+    background-size: 100%;
+    padding-top: 25%;
+    margin-top: 20px;
+  }
+
 }
 
 
@@ -822,4 +854,66 @@ table.thumbPageContainer td input[type=button] {
 .productThumbDesc ul li {
   display: inline-block;
   margin-right: 7px;
+}
+
+.thumbnail img{
+  background-color: #fff;
+}
+
+#sidebar.large{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #sidebar{
+    display: block;
+  } 
+  #sidebar2{
+    display: none;
+  }   
+}
+
+@media (max-width: 992px) {
+  #map-container {
+    height: 630px;
+  }
+
+  #map-canvas {    
+    width: 100% !important;
+    height: 320px !important;
+    float: none;
+  }
+   
+  #sidebar{
+    display: none;
+  } 
+  #sidebar2{
+    display: block;
+    overflow-y: auto;
+    height: 300px;
+  } 
+}
+
+.crossSellingThumbContainer{
+  padding: 0;
+}
+
+ul#sidebar-list-2 {
+    clear: left;
+    display: block;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul#sidebar-list-2 li {
+    border: 1px solid #ffffff;
+    clear: left;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 3% 4%;
+    width: 92%;
 }

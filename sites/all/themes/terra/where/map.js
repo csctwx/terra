@@ -152,8 +152,10 @@ function processData(allText)
 							var address = document.getElementById("address").value + "," + document.getElementById("addressInput").value + "," + document.getElementById("addressInput").value;
 							var country =  document.getElementById('countrycode').value;
 							var rad=document.getElementById('radiusSelect').value/1.609344;
-							var sidebar = document.getElementById('sidebar-list');							 
+							var sidebar = document.getElementById('sidebar-list');
+							var sidebar2 = document.getElementById('sidebar-list-2');							 
 							sidebar.innerHTML = '';
+							sidebar2.innerHTML = '';
 							//var loc=[];
 							var dd;
 							var numofstores=0;
@@ -180,7 +182,9 @@ function processData(allText)
 														
 														
 														var sidebarEntry = createSidebarEntry(storesusname[z], destinationsArray[z], num);
+														var sidebarEntry2 = createSidebarEntry2(storesusname[z], destinationsArray[z], num);
 														sidebar.appendChild(sidebarEntry);
+														sidebar2.appendChild(sidebarEntry2);
 														}
 													}
 												}
@@ -198,7 +202,9 @@ function processData(allText)
 
 															
 															var sidebarEntry = createSidebarEntry(storescaname[zz], storesca[zz], num);
+															var sidebarEntry2 = createSidebarEntry2(storescaname[zz], storesca[zz], num);
 															sidebar.appendChild(sidebarEntry);
+															sidebar2.appendChild(sidebarEntry2);
 														}
 													}
 												}
@@ -235,18 +241,23 @@ function createSidebarEntry(name, address, num) {
     });
 
     html +=  '</div></div>' ;
-    li.innerHTML = html;
-    //div.style.cursor = 'pointer';
-   // //div.style.marginBottom = '30px';
-    //GEvent.addDomListener(div, 'click', function() {
-    //    GEvent.trigger(marker, 'click');
-    //});
-   // GEvent.addDomListener(div, 'mouseover', function() {
-    //    div.style.backgroundColor = '#dcc9a8';
-    //});
-   // GEvent.addDomListener(div, 'mouseout', function() {
-    //    div.style.backgroundColor = '#F9F3DC';
-    //});
+    li.innerHTML = html;    
+    return li;
+}
+
+//--------------------------------------------------------------------------------------------------------------
+function createSidebarEntry2(name, address, num) {
+    var li = document.createElement('li');    
+    var html = '<div class="list-label">' + num + '</div>';
+    var address_arr = address.split(',');
+
+    html +=  '<div class="list-details"><div class="list-content"><div class="loc-name">' + name + '</div>';
+    $.each(address_arr, function(index, addr){
+    	html +=  '<span class="loc-addr">' + addr + '</span>';
+    });
+
+    html +=  '</div></div>' ;
+    li.innerHTML = html;    
     return li;
 }
 
