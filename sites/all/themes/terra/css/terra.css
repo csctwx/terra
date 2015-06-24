@@ -368,8 +368,21 @@ body.node-type-dinosaurs #productTitleDetailPageDino {
     -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
     border-image: url(../images/border.png) 30 round;
-    
+    /*border-image-width: 20px;*/
   }  
+}
+
+@media (max-width: 992px){
+  #container { 
+    border-image-width: 10px; 
+  }
+}
+
+@media (min-width: 992px){
+  #container { 
+    padding: 15px 6px;
+    border-image-width: 19px; 
+  }
 }
 
 body.not-front #crossSellingContainer {
