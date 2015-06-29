@@ -12,6 +12,7 @@ body {
 }
 
 body.front,
+body.page-figurines,
 body.page-categories,
 body.page-node-11 {	
 	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
@@ -21,9 +22,6 @@ body.page-node-11 {
 	
 }
 
-body.page-figurines,
-body.page-mini-animals,
-body.page-horses,
 body.node-type-dinosaurs,
 body.page-dinosaurs {
   background: url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg) no-repeat fixed top, 
