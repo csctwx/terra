@@ -31,6 +31,20 @@ body.page-dinosaurs {
   background-color: #bd6e4d;
 }
 
+body.node-type-horses,
+body.page-horses {
+  background: url(../images/horses-Backdrop-only-iStock-fadeout.jpg) no-repeat fixed top, 
+  rgb(202,117,53) url(../images/sticky-footer-kraft-strip-horse-green.jpg) repeat-x fixed bottom;
+  background-color: #bd6e4d;
+}
+
+body.node-type-mini-animals,
+body.page-mini-animals {
+  background: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg) no-repeat fixed top, 
+  rgb(202,117,53) url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg) repeat-x fixed bottom;
+  background-color: #bd6e4d;
+}
+
 body.node-type-fantasy-sets,
 body.page-fantasy-sets {
   background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
@@ -85,38 +99,6 @@ body.page-accessories {
   background-attachment: fixed, fixed;
 }
 
-
-/*body.front #topNavContainer ul li a.home,
-body.page-categories #topNavContainer ul li a.figurines,
-body.node-type-dinosaurs #topNavContainer ul li a.figurines,
-body.node-type-fantasy-sets #topNavContainer ul li a.figurines,
-body.page-dinosaurs #topNavContainer ul li a.figurines,
-body.page-fantasy-sets #topNavContainer ul li a.figurines,
-body.page-node-7 #topNavContainer ul li a.figurines,
-body.page-node-8 #topNavContainer ul li a.figurines,
-body.page-node-9 #topNavContainer ul li a.figurines,
-body.page-node-10 #topNavContainer ul li a.figurines,
-body.page-node-5 #topNavContainer ul li a.accessories,
-body.page-node-11 #topNavContainer ul li a.buy {	
-	color:rgb(80,61,51) !important;	
-}
-
-@media (max-width: 990px) {
-  body.front #topNavContainer ul li a.home,
-  body.page-categories #topNavContainer ul li a.figurines,
-  body.node-type-dinosaurs #topNavContainer ul li a.figurines,
-  body.page-node-4 #topNavContainer ul li a.figurines,
-  body.page-node-6 #topNavContainer ul li a.figurines,
-  body.page-node-7 #topNavContainer ul li a.figurines,
-  body.page-node-8 #topNavContainer ul li a.figurines,
-  body.page-node-9 #topNavContainer ul li a.figurines,
-  body.page-node-10 #topNavContainer ul li a.figurines,
-  body.page-node-5 #topNavContainer ul li a.accessories,
-  body.page-node-11 #topNavContainer ul li a.buy {  
-    color:orange !important; 
-  }
-}*/
-
 #topNavContainer #cssmenu ul li a.active,
 #topNavContainer #cssmenu ul li a.active-trail{
   color:rgb(80,61,51) !important;
@@ -134,40 +116,6 @@ body.page-node-11 #topNavContainer ul li a.buy {
 #topNavContainer #cssmenu ul li ul li a.active-trail{
   color:orange !important;
 }
-
-/*body.front #topNavContainer ul li a.home,
-body.page-node-5 #topNavContainer ul li a.accessories,
-body.page-node-11 #topNavContainer ul li a.buy {
-  cursor:default;  
-}
-
-body.node-type-accessories #topNavContainer ul li a.accessories {  
-  color:rgb(80,61,51) !important; 
-}
-
-body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
-body.page-dinosaurs #topNavContainer ul li a.dinosaurs, 
-body.page-fantasy-sets #topNavContainer ul li a.fantasy, 
-body.node-type-fantasy-sets #topNavContainer ul li a.fantasy, 
-body.node-type-wild-animals #topNavContainer ul li a.wild, 
-body.page-node-9 #topNavContainer ul li a.wild, 
-body.node-type-farm-animals #topNavContainer ul li a.farm,
-body.page-node-7 #topNavContainer ul li a.farm, 
-body.node-type-marine-animals #topNavContainer ul li a.marine, 
-body.page-node-10 #topNavContainer ul li a.marine, 
-body.node-type-north-american-animals #topNavContainer ul li a.american,
-body.page-node-8 #topNavContainer ul li a.american {  
-  color: orange !important;
-}
-
-body.page-node-4 #topNavContainer ul li a.dinosaurs, 
-body.page-node-6 #topNavContainer ul li a.fantasy, 
-body.page-node-9 #topNavContainer ul li a.wild, 
-body.page-node-7 #topNavContainer ul li a.farm, 
-body.page-node-10 #topNavContainer ul li a.marine, 
-body.page-node-8 #topNavContainer ul li a.american {
-  cursor: default !important;  
-}*/
 
 /*  Carousel set */
 .carousel-control { 
@@ -436,6 +384,14 @@ body.node-type-wild-animals #container {
 
   body.page-marine-animals #container {    
     background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;
+  }
+
+  body.page-horses #container {    
+    background: #ffe9bf url("../images/map-beige-bg-horses.jpg") no-repeat ;
+  }
+
+  body.page-mini-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-mini.jpg") no-repeat ;
   }
 
   body.page-accessories #container {    
