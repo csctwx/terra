@@ -3,6 +3,10 @@ body {
   font-weight: normal;
 }
 
+#description p {
+text-align:left !important;
+}
+
 #topNavContainer {    
     z-index: 99;    
 }
@@ -18,6 +22,7 @@ body.page-node-11 {
 	background-repeat:repeat-x;
 	background-color:rgb(80,61,51);
 	background-position:bottom;
+	background-attachment:fixed;
 	
 }
 
@@ -223,12 +228,12 @@ body.page-node-8 #topNavContainer ul li a.american {
 }
 
 .thumbnail:hover{
-  background-color: #403e37;
+  background-color: rgb(80,61,51);
 }
 
 .thumbnail:hover .views-field-title a,
 .thumbnail:hover .views-field-title a:visited{
-  color:#fae584;
+  color:cornsilk;
 }
 .views-field-title a,
 .views-field-title a:visited{
@@ -334,6 +339,8 @@ body.node-type-dinosaurs #productTitleDetailPageDino {
 @media (min-width: 992px){
   body.node-type-dinosaurs #productTitleDetailPageDino {    
     background: url("../images/product_page_lorusso_signature.png") top right no-repeat ;
+	background-size:205px;
+    background-position:100% 100%;
   }
 }
 
@@ -389,11 +396,14 @@ body.not-front #crossSellingContainer {
    background: transparent; 
 }
 
-body > #container ,
-#containerHomepage,
+body > #container , #containerHomepage,
 #bottomFooterContainer{
-  max-width: 1242px;
+  max-width: 1234px;
 }
+
+
+
+
 
 
 body.node-type-north-american-animals #container,
@@ -411,35 +421,75 @@ body.node-type-wild-animals #container {
   
   body.page-north-american-animals #container,
   body.page-categories #container {    
-    background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-african.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
   
   body.page-dinosaurs #container {    
-    background: #ffe9bf url("../images/map-beige-bg-dinosaurs-signature.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-dinosaurs-signature.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-dinosaurs-signature.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
   
   body.page-fantasy-sets #container {    
-    background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-fantasy.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-farm-animals #container {    
-    background: #ffe9bf url("../images/map-beige-bg-farm.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-farm.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-farm.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-wild-animals #container {    
-    background: #ffe9bf url("../images/map-beige-bg-wild.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-wild.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-wild.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-north-american-animals #container {    
-    background: #ffe9bf url("../images/map-beige-bg-american.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-american.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-american.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-marine-animals #container {    
-    background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-marine.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-accessories #container {    
-    background: #ffe9bf url("../images/map-beige-bg-accessories.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-accessories.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-accessories.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+	padding-bottom:50px;
   }
 } 
 
@@ -490,7 +540,7 @@ body.node-type-wild-animals #container {
 }
 
 #productDescriptionContainer #description{  
-  margin-top: 0;
+  margin-top: 2%;
   margin-bottom: 5%;
 }
 
@@ -514,7 +564,7 @@ body.node-type-wild-animals #container {
 
 .productSpecsContainer, 
 .productComponentsContainer {    
-    margin: 1% 0;    
+    margin: 2% 0;    
     width: 100%;
 }
 
@@ -524,12 +574,15 @@ body.node-type-wild-animals #container {
 }
 
 .productSpecsContainer .listTitle{
-  background-color: #CEAA9D;
+  background-color: #e3c697;
   text-align: center;
+  padding:3%;
 }
 
 .productSpecsContainer .listValue{
   background-color: #F8ECD4;
+  vertical-align:middle;
+  padding:3%;
 }
 
 .productSpecsContainer table tbody tr td{
@@ -602,7 +655,7 @@ body.node-type-wild-animals #container {
 
 .thumbPageContainer .thumbnail{
   width: 164px;
-  margin:0 auto 10px;
+  margin:0 auto 30% auto;
 }
 
 .carousel-inner .thumbnail{
@@ -617,8 +670,9 @@ body.node-type-wild-animals #container {
 
 @media (max-width: 420px){
   #productPictureDescContainer {
-    width: 75%;
-    margin-left: 12.5%;
+    width: 90%;
+    /*margin-left: 12.5%;*/
+	margin:0 0 0 5%;
   }
 }
 
@@ -656,6 +710,13 @@ body.node-type-wild-animals #container {
     padding: 0;
     border: none;
   }
+  
+  
+  .breadcrumb {
+  font-size:80%;
+}
+  
+  
 }
 
 .vcenter {
@@ -678,8 +739,9 @@ body.node-type-wild-animals #container {
 }
 
 #bottomFooterContainer a {
-  color: rgb(205,190,183);
+  color: cornsilk;
   text-decoration: none;
+  line-height:2em;
 }
 
 #cssmenu ul ul li a {    
@@ -690,21 +752,22 @@ body.node-type-wild-animals #container {
 .breadcrumb {
   background-color: transparent;
   color: maroon;
-  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
 .breadcrumb a, 
 .breadcrumb a:visited {
   color: maroon;
-  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
 }
 
 body.page-node-11 .thumbPageContainer{
   background-color: #e6ce9a !important;
-  padding:10px;
+  /*padding:10px;*/
+  padding:5%;
   text-align: left;
-  border: 1px solid #666;
+  /*border: 1px solid #666;*/
 }
 
 #map-container {
@@ -714,7 +777,7 @@ body.page-node-11 .thumbPageContainer{
   padding: 5px;
   text-align: center;
   display: block;
-  background-color:white; 
+  background-color:#e6ce9a; 
   height: 530px;
 }
 
@@ -761,8 +824,16 @@ ul#sidebar-list li {
   margin: 3% 4%;
   cursor: pointer;
   width: 92%;
-  border: 1px solid #ffffff;
+  border-bottom: 1px solid cornsilk;
 }
+
+
+ul#sidebar-list li:last-of-type {
+  border-bottom:none;
+}
+
+
+
 
 .list-label {
   float: left;
@@ -807,13 +878,22 @@ ul#sidebar-list li {
 
 #container table.thumbPageContainer,
 #container div#map-container{  
-  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  /*font: normal 14px/20px Arial, Helvetica, sans-serif;*/
   color: #333333;
+  font: normal 14px/24px 'ClearSans-Regular', Arial, Helvetica, sans-serif;
 }
 
 table.thumbPageContainer td {
   padding: 5px;
 }
+
+
+table.thumbPageContainer > tbody > tr:first-of-type > td {
+  padding: 0px 0 40px 0 !important;
+}
+
+
+
 
 table.thumbPageContainer td b{
   text-transform: uppercase;
@@ -856,6 +936,7 @@ table.thumbPageContainer td input[type=button] {
 
 #productTitleDetailPage h2, #productTitleDetailPageDino h2 {  
   line-height: 1em;
+  word-wrap:break-word;
 }
 
 #outputDiv {
@@ -925,11 +1006,29 @@ ul#sidebar-list-2 {
 }
 
 ul#sidebar-list-2 li {
-    border: 1px solid #ffffff;
+    border-bottom: 1px solid cornsilk;
     clear: left;
     cursor: pointer;
     display: block;
     float: left;
     margin: 3% 4%;
     width: 92%;
+}
+
+
+@media (max-width: 660px){
+  body.node-type-dinosaurs #productTitleDetailPageDino {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-top: 25px;
+    height: 88px;
+  }
+  body.node-type-dinosaurs #productDescriptionContainer {
+    background: url("../images/product_page_lorusso_signature_mobile.png") top center no-repeat ;
+    background-size: 80%;
+    padding-top: 25%;
+    margin-top: 20px;
+
+  }
+
 }

@@ -806,16 +806,32 @@ html {
 	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
 	color:maroon;
 	text-transform:none;
-	text-transform:uppercase;	
+	text-transform:uppercase;
+	padding:0 0 5% 0;	
 }
 
 
 
-#productTitleDetailPage h4, #productTitleDetailPageDino h4 {
+#productTitleDetailPage h4 {
 	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
 	font-size:150%;
 	color:rgb(80,61,51);
 	text-transform:uppercase;
+	/*padding:13% 0 0 0;*/
+	padding:13% 0 0 0;
+
+
+}
+
+
+
+#productTitleDetailPageDino h4 {
+	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
+	font-size:150%;
+	color:rgb(80,61,51);
+	text-transform:uppercase;
+	/*padding:13% 0 0 0;*/
+	padding:0 0 0 0;
 
 
 }
@@ -1042,7 +1058,7 @@ div.productTitleDetailPageThumb:hover {
 	/*margin:4% 0 0 0;*/
 	margin:2% 0 0 0;
 	text-align:center;
-	padding:3% 0 3% 0;
+	padding:5% 0 0% 0;
 	font-family:'ClearSans-Regular', Arial, Helvetica, sans-serif;
 	/*font-size:95%;*/
 	font-size:110%;
@@ -1187,10 +1203,10 @@ div.productTitleDetailPageThumb:hover {
 	/*background:cyan;*/
 	border-top:1px solid black;
 	margin:15px 0 0 0;
-	padding:10px 0 0 0;
+	padding:5% 10%;
 	font-size:85%;
 	overflow:visible;
-	line-height:1.25em;
+	line-height:1.55em;
 	/*position:absolute;*/
 	
 }
@@ -1324,7 +1340,7 @@ div.productTitleDetailPageThumb:hover {
 	width:75%;
 	height:auto;
 	/*background:lime;*/
-	margin:3% auto 0 auto !important;
+	margin:3% auto 7% auto !important;
 	padding:20px 0 0 0;
 	text-align:center;
 	display:block;
@@ -1489,7 +1505,7 @@ div.crossSellingThumb:hover, .crossSellingFloatingThumb {
 	line-height:1.25em !important;
 	padding:1.35em 0;
 	text-align:center;
-	color:rgb(205,190,183);
+	color:#e3c697;
 }
 
 
@@ -1578,6 +1594,19 @@ body.sectionFigurines #topNavContainer ul li a.american {
 
 
 
+@media all and (max-width: 550px) {
+#productTitleDetailPageDino h4 {
+line-height:1.15em;
+padding:0 0 2% 0;
+}
+
+}
+
+
+
+
+
+
 
 @media all and (max-width: 600px) {
   
@@ -1620,4 +1649,10 @@ body.sectionFigurines #topNavContainer ul li a.american {
   width:auto;
   
   
+}
+}
+
+
+.productHabitatContainer li:first-of-type {
+margin:2% 0 0 0;
 }

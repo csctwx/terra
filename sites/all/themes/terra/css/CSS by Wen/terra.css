@@ -1,0 +1,935 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#topNavContainer {    
+    z-index: 99;    
+}
+
+#main {
+    padding-top: 10%;
+}
+
+body.front,
+body.page-categories,
+body.page-node-11 {	
+	background-image:url(../images/sticky-footer-kraft-strip-brown.jpg);
+	background-repeat:repeat-x;
+	background-color:rgb(80,61,51);
+	background-position:bottom;
+	
+}
+
+body.page-figurines,
+body.page-mini-animals,
+body.page-horses,
+body.node-type-dinosaurs,
+body.page-dinosaurs {
+  background: url(../images/Dinosaur-Backdrop-only-iStock-fadeout5.jpg) no-repeat fixed top, 
+  rgb(202,117,53) url(../images/sticky-footer-kraft-strip-dino-orange.jpg) repeat-x fixed bottom;
+  background-color: #bd6e4d;
+}
+
+body.node-type-fantasy-sets,
+body.page-fantasy-sets {
+  background-image: url(../images/Fantasy-Backdrop-only-iStock-fadeout-blackWhite.jpg), url(../images/sticky-footer-kraft-strip-dark_charcoal2.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: black;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.node-type-farm-animals,
+body.page-farm-animals {
+  background-image: url(../images/Farm-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-farm.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #e0bf70;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.node-type-north-american-animals,
+body.page-north-american-animals {
+  background-image: url(../images/northAmercian-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-northAmerican.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #344018;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.node-type-wild-animals,
+body.page-wild-animals {  
+  background-image: url(../images/Africa-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-rusty-sand-shorter.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #ca7535;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;  
+}
+
+body.node-type-marine-animals,
+body.page-marine-animals {
+  background-image: url(../images/Marine-Backdrop-only-iStock-fadeout2.jpg), url(../images/sticky-footer-kraft-strip-marine-blue3.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #042477;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+body.node-type-accessories,
+body.page-accessories {
+  background-image: url(../images/Accessories-Backdrop-only-iStock-fadeout.jpg), url(../images/sticky-footer-kraft-strip-green-grass.jpg);
+  background-repeat: no-repeat, repeat-x;
+  background-color: #a3be39;
+  background-position: top, bottom;
+  background-attachment: fixed, fixed;
+}
+
+
+/*body.front #topNavContainer ul li a.home,
+body.page-categories #topNavContainer ul li a.figurines,
+body.node-type-dinosaurs #topNavContainer ul li a.figurines,
+body.node-type-fantasy-sets #topNavContainer ul li a.figurines,
+body.page-dinosaurs #topNavContainer ul li a.figurines,
+body.page-fantasy-sets #topNavContainer ul li a.figurines,
+body.page-node-7 #topNavContainer ul li a.figurines,
+body.page-node-8 #topNavContainer ul li a.figurines,
+body.page-node-9 #topNavContainer ul li a.figurines,
+body.page-node-10 #topNavContainer ul li a.figurines,
+body.page-node-5 #topNavContainer ul li a.accessories,
+body.page-node-11 #topNavContainer ul li a.buy {	
+	color:rgb(80,61,51) !important;	
+}
+
+@media (max-width: 990px) {
+  body.front #topNavContainer ul li a.home,
+  body.page-categories #topNavContainer ul li a.figurines,
+  body.node-type-dinosaurs #topNavContainer ul li a.figurines,
+  body.page-node-4 #topNavContainer ul li a.figurines,
+  body.page-node-6 #topNavContainer ul li a.figurines,
+  body.page-node-7 #topNavContainer ul li a.figurines,
+  body.page-node-8 #topNavContainer ul li a.figurines,
+  body.page-node-9 #topNavContainer ul li a.figurines,
+  body.page-node-10 #topNavContainer ul li a.figurines,
+  body.page-node-5 #topNavContainer ul li a.accessories,
+  body.page-node-11 #topNavContainer ul li a.buy {  
+    color:orange !important; 
+  }
+}*/
+
+#topNavContainer #cssmenu ul li a.active,
+#topNavContainer #cssmenu ul li a.active-trail{
+  color:rgb(80,61,51) !important;
+}
+
+@media (max-width: 990px) {
+  #topNavContainer #cssmenu ul li a.active,
+  #topNavContainer #cssmenu ul li a.active-trail{
+    color:orange !important;
+  }
+
+}
+
+#topNavContainer #cssmenu ul li ul li a.active,
+#topNavContainer #cssmenu ul li ul li a.active-trail{
+  color:orange !important;
+}
+
+/*body.front #topNavContainer ul li a.home,
+body.page-node-5 #topNavContainer ul li a.accessories,
+body.page-node-11 #topNavContainer ul li a.buy {
+  cursor:default;  
+}
+
+body.node-type-accessories #topNavContainer ul li a.accessories {  
+  color:rgb(80,61,51) !important; 
+}
+
+body.node-type-dinosaurs #topNavContainer ul li a.dinosaurs, 
+body.page-dinosaurs #topNavContainer ul li a.dinosaurs, 
+body.page-fantasy-sets #topNavContainer ul li a.fantasy, 
+body.node-type-fantasy-sets #topNavContainer ul li a.fantasy, 
+body.node-type-wild-animals #topNavContainer ul li a.wild, 
+body.page-node-9 #topNavContainer ul li a.wild, 
+body.node-type-farm-animals #topNavContainer ul li a.farm,
+body.page-node-7 #topNavContainer ul li a.farm, 
+body.node-type-marine-animals #topNavContainer ul li a.marine, 
+body.page-node-10 #topNavContainer ul li a.marine, 
+body.node-type-north-american-animals #topNavContainer ul li a.american,
+body.page-node-8 #topNavContainer ul li a.american {  
+  color: orange !important;
+}
+
+body.page-node-4 #topNavContainer ul li a.dinosaurs, 
+body.page-node-6 #topNavContainer ul li a.fantasy, 
+body.page-node-9 #topNavContainer ul li a.wild, 
+body.page-node-7 #topNavContainer ul li a.farm, 
+body.page-node-10 #topNavContainer ul li a.marine, 
+body.page-node-8 #topNavContainer ul li a.american {
+  cursor: default !important;  
+}*/
+
+/*  Carousel set */
+.carousel-control { 
+  width:  4%; 
+}
+
+.carousel-control.left{
+  margin-left:0px;
+  background-image:none;
+}
+
+.carousel-control.right {
+  margin-right:0px;
+  background-image:none;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -100%; }
+  .carousel-inner .next        { left:  100%; }
+  .carousel-inner .prev    { left: -100%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px ) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev    { left: -50%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+  .active > div:first-child + div { display:block; }
+}
+
+@media (min-width: 992px) and (max-width: 1220px ) {
+  .carousel-inner .active.left { left: -33.33%; }
+  .carousel-inner .next        { left:  33.33%; }
+  .carousel-inner .prev    { left: -33.33%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+@media (min-width: 1220px ) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .next        { left:  25%; }
+  .carousel-inner .prev    { left: -25%; }  
+}
+
+.thumbnail{
+  background-color: #e3c697;
+}
+
+.thumbnail:hover{
+  background-color: #403e37;
+}
+
+.thumbnail:hover .views-field-title a,
+.thumbnail:hover .views-field-title a:visited{
+  color:#fae584;
+}
+.views-field-title a,
+.views-field-title a:visited{
+  display: block;
+  color:#802a23;
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+  font-size: 11px !important;
+  text-transform: uppercase;
+}
+
+.front .views-field-title {
+  /*margin-top: 14px;*/
+}
+
+/* arrow style */
+@media screen and (min-width: 768px){
+  a.right.carousel-control img {
+    margin-right: 0;
+  }
+
+  a.left.carousel-control img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a.left.carousel-control img, 
+  a.right.carousel-control img {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+}
+
+a.right.carousel-control img {
+  right: 50%;
+  margin-right: -10px;
+}
+
+a.left.carousel-control img, 
+a.right.carousel-control img {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-inner {  
+  width: 90%;
+  margin: 0 auto;  
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  border-image: none;
+  filter:none;
+}
+
+#productTitleDetailPage {
+    width:75%; 
+    margin: 7% auto 0;
+    /*padding-left: 23px;*/
+}
+
+#breadcrumb {
+    width:75%; 
+    margin: 1% auto 0;
+    /*padding-left: 23px;*/
+}
+
+#container > .view {
+    width:75%; 
+    margin: 0 auto;
+}
+
+.view .thumbPageContainer {
+   width: 100%;     
+   margin: 0 auto !important;
+   padding: 0; 
+}
+
+#breadcrumb .breadcrumb{    
+    padding-left: 0;
+}
+
+#productTitleDetailPageDino {
+    width:75%; 
+    margin: 8% auto 0;
+}
+
+#productTitleDetailPage h2, #productTitleDetailPageDino h2 {
+  font-size: 210%;
+}
+
+body.node-type-dinosaurs #productTitleDetailPageDino {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-top: 85px;
+    height: 148px;
+}
+
+@media (min-width: 992px){
+  body.node-type-dinosaurs #productTitleDetailPageDino {    
+    background: url("../images/product_page_lorusso_signature.png") top right no-repeat ;
+  }
+}
+
+@media (max-width: 992px){
+  body.node-type-dinosaurs #productTitleDetailPageDino {
+    width:75%; 
+    margin: 1% auto 0;
+    padding-top: 25px;
+    height: 88px;
+  }
+  body.node-type-dinosaurs #productDescriptionContainer {
+    background: url("../images/product_page_lorusso_signature_mobile.png") top center no-repeat ;
+    background-size: 100%;
+    padding-top: 25%;
+    margin-top: 20px;
+  }
+
+}
+
+
+#container {    
+    background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
+    margin-top: 150px;   
+    
+}
+
+@media (min-width: 420px){
+  #container {    
+    /*border*/
+    border: 10px solid transparent;
+    padding: 15px 0;
+    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/border.png) 30 round;
+    /*border-image-width: 20px;*/
+  }  
+}
+
+@media (max-width: 992px){
+  #container { 
+    border-image-width: 10px; 
+  }
+}
+
+@media (min-width: 992px){
+  #container { 
+    padding: 15px 6px;
+    border-image-width: 19px; 
+  }
+}
+
+body.not-front #crossSellingContainer {
+   background: transparent; 
+}
+
+body > #container ,
+#containerHomepage,
+#bottomFooterContainer{
+  max-width: 1242px;
+}
+
+
+body.node-type-north-american-animals #container,
+body.node-type-dinosaurs #container,
+body.node-type-fantasy-sets #container,
+body.node-type-accessories #container,
+body.node-type-farm-animals #container,
+body.node-type-north-american-animals #container,
+body.node-type-marine-animals #container,
+body.node-type-wild-animals #container {
+  background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
+}
+
+@media (min-width: 992px) {
+  
+  body.page-north-american-animals #container,
+  body.page-categories #container {    
+    background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;
+  }
+  
+  body.page-dinosaurs #container {    
+    background: #ffe9bf url("../images/map-beige-bg-dinosaurs-signature.jpg") no-repeat ;
+  }
+  
+  body.page-fantasy-sets #container {    
+    background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;
+  }
+
+  body.page-farm-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-farm.jpg") no-repeat ;
+  }
+
+  body.page-wild-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-wild.jpg") no-repeat ;
+  }
+
+  body.page-north-american-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-american.jpg") no-repeat ;
+  }
+
+  body.page-marine-animals #container {    
+    background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;
+  }
+
+  body.page-accessories #container {    
+    background: #ffe9bf url("../images/map-beige-bg-accessories.jpg") no-repeat ;
+  }
+} 
+
+/*map style*/
+#about-content {
+    background-color: #f9f3dc;
+    border-radius: 10px;
+    color: #650360;
+    margin: 0 10px;
+    padding: 50px;
+}
+
+
+#about-content p {
+    margin-bottom: 12px;
+}
+
+#about-content {    
+    font-size: 100%;    
+    vertical-align: baseline;
+}
+
+#about-content .col-xs-12 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#productPictureInnerContainer{
+  background-color: #fff;
+  padding: 0; 
+  margin: 0;
+
+}
+
+#productRetailInfoContainer{  
+  width: auto;  
+  position: relative;
+  bottom: 5px;
+  border-top: none;
+  margin-top: 0;
+}
+
+#productPictureMapContainer{
+  background-color: #e3c697;
+  font-family: "ClearSans-Regular",Arial,Helvetica,sans-serif;
+  font-size: 110%;
+  line-height: 1.25em;
+}
+
+#productDescriptionContainer #description{  
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+#productDescriptionContainer h3 {
+  font-family: 'Novecento-DemiBold', Arial, Helvetica, sans-serif;
+  color: maroon;
+  text-transform: uppercase;
+}
+
+.row-same-height .productTitleDetailPageThumbContainerUnder {
+    padding: 6% 0;
+    text-align: justify;
+}
+
+#productDescriptionContainer {
+    background: none;    
+    margin: 0 auto;    
+    width: 75%;
+    text-align: justify;
+}
+
+.productSpecsContainer, 
+.productComponentsContainer {    
+    margin: 1% 0;    
+    width: 100%;
+}
+
+.productSpecsContainer .listSubTitleSpan{
+  font-size: 90%;
+  font-weight: normal;
+}
+
+.productSpecsContainer .listTitle{
+  background-color: #CEAA9D;
+  text-align: center;
+}
+
+.productSpecsContainer .listValue{
+  background-color: #F8ECD4;
+}
+
+.productSpecsContainer table tbody tr td{
+  border-top: 1px solid #802A18;
+}
+
+.productSpecsContainer tr:first-child td{
+  border-top: 1px solid transparent;
+}
+
+.drop-cap p:first-of-type:first-letter {
+    font-size: 3.5em;
+    float: left;
+    margin-top: .25em;
+}
+
+#productFactsContainer {
+  width: 100%; 
+  margin: 0;
+} 
+
+.crossSellTitleRuler,
+.crossSellTitle{
+  width: 30%;
+}
+
+@media screen and (max-width: 950px){
+  #productPictureMapContainer {
+    background-color: #e3c697 !important;
+  }
+}
+
+.productTitleDetailPageThumbContainerUnder {
+  background: transparent;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 950px){
+  #productPictureMapContainer {
+   background: #e3c697 !important; 
+  }
+}
+
+.crossSellingThumbContainer .productTitleDetailPageThumb {
+  width: 25%;
+  height: 25%;
+}
+
+.crossSellingThumbContainer #productPictureMapContainer .productThumbDesc{
+  font-size: 110%;
+} 
+
+.crossSellingThumbContainer .thumbPageContainer {
+  width: 100%;
+}
+
+.thumbPageContainer .thumbnail .views-field-field-product-picture .field-content {
+  background-color: #fff;
+}
+
+.thumbnail .views-field-title{  
+  margin: 15px auto;
+}
+
+/*.thumbnail .views-field-title .field-content{
+  position: relative;  
+  transform: translate(0,50%);
+  display: inline-block;
+}*/
+
+.thumbPageContainer .thumbnail{
+  width: 164px;
+  margin:0 auto 10px;
+}
+
+.carousel-inner .thumbnail{
+  width: 164px;
+  margin:0 auto;
+}
+
+#productPictureDescContainer {
+  padding: 2% 1%;
+  position: relative;
+}
+
+@media (max-width: 420px){
+  #productPictureDescContainer {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+
+.productTitleDetailPageThumb.col-xs-2{
+  padding: 0;
+  width: 20%;
+  height: 20%;
+}
+
+.productTitleDetailPageThumb {
+  margin: 0px 0.8em 0 0;
+}
+
+.productThumbDesc{
+  margin-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 992px) {
+  #productPictureInnerContainer{
+    width:100%;
+    max-width: 100%;
+  } 
+}
+
+@media (min-width: 993px) {
+  #productPictureInnerContainer {
+    width: 50%;    
+  }
+}
+
+@media (max-width: 420px) {
+  #productPictureMapContainer {
+    width: 100%; 
+    padding: 0;
+    border: none;
+  }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+@media (max-width: 950px){
+  #productPictureMapContainer {
+    width: 75%;    
+    padding: 0;
+    border: none;
+  }
+}
+
+.view-content .thumbPageContainer{
+  margin-top: 1% !important;
+  padding-top: 0;
+}
+
+#bottomFooterContainer a {
+  color: rgb(205,190,183);
+  text-decoration: none;
+}
+
+#cssmenu ul ul li a {    
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  color: maroon;
+  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.breadcrumb a, 
+.breadcrumb a:visited {
+  color: maroon;
+  font-family: 'Novecento-Medium', Arial, Helvetica, sans-serif;
+}
+
+body.page-node-11 .thumbPageContainer{
+  background-color: #e6ce9a !important;
+  padding:10px;
+  text-align: left;
+  border: 1px solid #666;
+}
+
+#map-container {
+  width: 75%;
+  height: auto;  
+  margin: 3% auto 0 auto !important;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  background-color:white; 
+  height: 530px;
+}
+
+#sidebar{
+  float: left;
+  width: 30%;
+  text-align: left;  
+}
+
+#map-canvas{
+  margin: 0 !important;
+  border: none !important;  
+  float: left;
+  width: 70%;
+  height: 100% !important;
+}
+
+#map-container #sidebar{
+  float: left;
+  width: 30%;
+  height: 100%;
+  overflow-x: auto;
+}
+
+ul#sidebar-list {
+  display: block;
+  clear: left;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  /*-webkit-padding-start: 40px*/
+}
+
+ul#sidebar-list li {
+  display: block;
+  clear: left;
+  float: left;
+  margin: 3% 4%;
+  cursor: pointer;
+  width: 92%;
+  border: 1px solid #ffffff;
+}
+
+.list-label {
+  float: left;
+  margin: 10px 0 0 6px;
+  padding: 2px 3px;
+  width: 26px;
+  height: 38px;
+  /*max-width: 25px;*/
+  text-align: center;
+  background: url(../where/store-marker.png) no-repeat;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.list-details {
+  float: left;
+  margin-left: 6px;
+  width: 80%;
+}
+
+.labels {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     width: 40px;
+     height:20px;
+     border: 2px solid black;
+     white-space: nowrap;
+   }
+
+.list-content {
+  padding: 10px;
+}
+
+.loc-name {
+  color: #ae2118;
+  font-weight: bold;
+}
+
+#container table.thumbPageContainer,
+#container div#map-container{  
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+table.thumbPageContainer td {
+  padding: 5px;
+}
+
+table.thumbPageContainer td b{
+  text-transform: uppercase;
+  color: maroon;
+  font-weight: bold;
+}
+
+table.thumbPageContainer td input,
+table.thumbPageContainer td select {
+    border: 1px solid #9b654a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*-moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;*/
+    /*font-size: 20px;*/
+    padding: 0px 3px;
+    outline: 0;
+    /*-webkit-appearance: none;*/
+}
+
+/*table.thumbPageContainer td input:focus,
+table.thumbPageContainer td select:focus {
+    border-color: #339933;
+}*/
+
+table.thumbPageContainer td select {
+ /* color: #ffa62e; 
+  background-color: #7b2215;*/
+}
+
+table.thumbPageContainer td input[type=button] {
+  color: #ffa62e; 
+  background-color: #503d33;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border: 1px solid #9b654a;
+}
+
+#productTitleDetailPage h2, #productTitleDetailPageDino h2 {  
+  line-height: 1em;
+}
+
+#outputDiv {
+  display:inline-block;
+  padding-left: 10px;
+}
+
+.productThumbDesc ul{
+  list-style-type: none;
+}
+
+.productThumbDesc ul li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.thumbnail img{
+  background-color: #fff;
+}
+
+#sidebar.large{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #sidebar{
+    display: block;
+  } 
+  #sidebar2{
+    display: none;
+  }   
+}
+
+@media (max-width: 992px) {
+  #map-container {
+    height: 630px;
+  }
+
+  #map-canvas {    
+    width: 100% !important;
+    height: 320px !important;
+    float: none;
+  }
+   
+  #sidebar{
+    display: none;
+  } 
+  #sidebar2{
+    display: block;
+    overflow-y: auto;
+    height: 300px;
+  } 
+}
+
+.crossSellingThumbContainer{
+  padding: 0;
+}
+
+ul#sidebar-list-2 {
+    clear: left;
+    display: block;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul#sidebar-list-2 li {
+    border: 1px solid #ffffff;
+    clear: left;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 3% 4%;
+    width: 92%;
+}
