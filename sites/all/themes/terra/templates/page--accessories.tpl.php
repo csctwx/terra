@@ -4,8 +4,8 @@
     <?php print $breadcrumb; ?>    
   </div>
   <div id="productTitleDetailPage">
-	<!-- <h4>Figurines</h4> -->
-	<h2><?php echo $title; ?></h2>
+	<h4><?php echo $title; ?></h4>
+	<h2>BUILDINGS & PLAYSETS</h2>
   </div>
   <?php print render($page['content']); ?>  
 </div>

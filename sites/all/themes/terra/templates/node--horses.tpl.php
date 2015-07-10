@@ -38,8 +38,10 @@
     <div id="productRetailInfoContainer">
       <ul>        
         <?php foreach ($product_informations as $value): ?>
-         <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
-        <?php endforeach; ?>
+          <?php if(isset($fields[$value])): ?> 
+            <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
+          <?php endif; ?>          
+        <?php endforeach; ?>  
       </ul>
     </div>      
   </div>
@@ -52,9 +54,11 @@
   </div>   
  
 </div>
-<div id="productPictureMapContainer2">
-  <img src="<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>" style="width:100%;">
-</div>
+<?php if(isset($fields['habitat_map'])): ?>
+  <div id="productPictureMapContainer2">
+    <img src="<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>" style="width:100%;">
+  </div>
+<?php endif; ?>
 <div id="crossSellingContainer">
   <div class="crossSellTitleRuler"></div>
   <div class="crossSellTitle">ITEMS FROM THE SAME COLLECTION</div>
@@ -63,7 +67,8 @@
   <div class="crossSellingThumbContainer"> 
 
     <div class="thumbPageContainer row"> 
-          <?php foreach ($other_products as $index => $product):?>  
+      <?php if(isset($other_products)): ?>
+        <?php foreach ($other_products as $index => $product):?>  
           <div class="item">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="thumbnail" style="">  
@@ -74,13 +79,14 @@
                 </div>  
                 <div class="views-field views-field-title">        
                   <span class="field-content">
-                    <a href="/terra/dinosaurs"><?php echo $product['title']; ?></a>
+                    <a href="<?php echo $product['url']; ?>"><?php echo $product['title']; ?></a>
                   </span>  
                 </div>
                </div>
             </div>
           </div>
         <?php endforeach; ?>      
+      <?php endif; ?>         
     </div>
   </div>
 </div>
