@@ -18,7 +18,8 @@
                             'piece_count',                            
                           );  
 
- // kpr($fields); die();                       
+ $other_products = myfunctionlib_get_other_products($type, $node->nid);                  
+?>              
 ?>
 <div id="productTitleDetailPageDino">
   <h4><?php echo str_replace('_', ' ', $type) ; ?></h4>
