@@ -49,7 +49,7 @@
           <?php endif; ?>          
         <?php endforeach; ?>  
         <?php if(isset($fields['instructions_sheet']['url'])): ?>
-        <li>Download the <a href="<?php echo $fields['instructions_sheet']['url'][0]['picture_url']; ?>">Instructions Sheet</a></li>
+        <li>Download the <a href="<?php echo $fields['instructions_sheet']['url'][0]['picture_url']; ?>" target="_blank">Instructions Sheet</a></li>
         <?php endif; ?>
       </ul>
     </div>      
@@ -82,7 +82,6 @@
   <div class="crossSellTitleRuler"></div>
 
   <div class="crossSellingThumbContainer"> 
-
     <div class="thumbPageContainer row"> 
       <?php if(isset($other_products)): ?>
         <?php foreach ($other_products as $index => $product):?>  

@@ -97,7 +97,6 @@
   <div class="crossSellTitleRuler"></div>
 
   <div class="crossSellingThumbContainer"> 
-
     <div class="thumbPageContainer row"> 
       <?php if(isset($other_products)): ?>
         <?php foreach ($other_products as $index => $product):?>  
