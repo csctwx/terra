@@ -191,13 +191,12 @@ function myfunctionlib_get_other_products($type, $current_nid){
         }
         $product = node_load($id); 
         $title = $product->title;
-        $product_url = $product->field_product_picture['und'][0]['uri'];
+        $product_url = $product->field_product_picture['und'][0]['uri'];        
         $thumbnail_url = image_style_url("thumbnail", $product_url);
-        $url = $base_url.'/'.$type.'/'.strtolower(str_replace(' ', '-', $title)); 
+        $url = drupal_get_path_alias('node/'.$id);        
         $other_products[$id] = array('title'=>$title,
                                       'thumbnail_url'=>$thumbnail_url,
                                       'url' => $url);
-        
       }
     }
     return $other_products;
