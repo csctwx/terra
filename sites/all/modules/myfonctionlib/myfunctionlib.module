@@ -193,7 +193,7 @@ function myfunctionlib_get_other_products($type, $current_nid){
         $title = $product->title;
         $product_url = $product->field_product_picture['und'][0]['uri'];        
         $thumbnail_url = image_style_url("thumbnail", $product_url);
-        $url = drupal_get_path_alias('node/'.$id);        
+        $url = $base_url.'/'.drupal_get_path_alias('node/'.$id);           
         $other_products[$id] = array('title'=>$title,
                                       'thumbnail_url'=>$thumbnail_url,
                                       'url' => $url);
