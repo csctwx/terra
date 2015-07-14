@@ -44,7 +44,7 @@ list of stores that sometimes carry our toys.
       </Select>
       </td>
     </tr>
-   <tr>
+   <tr style="display:none;">
       <td>
        <b>Address:&nbsp;</b><input type="text" id="address" style="width:40%" value="">
       </td>
@@ -55,8 +55,8 @@ list of stores that sometimes carry our toys.
     </tr>
     <tr>
       <td colspan="2">
-      <div id="US" class="country" ><b>State, and/or Zipcode:</b></div>            
-      <div id="CA" class="country" style="display:none"><b>Province, and/or Postal code:</b></div>
+      <div id="US" class="country" ><b>Address, City, State, and/or Zipcode:</b></div>            
+      <div id="CA" class="country" style="display:none"><b>Address, City, Province, and/or Postal code:</b></div>
       <input type="text" id="addressInput" style="width:80%" value="">
     </td>
     </tr> 

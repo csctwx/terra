@@ -2,6 +2,15 @@
   //Create field variables 
   $fields = myfunctionlib_get_fields($content);  
   
+   $animal_specifications = array('name_means',                             
+                                'diet',
+                                'size',
+                                'weight',
+                                'species',                             
+                                'average_life_span',
+                                'group_name',
+                                'protection_status',
+                               ); 
   
   $product_informations = array('product_no', 
                             'age_grade', 
@@ -51,9 +60,32 @@
   <h3>DESCRIPTION</h3>  
   <div id="description" class="drop-cap">
     <?php echo $fields['descriptive_text']['value']; ?>
-  </div>   
- 
+  </div>    
+  <h3>CHARACTERISTICS</h3>
+  <div class="productSpecsContainer">
+    <table class="table">      
+      <?php foreach ($animal_specifications as $value): ?>
+        <?php if(isset($fields[$value]['value'])): ?>
+        <tr>
+          <td class="listTitle"><span class="listSubTitleSpan"><?php echo $fields[$value]['label']; ?></span> </td>
+          <td class="listValue"><?php echo $fields[$value]['value']; ?></td>
+        </tr>
+        <?php endif; ?>       
+      <?php endforeach; ?>      
+    </table>    
+  </div>
+  <div id="productFactsContainer">
+    <div class="productHabitatContainer">
+    <span class="listSubTitleSpan"><?php echo $fields['natural_habitat']['label']; ?></span>
+      <ol>
+        <?php foreach($fields['natural_habitat']['value'] as $natural_habitat_value): ?>
+          <li><span><?php echo $natural_habitat_value['value']; ?></span></li>
+        <?php endforeach; ?>
+      </ol>
+    </div>       
+  </div>
 </div>
+
 <?php if(isset($fields['habitat_map'])): ?>
   <div id="productPictureMapContainer2">
     <img src="<?php echo $fields['habitat_map']['url'][0]['picture_url']; ?>" style="width:100%;">

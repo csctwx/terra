@@ -253,7 +253,7 @@ function createSidebarEntry2(name, address, num) {
 
     html +=  '<div class="list-details"><div class="list-content"><div class="loc-name">' + name + '</div>';
     $.each(address_arr, function(index, addr){
-    	html +=  '<span class="loc-addr">' + addr + '</span>';
+    	html +=  '<span class="loc-addr"> ' + addr + '</span>';
     });
 
     html +=  '</div></div>' ;
