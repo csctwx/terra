@@ -40,7 +40,7 @@ list of stores that sometimes carry our toys.
       <b>Country:</b>
       <Select class="CountrySelect" id="countrycode" >
         <option value="US">US</option>
-        <option value="CA">Canada</option>        
+        <!-- <option value="CA">Canada</option> -->        
       </Select>
       </td>
     </tr>
