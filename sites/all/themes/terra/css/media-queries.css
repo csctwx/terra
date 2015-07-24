@@ -1123,6 +1123,29 @@ CSS Document */
 
 
 	}
+	
+	
+	
+	
+	
+	@media all and (min-width: 1650px) {
+
+#productPictureInnerContainer img {
+	width:100% !important;
+	max-width:450px !important;
+	height:auto;
+	/*margin:0 0 0 5%;*/
+	margin:0 auto !important;
+	/*background:brown;*/
+	position:relative;
+	
+}	
+
+}
+
+	
+	
+	
 
 
 

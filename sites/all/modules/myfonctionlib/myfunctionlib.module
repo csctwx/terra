@@ -195,9 +195,9 @@ function myfunctionlib_get_other_products($type, $current_nid){
     foreach ($rand_keys as $id) {
       if($id != $current_nid){        
         $n++;
-        // if($n > 4){
-        //     break;
-        // }
+        if($n > 4){
+            break;
+        }
         $product = node_load($id); 
         $title = $product->title;
         $product_url = $product->field_product_picture['und'][0]['uri'];        

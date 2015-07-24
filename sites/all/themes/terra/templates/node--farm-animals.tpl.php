@@ -37,25 +37,28 @@
       <img src="<?php echo $fields['product_picture']['url'][0]['picture_url']; ?>" name="stage" id="stage" />
   </div><!--
 --><div id="productPictureDescContainer"  class="col-xs-12 col-md-6 col-md-height  vcenter">    
-    <div class="productTitleDetailPageThumbContainerUnder row">
-      <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
-          <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
-          <div class="productTitleDetailPageThumb col-xs-2">
-            <a href="javascript:void(0)"><img src="<?php echo $thumbnail_url; ?>" width="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
-          </div>
-      <?php endforeach; ?>
-    </div>      
-    <div id="productRetailInfoContainer">
-      <ul>        
-        <?php foreach ($product_informations as $value): ?>
-          <?php if(isset($fields[$value])): ?> 
-            <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
-          <?php endif; ?>          
-        <?php endforeach; ?>          
-      </ul>
-    </div>      
-  </div>
- <!-- </div>   -->
+    <div id="card">
+      <div id="card-inner">  
+        <div class="productTitleDetailPageThumbContainerUnder row">
+          <?php foreach ($fields['product_picture']['url'] as $product_picture_url): ?>
+              <?php $picture_url = $product_picture_url['picture_url'];  $thumbnail_url = $product_picture_url['thumbnail_url']; ?>  
+              <div class="productTitleDetailPageThumb col-xs-2">
+                <a href="javascript:void(0)"><img src="<?php echo $thumbnail_url; ?>" width="100%" onClick="MM_swapImage('stage','','<?php echo $picture_url; ?>',1)"/></a>
+              </div>
+          <?php endforeach; ?>
+        </div>      
+        <div id="productRetailInfoContainer">
+          <ul>        
+            <?php foreach ($product_informations as $value): ?>
+              <?php if(isset($fields[$value])): ?> 
+                <li><span><?php echo $fields[$value]['label']; ?>:</span> <?php echo $fields[$value]['value']; ?></li>  
+              <?php endif; ?>          
+            <?php endforeach; ?>  
+          </ul>
+        </div> 
+      </div>
+    </div>              
+  </div> 
 </div>
 <div id="productDescriptionContainer">
   <h3>DESCRIPTION</h3>  

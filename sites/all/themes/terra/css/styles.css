@@ -825,6 +825,23 @@ html {
 
 
 
+body.page-figurines #productTitleDetailPage h4, body.page-node-11 #productTitleDetailPage h4 
+ {
+font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
+font-size:150%;
+color:rgb(80,61,51);
+text-transform:uppercase;
+/*padding:13% 0 0 0;*/
+padding:0 0 0 0;
+
+
+}
+
+
+
+
+
+
 #productTitleDetailPageDino h4 {
 	font-family:'Novecento-Bold', Arial, Helvetica, sans-serif;
 	font-size:150%;

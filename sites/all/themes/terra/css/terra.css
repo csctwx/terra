@@ -309,6 +309,7 @@ body.node-type-dinosaurs #productTitleDetailPageDino {
 
 #container {    
     background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
+	/*background-size:100% auto;*/
     margin-top: 150px;   
     
 }
@@ -361,6 +362,7 @@ body.node-type-north-american-animals #container,
 body.node-type-marine-animals #container,
 body.node-type-wild-animals #container {
   background: #ffe9bf url("../images/map-beige-bg.jpg") no-repeat ;
+ 
 }
 
 @media (min-width: 992px) {
@@ -370,7 +372,7 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-african.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-african.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -379,7 +381,8 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-dinosaurs-signature.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-dinosaurs-signature.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
+	/*background-size:contain;*/
     background-position:top;
 	padding-bottom:50px;
   }
@@ -388,7 +391,7 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-fantasy.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-fantasy.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -397,7 +400,7 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-farm.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-farm.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -406,7 +409,7 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-wild.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-wild.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -415,7 +418,7 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-american.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-american.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -424,24 +427,34 @@ body.node-type-wild-animals #container {
     /*background: #ffe9bf url("../images/map-beige-bg-marine.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-marine.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
 
   body.page-horses #container {    
-    background: #ffe9bf url("../images/map-beige-bg-horses.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-horses.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-horses.jpg");
+	background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-mini-animals #container {    
-    background: #ffe9bf url("../images/map-beige-bg-mini.jpg") no-repeat ;
+    /*background: #ffe9bf url("../images/map-beige-bg-mini.jpg") no-repeat ;*/
+	background-image:url("../images/map-beige-bg-mini.jpg");
+	background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:top;
+	padding-bottom:50px;
   }
 
   body.page-accessories #container {    
     /*background: #ffe9bf url("../images/map-beige-bg-accessories.jpg") no-repeat ;*/
 	background-image:url("../images/map-beige-bg-accessories.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100% auto;
     background-position:top;
 	padding-bottom:50px;
   }
@@ -484,10 +497,11 @@ body.node-type-wild-animals #container {
   bottom: 5px;
   border-top: none;
   margin-top: 0;
+  padding: 0;
 }
 
 #productPictureMapContainer{
-  background-color: #e3c697;
+  background-color: #fff;
   font-family: "ClearSans-Regular",Arial,Helvetica,sans-serif;
   font-size: 110%;
   line-height: 1.25em;
@@ -565,7 +579,7 @@ body.node-type-wild-animals #container {
 
 @media screen and (max-width: 950px){
   #productPictureMapContainer {
-    background-color: #e3c697 !important;
+    background-color: #fff !important;
   }
 }
 
@@ -576,7 +590,7 @@ body.node-type-wild-animals #container {
 
 @media screen and (max-width: 950px){
   #productPictureMapContainer {
-   background: #e3c697 !important; 
+   background: #fff !important; 
   }
 }
 
@@ -619,7 +633,23 @@ body.node-type-wild-animals #container {
 
 #productPictureDescContainer {
   padding: 2% 1%;
-  position: relative;
+  position: relative;  
+}
+
+#card {
+  padding: 5% 0;
+  background-image: url('../images/card-bk/spec_card_top.png'), url('../images/card-bk/spec_card_bottom.png');
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+}
+
+#card-inner {
+  padding: 10px;  
+  background-image: url('../images/card-bk/spec_card_middle.png');
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 @media (max-width: 420px){
@@ -637,7 +667,7 @@ body.node-type-wild-animals #container {
 }
 
 .productTitleDetailPageThumb {
-  margin: 0px 0.8em 0 0;
+  margin: 0px 4% 0 0;
 }
 
 .productThumbDesc{
