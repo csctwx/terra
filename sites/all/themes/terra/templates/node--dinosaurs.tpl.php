@@ -58,8 +58,7 @@
         </div>      
       </div>      
     </div>    
-  </div>
- <!-- </div>   -->
+  </div> 
 </div>
 <div id="productDescriptionContainer">
   <h3>DESCRIPTION</h3>  

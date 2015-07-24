@@ -662,12 +662,16 @@ body.node-type-wild-animals #container {
 
 .productTitleDetailPageThumb.col-xs-2{
   padding: 0;
-  width: 20%;
-  height: 20%;
+  width: 22%;
+  height: 22%;
 }
 
 .productTitleDetailPageThumb {
-  margin: 0px 4% 0 0;
+  margin: 0 4% 0 0;
+}
+
+.productTitleDetailPageThumb:last-child {
+  margin: 0;
 }
 
 .productThumbDesc{
