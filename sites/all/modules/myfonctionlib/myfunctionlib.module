@@ -180,19 +180,24 @@ function myfunctionlib_set_breadcrumbs($category, $taxonomy){
 
 function myfunctionlib_get_other_products($type, $current_nid){
     global $base_url;
-    $entities = (new EntityFieldQuery)->entityCondition("entity_type", "node")->entityCondition("bundle", $type)->execute();
+    $result = db_query("SELECT nid FROM node WHERE type = :nid", array(':nid'=>$type));
+    $nids = array();
+    foreach ($result as $obj) {
+        $nids[] = $obj->nid;
+    }
     $other_products = array();
     $n = 0;
-    
+    //kpr($nids); die();
     $rand_keys = array();
-    if (count($entities['node']) > 5) {
-        $rand_keys = array_rand($entities['node'],5);
+    if (count($nids) > 5) {
+        $rand_keys = array_rand($nids,5);
     }
     else{
-        $rand_keys = array_keys($entities['node']);
+        $rand_keys = array_rand($nids);
     }
     //kpr($rand_keys); die();
-    foreach ($rand_keys as $id) {
+    foreach ($rand_keys as $id_key) {
+      $id = $nids[$id_key];
       if($id != $current_nid){        
         $n++;
         if($n > 4){
